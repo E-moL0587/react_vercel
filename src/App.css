@@ -14,20 +14,19 @@
 }
 
 .App-header {
-  background-image: url(/public/background1.jpg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center center;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(19, 0, 231);
+  color: rgb(255, 255, 255);
 }
 
 .App-link {
-  color: #4700ba;
+  color: #ffee00;
 }
 
 @keyframes App-logo-spin {

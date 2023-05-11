@@ -5,10 +5,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>成蹊大学ポケモンサークル</h2>
+        <h2>
+          <font face="serif">成蹊大学ポケモンサークル</font><br></br>
+          <font size="500" color="yellow">蹊モンガ</font>
+        </h2>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          (※成蹊大学ポケモンサークルのwebサイトを作成中です)
+          (※公式webサイトを作成中です)
         </p>
 
         <a
@@ -20,27 +23,15 @@ function App() {
           ポケモンサークル公式Twitter
         </a>
 
-
-
-
         <p>
-         新入生の皆様、ご入学おめでとうございます！( ⌯'-'⌯)<br></br>
-         成蹊大学ポケモンサークル 蹊モンガ では、<br></br>
-         ポケモンに関する研究を中心として、<br></br>
-         お互いの意見交換の場として活動していきます。<br></br>
-         たくさんの人にポケモンの魅力を伝えていきたいです！
+         新入生の皆様、ご入学おめでとうございます！<br></br><br></br>
+         成蹊大学ポケモンサークル 蹊モンガ は、<br></br>
+         ポケモンが大好きな人が集まるサークルです！<br></br>
         </p>
         <img src={"mypika.jpg"} alt="gphoto1" width="500" />
-        <p>
          <br></br>
-        </p>
         <img src={"emol.jpg"} alt="gphoto2" width="500" />
-        <p>
          <br></br>
-         <br></br>
-         <br></br>
-        </p>
-
 
       </header>
     </div>
