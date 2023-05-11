@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>蹊モンガホームページ</h2>
+        <h2>成蹊大学ポケモンサークル</h2>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           (※成蹊大学ポケモンサークルのwebサイトを作成中です)
