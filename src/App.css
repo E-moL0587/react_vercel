@@ -1,3 +1,4 @@
+
 .App {
     text-align: center;
   }
@@ -21,46 +22,4 @@
   
   .App-link {
     color: #ffee00;
-  }
-
-
-  
-  @keyframes infinity-scroll-left {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
-  
-  /*
-  IE11対策
-  ----------------------------*/
-  _:-ms-lang(x)::-ms-backdrop,
-  .d-demo {
-    display: -ms-grid;
-    overflow: hidden;
-  }
-  /*----------------------------*/
-  
-  .d-demo__wrap {
-    display: flex;
-    overflow: hidden;
-  }
-  
-  .d-demo__list {
-    display: flex;
-    list-style: none;
-  }
-  
-  .d-demo__list--left{
-  animation :infinity-scroll-left 4s infinite linear 2s both;
-  }
-  
-  .d-demo__item {
-    width: calc(50vw / 3);
-  }
-  .d-demo__item > img{
-     width: 100%;
   }
