@@ -22,15 +22,16 @@ function App() {
         </a>
         </div>
 
+        <div className="delay-time06 fadeUp">
         <p>
-          (※公式webサイトを作成中です)
+         新入生の皆様、<br></br>
+         ご入学おめでとうございます！<br></br><br></br>
+         成蹊大学ポケモンサークル<br></br>
+         蹊モンガ は、<br></br>
+         ポケモンが大好きな人が<br></br>
+         集まるサークルです！<br></br>
         </p>
-
-        <p>
-         新入生の皆様、ご入学おめでとうございます！<br></br><br></br>
-         成蹊大学ポケモンサークル 蹊モンガ は、<br></br>
-         ポケモンが大好きな人が集まるサークルです！<br></br>
-        </p>
+        </div>
         <br></br>
         <img src={"mypika.jpg"} alt="gphoto1" width="200" />
          <br></br>
@@ -39,6 +40,7 @@ function App() {
         <img src={"https://aniyuki.com/wp-content/uploads/2022/03/aniyuki-pokemon-67.gif"} alt="gphoto2" width="200" />
          <br></br>
 
+         <p> (※公式webサイト作成中です) </p>
 
       </header>
     </div>
