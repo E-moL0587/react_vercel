@@ -10,7 +10,7 @@ function App() {
           <font face="serif">成蹊大学ポケモンサークル</font><br></br>
           <font size="500" color="yellow">蹊モンガ</font>
         </h2>
-        <img src="https://archives.bulbagarden.net/media/upload/6/60/Spr_5b_587_s.png" className="App-logo" alt="logo" />
+        <img src="https://archives.bulbagarden.net/media/upload/6/60/Spr_5b_587_s.png" poster="mypika.jpg" className="App-logo" alt="logo" />
         <p>
           (※公式webサイトを作成中です)
         </p>
