@@ -1,13 +1,15 @@
 
 .App {
     text-align: center;
+    position: relative;
+    right: 35px;
   }
   
   .App-logo {
     height: 50vmin;
     pointer-events: none;
   }
-  
+
   .App-header {
     background-repeat: no-repeat;
     background-size: contain;
@@ -63,7 +65,9 @@ opacity: 0;
 
 .slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
     width:94%;
-    margin:0 auto;
+    text-align: center;
+    position: relative;
+    right: 25px;
 }
 
 .slider img {
@@ -72,7 +76,7 @@ opacity: 0;
 }
 
 .slider .slick-slide {
-	transform: scale(0.8);/*左右の画像のサイズを80%に*/
+	transform: scale(0.9);/*左右の画像のサイズを80%に*/
 	transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
 	opacity: 0.5;/*透過50%*/
 }
@@ -92,32 +96,19 @@ opacity: 0;
     top: 42%;
     cursor: pointer;/*マウスカーソルを指マークに*/
     outline: none;/*クリックをしたら出てくる枠線を消す*/
-    border-top: 2px solid #666;/*矢印の色*/
-    border-right: 2px solid #666;/*矢印の色*/
+    border-top: 2px solid #ffffff;/*矢印の色*/
+    border-right: 2px solid #ffffff;/*矢印の色*/
     height: 15px;
     width: 15px;
 }
 
 .slick-prev {/*戻る矢印の位置と形状*/
-    left: -1.5%;
+    left: 20px;
     transform: rotate(-135deg);
 }
 
 .slick-next {/*次へ矢印の位置と形状*/
-    right: -1.5%;
+    right: -15px;
     transform: rotate(45deg);
 }
-
-/*ドットナビゲーションの設定*/
-
-.slick-dots {
-    text-align:center;
-	margin:20px 0 0 0;
-}
-
-.slick-dots li {
-    display:inline-block;
-	margin:0 5px;
-}
-
 
