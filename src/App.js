@@ -7,17 +7,24 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h2>
+          <div className="fadeUp">
           <font face="serif">成蹊大学ポケモンサークル</font><br></br>
+          </div>
+          <div className="delay-time02 fadeUp">
           <font size="500" color="yellow">蹊モンガ</font>
+          </div>
         </h2>
         <img src="https://archives.bulbagarden.net/media/upload/6/60/Spr_5b_587_s.png" poster="mypika.jpg" className="App-logo" alt="logo" />
-        <p>
-          (※公式webサイトを作成中です)
-        </p>
 
+        <div className="delay-time04 fadeUp">
         <a className="App-link" href="https://twitter.com/seikei_Pokecir" target="_blank" rel="noopener noreferrer">
           ポケモンサークル公式Twitter
         </a>
+        </div>
+
+        <p>
+          (※公式webサイトを作成中です)
+        </p>
 
         <p>
          新入生の皆様、ご入学おめでとうございます！<br></br><br></br>
@@ -31,7 +38,6 @@ function App() {
          <br></br>
         <img src={"https://aniyuki.com/wp-content/uploads/2022/03/aniyuki-pokemon-67.gif"} alt="gphoto2" width="200" />
          <br></br>
-
 
 
       </header>
