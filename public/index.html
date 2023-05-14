@@ -99,6 +99,43 @@
         <ul class="App-header">
           <h2>ダメージ計算機作成中です</h2>
           <img src="keimolga.png" class="App-logo" alt="logo" />
+
+
+          <html>
+          <head>
+              <meta charset='utf-8'>
+              <title>BMI計測</title>
+              <meta name='viewport' content='width=device-width, initial-scale=1'>
+              <!--<link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>-->
+          </head>
+          
+          <body>
+              <script src='/damage.js'></script>
+              <h3>damage計算</h3>
+              <div>
+                  <!--入力欄-->
+                  <p><label>体重[kg]<input id="weight" type="text" size="10" maxlength="8"></label></p>
+                  <p><label>身長[m] <input id="height" type="text" size="10" maxlength="8"></label></p>
+              </div>
+              <div>
+                  <!--ボタン設置-->
+                  <p><input type="button" id="getResult" value="計算" onclick="func()"></p>
+              </div>
+              <p>
+                  <!--結果表示-->
+                  <label>体重<input id="bmi_weight_value" type="text" size="10" maxlength="8"></label>
+                  <label>÷(身長<input id="bmi_height_value1" type="text" size="10" maxlength="8"></label>
+                  <label>×身長<input id="bmi_height_value2" type="text" size="10" maxlength="8"></label>
+                  <label>)=BMI<input id="bmi_value" type="text" size="10" maxlength="8"></label>
+              </p>
+              </div>
+          </body>
+          </html>
+
+
+
+
+
         </ul>
       </ul>
     </div>
