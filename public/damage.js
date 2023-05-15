@@ -7,6 +7,8 @@ function func() {
     let lv = Number(document.getElementById('lv').value); //レベルの値を取得
     let mm = Number(document.getElementById('mm').value); //補正値の値を取得
 
+
+
     //入力した値が0以上の場合計算処理する
     if (parseFloat(sv) > 0) {  //parseFloat(文字列変数)⇒数値に変換
 
@@ -17,7 +19,13 @@ function func() {
         document.getElementById("damage_value0.85").value = Math.floor(damage*0.85);
         document.getElementById("damage_value1.00").value = Math.floor(damage*1.00);
     }
-
     // エラー表示
     else { alert("値をちゃんと入れてくれないと悲しみます(´；ω；`)ｳｩｩ..."); }
+
 }
+
+function fun() {
+    let num = document.getElementById("data");
+    document.getElementById("pokemon").value = num.value;
+}
+

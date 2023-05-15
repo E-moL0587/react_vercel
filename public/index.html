@@ -6,7 +6,7 @@
     <link rel="icon" href="keimolga.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta name="description" content="公式ホームページです！" />
+    <meta name="description" content="成蹊大学ポケモンサークルの公式ホームページです。" />
 
       <div id="video-area">
         <video id="video" poster="hosizora_frame.jpg" webkit-playsinline playsinline muted autoplay loop>
@@ -104,9 +104,7 @@
           <html>
           <head>
               <meta charset='utf-8'>
-              <title>BMI計測</title>
               <meta name='viewport' content='width=device-width, initial-scale=1'>
-              <!--<link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>-->
           </head>
           
           <body>
@@ -121,14 +119,19 @@
               </style>
             </head>
             <body>
+
               <form>
-                <select name="test">
-                  <option value="">No select (´；ω；`)</option>
-                  <option value="test1">ピカチュウ</option>
-                  <option value="test2">エモンガ</option>
-                  <option value="test3">ガブリアス</option>
+                <select name="data" id="data" onclick="fun()">
+                  <option value="">--選択してください--</option>
+                  <option value="35-55-40-50-50-90">    ピカチュウ </option>
+                  <option value="55-75-60-75-60-103">   エモンガ   </option>
+                  <option value="108-130-95-80-85-102"> ガブリアス </option>
                 </select>
               </form>
+
+              <p><label>種族値
+              <input id="pokemon" type="text" size="20" maxlength="30">
+              </p>
 
               <div>
                 <p><label>種族値<input id="sv" type="text" size="1" maxlength="3"></label>
@@ -164,14 +167,17 @@
 
               <a class="App-link" href="https://latest.pokewiki.net/%E3%83%80%E3%83%A1%E3%83%BC%E3%82%B8%E8%A8%88%E7%AE%97%E5%BC%8F" target="_blank" rel="noopener noreferrer">ダメージ計算の参考文献</a>
 
+              <br></br>
+              <br></br>
 
+              <p>メモ</p>
+              <p>上の種族値から自動的に記述するプログラムを作成中です</p>
+              <p>タイプ相性、技選択等、スクレイピングして指定ポケモンの覚える技だけを埋め込みたい</p>
+              <p>一致補正や威力無し、相性、メガシンカ、フォルムチェンジの実装、画像の実装、薄くバックグラウンドを作成して文字を見やすくUI考える、課題は多い...</p>
 
               </div>
           </body>
           </html>
-
-
-
         </ul>
       </ul>
     </div>
@@ -183,9 +189,6 @@
         </ul>
       </ul>
     </div>
-
-
-
 
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
