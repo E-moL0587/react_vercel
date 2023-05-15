@@ -23,6 +23,7 @@
         <li class="tab-list-item">　日程表　</li>
         <li class="tab-list-item">　計算機　</li>
         <li class="tab-list-item">　部員紹介　</li>
+        <li class="tab-list-item">　クイズ　</li>
       </ul>
     </font>
 
@@ -87,7 +88,7 @@
           <div class="delay-time02 fadeUp">
             <p>毎週火曜日と水曜日の5限(16:50~)から<br></br>
                9-305号室にて活動しています！<br></br>
-              (2023/05/14 13:00更新しました)
+              (2023/05/16 13:00更新しました)
             </p>
           </div>
           <br></br>
@@ -121,30 +122,34 @@
             <body>
 
               <form>
-                <select name="data" id="data" onclick="iv()">
-                  <option value=",,,,,,">--選択してください--</option>
-                  <option value="35,55,40,50,50,90,電">ピカチュウ</option>
-                  <option value="55,75,60,75,60,103,電飛">エモンガ</option>
-                  <option value="108,130,95,80,85,102",地竜>ガブリアス</option>
+                <select name="data" id="data" onclick="pika()">
+                  <option value=",,,,,,,">--選択してください--</option>
+                  <option value="35,55,40,50,50,90,電,">ピカチュウ</option>
+                  <option value="55,75,60,75,60,103,電,飛">エモンガ</option>
+                  <option value="108,130,95,80,85,102,地,竜">ガブリアス</option>
                 </select>
               </form>
 
-              <p><label>種族値
-              <input id="H" type="text" size="1" maxlength="3">-
-              <input id="A" type="text" size="1" maxlength="3">-
-              <input id="B" type="text" size="1" maxlength="3">-
-              <input id="C" type="text" size="1" maxlength="3">-
-              <input id="D" type="text" size="1" maxlength="3">-
+              <p>種族値
+              <input id="H" type="text" size="1" maxlength="3">
+              <input id="A" type="text" size="1" maxlength="3">
+              <input id="B" type="text" size="1" maxlength="3">
+              <input id="C" type="text" size="1" maxlength="3">
+              <input id="D" type="text" size="1" maxlength="3">
               <input id="S" type="text" size="1" maxlength="3">
+              </p>
+              <p>タイプ
+              <input id="type1" type="text" size="4" maxlength="2">
+              <input id="type2" type="text" size="4" maxlength="2">
               </p>
 
               <div>
-                <p><label>種族値<input id="sv" type="text" size="1" maxlength="3"></label>
-                   <label>努力値<input id="ev" type="text" size="1" maxlength="3" value="252"></label></p>
-                <p><label>技威力<input id="mv" type="text" size="1" maxlength="3" value="100"></label>
-                   <label>個体値<input id="iv" type="text" size="1" maxlength="2" value="31"></label></p>
-                <p><label>レベル<input id="lv" type="text" size="1" maxlength="3" value="50"></label>
-                   <label>補正値<input id="mm" type="text" size="1" maxlength="3" value="1.0"></label></p>
+                <p>種族値<input id="sv" type="text" size="1" maxlength="3"></label>
+                   努力値<input id="ev" type="text" size="1" maxlength="3" value="252"></label></p>
+                <p>技威力<input id="mv" type="text" size="1" maxlength="3" value="100"></label>
+                   個体値<input id="iv" type="text" size="1" maxlength="2" value="31"></label></p>
+                <p>レベル<input id="lv" type="text" size="1" maxlength="3" value="50"></label>
+                   補正値<input id="mm" type="text" size="1" maxlength="3" value="1.0"></label></p>
               </div>
 
               <div>
@@ -154,7 +159,7 @@
                         padding: 10px;
                         box-sizing: border-box;
                         border: 5px solid #ffff00;
-                        background: #8fd8ff;
+                        background: #8fd8ff7b;
                         cursor: pointer;
                     }
                     </style>
@@ -190,11 +195,36 @@
     <div class="tab-contents-item">
       <ul class="App">
         <ul class="App-header">
-          <h2>部員紹介</h2>
+
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <title>部員紹介</title>
+            <link rel="stylesheet" type="text/css" href="member.css">
+          </head>
+          <body>
+            <h2>部員紹介</h2>
+            <p>このピカチュウをボーダーの中で表示したいです↓</p>
+            <img src="https://archives.bulbagarden.net/media/upload/b/b2/Spr_5b_025_m.png" alt="gphoto2" width="200" />
+            <div id="members"></div>
+            <script src="member.js"></script>
+          </body>
+          </html>
 
         </ul>
       </ul>
     </div>
+
+    <div class="tab-contents-item">
+      <ul class="App">
+        <ul class="App-header">
+          <h2>クイズ</h2>
+          <p>クイズをランダムに出題するプログラムの作成</p>
+        </ul>
+      </ul>
+    </div>
+
+
 
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

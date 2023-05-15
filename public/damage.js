@@ -24,7 +24,7 @@ function func() {
 
 }
 
-function iv() {
+function pika() {
     let text = document.getElementById("data");
     const itemData = (text.value).split(',');
     document.getElementById("sv").value = itemData[1];
@@ -34,5 +34,19 @@ function iv() {
     document.getElementById("C").value = itemData[3];
     document.getElementById("D").value = itemData[4];
     document.getElementById("S").value = itemData[5];
+
+
+    var typelist = ['無','炎','水','草','鋼','電','悪','虫','毒','飛','妖','霊','竜','氷','闘','超','地','岩',''];
+    var typelistlit = ['ノーマル','ほのお','みず','くさ','はがね','でんき','あく','むし','どく','ひこう','フェアリー','ゴースト','ドラゴン','こおり','かくとう','エスパー','じめん','いわ',''];
+
+    var result = typelist.indexOf( itemData[6] );
+    document.getElementById("type1").value = typelistlit[result];
+    var result = typelist.indexOf( itemData[7] );
+    document.getElementById("type2").value = typelistlit[result];
+
+
+
+
+
 }
 

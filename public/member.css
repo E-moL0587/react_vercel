@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+  }
+  
+  .member {
+    border: 1px solid #ffff00;
+    background-color: #93a7ff86;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
