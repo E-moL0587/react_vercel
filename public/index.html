@@ -121,16 +121,21 @@
             <body>
 
               <form>
-                <select name="data" id="data" onclick="fun()">
-                  <option value="">--選択してください--</option>
-                  <option value="35-55-40-50-50-90">    ピカチュウ </option>
-                  <option value="55-75-60-75-60-103">   エモンガ   </option>
-                  <option value="108-130-95-80-85-102"> ガブリアス </option>
+                <select name="data" id="data" onclick="iv()">
+                  <option value=",,,,,,">--選択してください--</option>
+                  <option value="35,55,40,50,50,90,電">ピカチュウ</option>
+                  <option value="55,75,60,75,60,103,電飛">エモンガ</option>
+                  <option value="108,130,95,80,85,102",地竜>ガブリアス</option>
                 </select>
               </form>
 
               <p><label>種族値
-              <input id="pokemon" type="text" size="20" maxlength="30">
+              <input id="H" type="text" size="1" maxlength="3">-
+              <input id="A" type="text" size="1" maxlength="3">-
+              <input id="B" type="text" size="1" maxlength="3">-
+              <input id="C" type="text" size="1" maxlength="3">-
+              <input id="D" type="text" size="1" maxlength="3">-
+              <input id="S" type="text" size="1" maxlength="3">
               </p>
 
               <div>
@@ -186,6 +191,7 @@
       <ul class="App">
         <ul class="App-header">
           <h2>部員紹介</h2>
+
         </ul>
       </ul>
     </div>

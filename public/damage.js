@@ -20,12 +20,19 @@ function func() {
         document.getElementById("damage_value1.00").value = Math.floor(damage*1.00);
     }
     // エラー表示
-    else { alert("値をちゃんと入れてくれないと悲しみます(´；ω；`)ｳｩｩ..."); }
+    else { alert("値がない箇所があります(´；ω；`)ｳｩｩ..."); }
 
 }
 
-function fun() {
-    let num = document.getElementById("data");
-    document.getElementById("pokemon").value = num.value;
+function iv() {
+    let text = document.getElementById("data");
+    const itemData = (text.value).split(',');
+    document.getElementById("sv").value = itemData[1];
+    document.getElementById("H").value = itemData[0];
+    document.getElementById("A").value = itemData[1];
+    document.getElementById("B").value = itemData[2];
+    document.getElementById("C").value = itemData[3];
+    document.getElementById("D").value = itemData[4];
+    document.getElementById("S").value = itemData[5];
 }
 
