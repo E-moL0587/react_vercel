@@ -2,7 +2,7 @@ var members = [
     {
       name: "E_moL(部長)",
       position: "ピカチュウ",
-      introduction: "エモルです。よく顔文字を使います。",
+      introduction: "エモルです。よく顔文字使います。",
       photo: 'https://archives.bulbagarden.net/media/upload/thumb/c/c4/0025Pikachu-Unova.png/150px-0025Pikachu-Unova.png'
     },
     {
@@ -15,7 +15,7 @@ var members = [
       name: "neko",
       position: "nuko",
       introduction: "neko master desu",
-      photo: 'https://sing-blog.com/img/gif/cat/00125.gif'
+      photo: '00125.gif'
     },
     // 他の部員の情報も追加できます
   ];
