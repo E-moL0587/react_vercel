@@ -2,17 +2,20 @@ var members = [
     {
       name: "E_moL(部長)",
       position: "ピカチュウ",
-      introduction: "エモルです。よく顔文字を使います。"
+      introduction: "エモルです。よく顔文字を使います。",
+      photo: 'https://archives.bulbagarden.net/media/upload/thumb/c/c4/0025Pikachu-Unova.png/150px-0025Pikachu-Unova.png'
     },
     {
       name: "hako(副部長)",
       position: "聞いておきます",
-      introduction: "ユナイトマスターです。"
+      introduction: "ユナイトマスターです。",
+      photo: 'https://archives.bulbagarden.net/media/upload/thumb/b/bb/0025Pikachu-Sinnoh.png/150px-0025Pikachu-Sinnoh.png'
     },
     {
       name: "neko",
-      position: "neko",
-      introduction: "neko master desu"
+      position: "nuko",
+      introduction: "neko master desu",
+      photo: 'https://sing-blog.com/img/gif/cat/00125.gif'
     },
     // 他の部員の情報も追加できます
   ];
@@ -34,6 +37,10 @@ var members = [
     var introductionPara = document.createElement("p");
     introductionPara.textContent = member.introduction;
     memberDiv.appendChild(introductionPara);
-  
+
+    var photoPara = document.createElement("img");
+    photoPara.src = member.photo;
+    memberDiv.appendChild(photoPara);
+
     membersContainer.appendChild(memberDiv);
   });
