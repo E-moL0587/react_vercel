@@ -3,35 +3,38 @@
   <head>
     <meta charset="utf-8" />
     <title>成蹊大学ポケモンサークルホームページ</title>
-    <link rel="icon" href="keimolga.ico" />
+    <link rel="icon" href="image_box/keimolga.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="成蹊大学ポケモンサークルの公式ホームページです。" />
 
       <div id="video-area">
-        <video id="video" poster="hosizora_frame.jpg" webkit-playsinline playsinline muted autoplay loop>
-          <source src="hosizora.mp4" type="video/mp4">
+        <video id="video" poster="image_box/zoroa.jpg" webkit-playsinline playsinline muted autoplay loop>
+          <source src="image_box/zoroa.jpg" type="video/mp4">
         </video>
       </div>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="tab.css">
     </head>
 
+
+
+
+
+
+
+<!--tab一覧-->
     <font color="ffffff">
       <ul class="tab-list">
         <li class="tab-list-item active">　ホーム　</li>
         <li class="tab-list-item">　日程表　</li>
         <li class="tab-list-item">　計算機　</li>
-      </ul>
-      <ul class="tab-list">
         <li class="tab-list-item">　部員欄　</li>
-        <li class="tab-list-item">　クイズ　</li>
-        <li class="tab-list-item">　その他　</li>
       </ul>
     </font>
 
 
-
+<!--ホーム-->
     <div class="tab-contents">
       <div class="tab-contents-item show">
 
@@ -45,7 +48,8 @@
               <font size="500" color="yellow">蹊モンガ</font>
             </div>
           </h2>
-          <img src="https://archives.bulbagarden.net/media/upload/6/60/Spr_5b_587_s.png" poster="keimolga.png" class="App-logo" alt="logo" />
+          <img src="image_box/keimolga.png" class="App-logo" alt="logo" />
+          <br></br>
           <div class="delay-time04 fadeUp">
             <a class="App-link" href="https://twitter.com/seikei_Pokecir" target="_blank" rel="noopener noreferrer">
               ポケモンサークル公式Twitter
@@ -59,7 +63,7 @@
           ポケモンが大好きな人が集まるサークルです！
         </p>
       </div>
-      <img src="https://aniyuki.com/wp-content/uploads/2022/03/aniyuki-pokemon-67.gif" alt="gphoto2" width="200" />
+      <!--img src="https://aniyuki.com/wp-content/uploads/2022/03/aniyuki-pokemon-67.gif" alt="gphoto2" width="200" /-->
         <br></br>
   
       <ul class="slider">
@@ -75,7 +79,6 @@
         <script src="slider.js"></script>
   
         <p>※このサイトは開発中のモノです。<br></br>
-           PCや機種によっては背景が動きます。
         </p>
         </ul>
         </ul>
@@ -103,7 +106,6 @@
       <ul class="App">
         <ul class="App-header">
           <h2>ダメージ計算機</h2>
-
 
           <html>
           <head>
@@ -183,11 +185,6 @@
               <br></br>
               <br></br>
 
-              <p>メモ</p>
-              <p>上の種族値から自動的に記述するプログラムを作成中です</p>
-              <p>タイプ相性、技選択等、スクレイピングして指定ポケモンの覚える技だけを埋め込みたい</p>
-              <p>一致補正や威力無し、相性、メガシンカ、フォルムチェンジの実装、画像の実装、薄くバックグラウンドを作成して文字を見やすくUI考える、課題は多い...</p>
-
               </div>
           </body>
           </html>
@@ -195,51 +192,32 @@
       </ul>
     </div>
 
-    <div class="tab-contents-item">
-      <ul class="App">
-        <ul class="App-header">
 
 
 
 
-          <!DOCTYPE html>
-          <html>
-          <head>
-            <title>部員紹介</title>
-            <link rel="stylesheet" type="text/css" href="member.css">
-          </head>
-          <body>
-            <h2>部員紹介</h2>
-            <div id="members"></div>
-            <script src="member.js"></script>
-          </body>
-          </html>
 
-        </ul>
-      </ul>
+
+<!--部員紹介-->
+<div class="tab-contents-item">
+  <head>
+    <title>部員紹介</title>
+    <link rel="stylesheet" type="text/css" href="member.css">
+  </head>
+  <body>
+    <div class="fadeUp">
+    <h2>部員紹介</h2>
     </div>
-
-    <div class="tab-contents-item">
-      <ul class="App">
-        <ul class="App-header">
-          <h2>クイズ</h2>
-          <p>クイズをランダムに出題してくれるプログラムを作成中です
-            可能であればオンライン対戦やランキングの実装も！
-          </p>
-        </ul>
-      </ul>
+    <div class="delay-time02 fadeUp">
+    <div id="members"></div>
     </div>
+    <script src="member.js"></script>
+  </body>
+</div>
 
-    <div class="tab-contents-item">
-      <ul class="App">
-        <ul class="App-header">
-          <h2>その他</h2>
-          <p>
-            メモ欄です。
-          </p>
-        </ul>
-      </ul>
-    </div>
+
+
+
 
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
