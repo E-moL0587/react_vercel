@@ -4,9 +4,9 @@
 }
 .tab-list-item {
   text-align: center;
-  flex: 0 0 10;
+  flex: 0 0 1;
   background-color: #eeeeee00;
-  padding: 10px 0;
+  padding: 3px 0;
 }
 .tab-list-item.active {
   background-color: #00a6ff6c;
