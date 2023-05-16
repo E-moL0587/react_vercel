@@ -2,7 +2,7 @@ var members = [
     {
       name: "E_moL(部長)",
       position: "ピカチュウ",
-      introduction: "エモルです。よく顔文字使います。",
+      introduction: "エモルです。よく顔文字を使います。",
       photo: 'https://archives.bulbagarden.net/media/upload/thumb/c/c4/0025Pikachu-Unova.png/150px-0025Pikachu-Unova.png'
     },
     {
@@ -12,11 +12,17 @@ var members = [
       photo: 'https://archives.bulbagarden.net/media/upload/thumb/b/bb/0025Pikachu-Sinnoh.png/150px-0025Pikachu-Sinnoh.png'
     },
     {
+      name: "メタモン愛好家",
+      position: "メタモン",
+      introduction: "⟆͟  ‧͟   ݀𑁤　(メタモンの顔文字です)",
+      photo: 'https://archives.bulbagarden.net/media/upload/9/90/Spr_5b_132_s.png'
+    },
+    {
       name: "neko",
       position: "nuko",
       introduction: "neko master desu",
       photo: '00125.gif'
-    },
+    }
     // 他の部員の情報も追加できます
   ];
   
