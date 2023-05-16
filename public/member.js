@@ -3,13 +3,13 @@ var members = [
       name: "E_moL(部長)",
       position: "ピカチュウ",
       introduction: "エモルです。よく顔文字を使います。",
-      photo: 'https://archives.bulbagarden.net/media/upload/thumb/c/c4/0025Pikachu-Unova.png/150px-0025Pikachu-Unova.png'
+      photo: 'https://archives.bulbagarden.net/media/upload/b/b2/Spr_5b_025_m.png'
     },
     {
       name: "hako(副部長)",
       position: "聞いておきます",
       introduction: "ユナイトマスターです。",
-      photo: 'https://archives.bulbagarden.net/media/upload/thumb/b/bb/0025Pikachu-Sinnoh.png/150px-0025Pikachu-Sinnoh.png'
+      photo: 'https://archives.bulbagarden.net/media/upload/a/a5/Spr_4p_025_m.png'
     },
     {
       name: "メタモン愛好家",
