@@ -2,7 +2,7 @@ var members = [
     {
       name: "T_Kaito",
       position: "理工学部情報科学科3年",
-      introduction: "ポケモンサークルの創設者であり、現部長を務めさせて頂いております。ポケモン関連でしたらある程度は分かります。不束者では御座いますが何卒よろしくお願いいたします！",
+      introduction: "ポケモンサークルの創設者であり、現部長を務めさせて頂いております。ポケモン関連でしたらある程度は分かります。不束者では御座いますが、何卒よろしくお願いいたします。",
       photo: 'https://archives.bulbagarden.net/media/upload/b/b2/Spr_5b_025_m.png'
     },
     {
@@ -14,7 +14,7 @@ var members = [
     {
       name: "K_Naoki",
       position: "文学部英文学科2年",
-      introduction: "4月から新しく入部してくれた文学部の子です！趣味は吉祥寺近辺の美味しいお店を巡ることで、会った際にはお店を紹介してもらえるかもしれません！",
+      introduction: "4月から新しく入部してくれた文学部の子です。趣味は吉祥寺近辺の美味しいお店を巡ることで、出会った際にはお店を紹介してもらえるかもしれません！",
       photo: 'https://archives.bulbagarden.net/media/upload/9/90/Spr_5b_132_s.png'
     },
     {
