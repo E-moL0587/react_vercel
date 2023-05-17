@@ -1,5 +1,11 @@
-h1 { color: #ffffff; }
-p  { color: #ffffff; }
+h1 {
+  color: #ffffff;
+  text-align: center;
+}
+
+p  {
+  color: #ffffff;
+}
 
 .App {
   text-align: center;
