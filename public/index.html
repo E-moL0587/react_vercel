@@ -15,6 +15,7 @@
       </div>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="tab.css">
+    <link rel="stylesheet" type="text/css" href="slider.css">
     </head>
 
 
@@ -107,6 +108,88 @@
         <ul class="App-header">
           <h2>ダメージ計算機</h2>
 
+
+
+
+
+
+
+
+
+
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <title>ポケモンの計算機</title>
+            <style>
+              /* CSS スタイル */
+              body {
+                font-family: Arial, sans-serif;
+                background-color: #f2f2f2;
+                text-align: center;
+              }
+              
+              #container {
+                margin-top: 50px;
+              }
+              
+              input[type="text"] {
+                padding: 5px;
+                width: 50px;
+              }
+              
+              input[type="button"] {
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+              }
+            </style>
+          </head>
+          <body>
+            <div id="container">
+              <!--h1>ポケモンの計算機</h1-->
+              <p>足し算できます</p>
+              <input type="text" id="value1" placeholder="値1">+
+              <input type="text" id="value2" placeholder="値2">=
+              <br><br>
+              <input type="button" value="計算する" onclick="calculate()">
+              <br><br>
+              <h2 id="result"></h2>
+            </div>
+          
+            <script>
+              // JavaScript コード
+              function calculate() {
+                // 入力値の取得
+                var value1 = parseFloat(document.getElementById('value1').value);
+                var value2 = parseFloat(document.getElementById('value2').value);
+                
+                // 計算
+                var result = value1 + value2;
+                
+                // 結果の表示
+                document.getElementById('result').innerHTML = "結果: " + result;
+              }
+            </script>
+          </body>
+          </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
           <html>
           <head>
               <meta charset='utf-8'>
@@ -172,7 +255,6 @@
 
               </div>
               <p>
-                  <!--結果表示-->
                   <label>ダメージは
                     <input id="damage_value0.85" type="text" size="1" maxlength="3">
                     ~
@@ -192,7 +274,7 @@
       </ul>
     </div>
 
-
+ -->
 
 
 
