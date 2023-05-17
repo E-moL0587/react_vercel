@@ -39,8 +39,7 @@
     <div class="tab-contents">
       <div class="tab-contents-item show">
 
-      <ul class="App">
-        <ul class="App-header">
+      <ul class="App App-header">
           <h2>
             <div class="fadeUp">
               <font face="serif">成蹊大学ポケモンサークル</font>
@@ -87,18 +86,19 @@
     </div>
 
 <div class="tab-contents-item">
-  <ul class="App" class="App-header">
+  <ul class="App">
+    <ul class="App-header">
     <h2 class="fadeUp">スケジュール</h2>
     <p class="delay-time02 fadeUp">
       毎週火曜日と水曜日の5限(16:50~)から<br></br>
       9-305号室にて活動しています！<br></br>
       (2023/05/17 19:00更新しました)
     </p>  
-  </ul>
+  </ul></ul>
 </div>
 
 <div class="tab-contents-item">
-  <ul class="App" class="App-header">
+  <ul class="App App-header">
 
           <!DOCTYPE html>
           <html>
@@ -109,15 +109,17 @@
           <body>
             <div id="container">
               <h2>ダメージ計算機</h2>
-              <input type="text" id="p_name" size="30" placeholder="ポケモン名を入力してください..." oninput="p_name()"><br></br>
-              <input type="text" id="move" size="30" placeholder="技名を入力してください..." oninput="move()"><br></br>
+              <input type="text" id="p_name" size="26" placeholder="ポケモン名を入力してください..."><br></br>
+              <input type="text" id="p_move" size="26" placeholder="技名を入力してください..." oninput="move('m_data.csv','p_data.csv')"><br></br>
 
               <p>
+              ガブリアス、ピカチュウ、ストーンエッジ(物理)、10まんボルト(特殊)は実装しました！相手のポケモンはクレセリアになります<br></br>
               種族値<input id="sv" type="text" size="1" maxlength="3">
               技威力<input id="mv" type="text" size="1" maxlength="3">
               <br></br>
               努力値<input id="ev" type="text" size="1" maxlength="3" value="252">
               個体値<input id="iv" type="text" size="1" maxlength="2" value="31">
+              <br></br>
               レベル<input id="lv" type="text" size="1" maxlength="3" value="50">
               補正値<input id="mm" type="text" size="1" maxlength="3" value="1.0">
 
@@ -130,70 +132,35 @@
           <script src="keisan.js"></script>
           </body>
           </html>
+
+
+
+
+
+
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <title>CSVファイル読み込みと表示</title>
+          </head>
+          <body>
+            <div id="csvData"></div>
+            <script>
+              loadCSV('p_data.csv');
+            </script>
+          </body>
+          </html>
+          
+                    
+
+
+
+
+
   </ul>
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-<!-- 
-
-              <p>種族値
-              <input id="H" type="text" size="1" maxlength="3">
-              <input id="A" type="text" size="1" maxlength="3">
-              <input id="B" type="text" size="1" maxlength="3">
-              <input id="C" type="text" size="1" maxlength="3">
-              <input id="D" type="text" size="1" maxlength="3">
-              <input id="S" type="text" size="1" maxlength="3">
-              </p>
-              <p>タイプ
-              <input id="type1" type="text" size="4" maxlength="2">
-              <input id="type2" type="text" size="4" maxlength="2">
-              </p>
-
-              <div>
-
-              </div>
-
-              <div>
-                  <style>
-                    .example{
-                        width: 100px;
-                        padding: 10px;
-                        box-sizing: border-box;
-                        border: 5px solid #ffff00;
-                        background: #8fd8ff7b;
-                        cursor: pointer;
-                    }
-                    </style>
-                  <input type="button" id="getResult" value="計算" onclick="func()", class="example">
-
-              </div>
-              <p>
-                  <label>ダメージは
-                    <input id="damage_value0.85" type="text" size="1" maxlength="3">
-                    ~
-                    <input id="damage_value1.00" type="text" size="1" maxlength="3">
-                    の範囲です。</label>
-              </p>
-
-              <a class="App-link" href="https://latest.pokewiki.net/%E3%83%80%E3%83%A1%E3%83%BC%E3%82%B8%E8%A8%88%E7%AE%97%E5%BC%8F" target="_blank" rel="noopener noreferrer">ダメージ計算の参考文献</a>
-
-              <br></br>
-              <br></br>
-
-              </div>
-          </body>
-          </html>
- -->
 
 
 
@@ -208,7 +175,7 @@
     <link rel="stylesheet" type="text/css" href="member.css">
   </head>
   <body>
-    <h1 class="fadeUp">　部員紹介<br></br>(※簡易的な表示も実装します...)</h1>
+    <h1 class="fadeUp">部員紹介<br></br>(※簡易的な表示も実装します...)</h1>
     <div class="delay-time02 fadeUp" id="members"></div>
     <script src="member.js"></script>
   </body>

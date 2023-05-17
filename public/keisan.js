@@ -1,11 +1,43 @@
-function p_name() {
-    var name = document.getElementById('p_name').value;
-    if (name == "ガブリアス") document.getElementById("sv").value = 130;
-}
 
-function move() {
-    var move = document.getElementById('move').value;
-    if (move == "ストーンエッジ") document.getElementById("mv").value = 100;
+function move(file1, file2) {
+    var name = document.getElementById('p_name').value;
+    var move = document.getElementById('p_move').value;
+
+    let meg = '';
+    let num = 0;
+
+    fetch(file1)
+    .then(response => response.text())
+    .then(data => {
+        var p_move = parseCSV(data);
+        for (var i = 0; i < p_move.length; i++) {
+            if (move == p_move[i][0]) {
+                meg = p_move[i][1];
+                num = p_move[i][2];
+            }
+        }
+    })
+    .catch(error => {
+        console.log('ファイルの読み込みエラー:', error);
+    });
+
+    fetch(file2)
+    .then(response => response.text())
+    .then(data => {
+        var p_name = parseCSV(data);
+        for (var i = 0; i < p_name.length; i++) {
+            if (name == p_name[i][1]) {
+                if (meg == '物理') document.getElementById("sv").value = p_name[i][3];
+                else document.getElementById("sv").value = p_name[i][5];
+                document.getElementById("mv").value = num;
+            }
+        }
+    })
+    .catch(error => {
+        console.log('ファイルの読み込みエラー:', error);
+    });
+
+
 }
 
 function cal() {
@@ -31,3 +63,19 @@ function cal() {
     else { alert("値がない箇所があります(´；ω；`)ｳｩｩ..."); }
 
 }
+
+
+
+
+
+function parseCSV(csv) {
+    var lines = csv.split("\n");
+    var data = [];
+
+    for (var i = 0; i < lines.length; i++) {
+      var cells = lines[i].split(",");
+      data.push(cells);
+    }
+
+    return data;
+  }
