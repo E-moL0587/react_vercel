@@ -1,12 +1,5 @@
 function func() {
 
-    let sv = Number(document.getElementById('sv').value); //種族値の値を取得
-    let ev = Number(document.getElementById('ev').value); //努力値の値を取得
-    let mv = Number(document.getElementById('mv').value); //技威力の値を取得
-    let iv = Number(document.getElementById('iv').value); //個体値の値を取得
-    let lv = Number(document.getElementById('lv').value); //レベルの値を取得
-    let mm = Number(document.getElementById('mm').value); //補正値の値を取得
-
 
 
     //入力した値が0以上の場合計算処理する
