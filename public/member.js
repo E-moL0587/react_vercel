@@ -18,6 +18,12 @@ var members = [
       photo: 'https://archives.bulbagarden.net/media/upload/9/90/Spr_5b_132_s.png'
     },
     {
+      name: "K_Naoto",
+      position: "理工学部コンピュータ科学科1年",
+      introduction: "4月から新しく入部してくれた理工学部の子です。ポケモンユナイトを専門とし、マスター帯(最高ランク)を目指して日々頑張っております！好きなポケモンはシャンデラで、ユナイトに実装された際にはとても喜んでおりました！",
+      photo: 'https://archives.bulbagarden.net/media/upload/e/e7/Spr_5b_609.png'
+    },
+    {
       name: "Name",
       position: "Position",
       introduction: "Profile",
