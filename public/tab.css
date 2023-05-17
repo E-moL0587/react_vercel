@@ -2,18 +2,22 @@
   list-style-type: none;
   display: flex;
 }
+
 .tab-list-item {
   text-align: center;
   flex: 0 0 1;
   background-color: #eeeeee00;
   padding: 3px 0;
 }
+
 .tab-list-item.active {
   background-color: #00a6ff6c;
 }
+
 .tab-contents-item {
   display: none;
 }
+
 .tab-contents-item.show {
   display: block;
 }

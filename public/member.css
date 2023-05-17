@@ -1,13 +1,8 @@
-
-h2 {
-  color: rgb(255, 255, 255);
-}
-  
 .member {
   text-align: left;
   border: 1px solid #ffff00;
   background-color: #93a7ff86;
   padding: 10px;
   margin-bottom: 10px;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }

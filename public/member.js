@@ -1,33 +1,39 @@
 var members = [
     {
-      name: "T_Kaito",
+      name: "T_Kaito (部長)",
       position: "理工学部情報科学科3年",
-      introduction: "ポケモンサークルの創設者であり、現部長を務めさせて頂いております。ポケモン関連でしたらある程度は分かります。不束者では御座いますが、何卒よろしくお願いいたします。",
-      photo: 'https://archives.bulbagarden.net/media/upload/b/b2/Spr_5b_025_m.png'
+      introduction: "ポケモンサークルの創設者であり、現部長を務めさせて頂いております。ポケモン関連でしたらある程度は分かります。不束者では御座いますが、何卒よろしくお願いいたします。(詳細は創設者に関してを参考に)",
+      photo: 'image_bw/ピカチュウ.png'
     },
     {
-      name: "H_Kouta",
+      name: "H_Kouta (副部長)",
       position: "経済学部経済数理学科2年",
       introduction: "ポケモンサークルの2代目副部長です。常に責任感を持ち、サークルをより良くしようと考えてくれています！専門はポケモンユナイトとポケモンSVであり、新入生にとっては頼りになる先輩です！",
-      photo: 'https://archives.bulbagarden.net/media/upload/8/89/Spr_5b2_133_s.png'
+      photo: 'image_bw/ボルトロスR.png'
     },
     {
       name: "K_Naoki",
       position: "文学部英文学科2年",
       introduction: "4月から新しく入部してくれた文学部の子です。趣味は吉祥寺近辺の美味しいお店を巡ることで、出会った際にはお店を紹介してもらえるかもしれません！",
-      photo: 'https://archives.bulbagarden.net/media/upload/9/90/Spr_5b_132_s.png'
+      photo: 'image_bw/メタモン.png'
     },
     {
       name: "K_Naoto",
       position: "理工学部コンピュータ科学科1年",
       introduction: "4月から新しく入部してくれた理工学部の子です。ポケモンユナイトを専門とし、マスター帯(最高ランク)を目指して日々頑張っております！好きなポケモンはシャンデラで、ユナイトに実装された際にはとても喜んでおりました！",
-      photo: 'https://archives.bulbagarden.net/media/upload/e/e7/Spr_5b_609.png'
+      photo: 'image_bw/シャンデラ.png'
+    },
+    {
+      name: "K_Kouta",
+      position: "経済学部現代経済学科1年",
+      introduction: "4月から新しく入部してくれた経済学部の子です。ユナイトではイワパレスをよく使っており、SVのシーズン5では約15000位と猛者がいる環境でも諦めず頑張っております！",
+      photo: 'image_bw/サザンドラ.png'
     },
     {
       name: "Name",
       position: "Position",
       introduction: "Profile",
-      photo: 'Photo'
+      photo: 'image_bw/イーブイ.png'
     }
     // こちらに他の部員の情報を追加していきます。
   ];
