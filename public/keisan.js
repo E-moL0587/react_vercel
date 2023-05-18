@@ -28,7 +28,7 @@ function move(file1, file2) {
         for (var i = 0; i < p_name.length; i++) {
             if (name == p_name[i][1]) {
                 if (meg == '物理') document.getElementById("sv").value = p_name[i][3];
-                else document.getElementById("sv").value = p_name[i][5];
+                if (meg == '特殊') document.getElementById("sv").value = p_name[i][5];
                 document.getElementById("mv").value = num;
             }
         }
