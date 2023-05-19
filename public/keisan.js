@@ -1,3 +1,22 @@
+function n_name(file) {
+    var name = document.getElementById('p_name').value;
+
+    fetch(file)
+    .then(response => response.text())
+    .then(data => {
+        var p_name = parseCSV(data);
+        for (var i = 0; i < p_name.length; i++) {
+            if (name == p_name[i][1]) {
+                document.getElementById("number_data").innerHTML = '図鑑番号: '+p_name[i][0];
+                document.getElementById("iv_data").innerHTML = '種族値: '+p_name[i][2]+'-'+p_name[i][3]+'-'+p_name[i][4]+'-'+p_name[i][5]+'-'+p_name[i][6]+'-'+p_name[i][7];
+                document.getElementById("type_data").innerHTML = 'タイプ: '+p_name[i][8]+','+p_name[i][9];
+            }
+        }
+    })
+    .catch(error => {
+        console.log('ファイルの読み込みエラー:', error);
+    });
+}
 
 function move(file1, file2) {
     var name = document.getElementById('p_name').value;
@@ -36,8 +55,6 @@ function move(file1, file2) {
     .catch(error => {
         console.log('ファイルの読み込みエラー:', error);
     });
-
-
 }
 
 function cal() {

@@ -110,11 +110,14 @@
           <body>
             <div id="container">
               <h2>ダメージ計算機</h2>
-              <input type="text" id="p_name" size="26" placeholder="ポケモン名を入力してください..."><br></br>
-              <input type="text" id="p_move" size="26" placeholder="技名を入力してください..." oninput="move('m_data.csv','p_data.csv')"><br></br>
+              <p>英字,小文字,半角,200番目まで対応(例:eevee, pikachu等)</p>
+              <input type="text" id="p_name" size="26" placeholder="ポケモン名を入力してください..." oninput="n_name('pokemon_data.csv')"><br></br>
+              <input type="text" id="p_move" size="26" placeholder="技名を入力してください..." oninput="move('m_data.csv','pokemon_data.csv')"><br></br>
 
+              <h2 id="number_data"></h2>
+              <h2 id="iv_data"></h2>
+              <h2 id="type_data"></h2>
               <p>
-              ガブリアス、ピカチュウ、ストーンエッジ(物理)、はかいこうせん(特殊)は実装しました！相手のポケモンはクレセリアになります<br></br>
               種族値<input id="sv" type="text" size="1" maxlength="3">
               技威力<input id="mv" type="text" size="1" maxlength="3">
               <br></br>
