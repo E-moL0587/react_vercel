@@ -97,9 +97,11 @@
   </ul></ul>
 </div>
 
+
+
+
+
 <div class="tab-contents-item">
-  <ul class="App">
-    <ul class="App-header">
 
           <!DOCTYPE html>
           <html>
@@ -110,68 +112,57 @@
           <body>
             <div id="container">
               <h2>ダメージ計算機</h2>
-              <p>英字,小文字,半角,200番目まで対応(例:eevee, pikachu等)</p>
-              <input type="text" id="p_name" size="26" placeholder="ポケモン名を入力してください..." oninput="n_name('pokemon_data.csv')"><br></br>
-              <input type="text" id="p_move" size="26" placeholder="技名を入力してください..." oninput="move('move_data.csv','pokemon_data.csv')"><br></br>
+              <p>英字,小文字,半角,200番目まで対応<br></br>(例:eevee, pikachu等)</p>
+              <p>攻撃側</p>
+              <input type="text" id="p_name" size="26" placeholder="ポケモン名を入力してください..." oninput="p_name('pokemon_data.csv')">
+              <p id="number_data"></p>
+              <p id="iv_data"></p>
+              <p id="type_data"></p>
 
-
-
-
-              <p>-name--------------------------</p>
-              <h2 id="number_data"></h2>
-              <h2 id="iv_data"></h2>
-              <h2 id="type_data"></h2>
-              <p>-move--------------------------</p>
-              <h2 id="atk_data"></h2>
-              <h2 id="atype_data"></h2>
-              <h2 id="ps_data"></h2>
-              <p>-------------------------------</p>
+              <input type="text" id="p_move" size="26" placeholder="技名を入力してください..." oninput="move('move_data.csv','pokemon_data.csv')">
+              <p id="atk_data"></p>
+              <p id="atype_data"></p>
+              <p id="ps_data"></p>
 
               <p>
-              種族値<input id="sv" type="text" size="1" maxlength="3">
-              技威力<input id="mv" type="text" size="1" maxlength="3">
-              <br></br>
-              努力値<input id="ev" type="text" size="1" maxlength="3" value="252">
-              個体値<input id="iv" type="text" size="1" maxlength="2" value="31">
-              <br></br>
-              レベル<input id="lv" type="text" size="1" maxlength="3" value="50">
-              補正値<input id="mm" type="text" size="1" maxlength="3" value="1.0">
+                技の威力<input id="mv" type="text" size="1" maxlength="3">
+                <br></br>
+                種族値(A or C)<input id="sv" type="text" size="1" maxlength="3">
+                <br></br>
+                努力値<input id="ev" type="text" size="1" maxlength="3" value="252">
+                個体値<input id="iv" type="text" size="1" maxlength="2" value="31">
+                <br></br>
+                レベル<input id="lv" type="text" size="1" maxlength="3" value="50">
+                補正値<input id="mm" type="text" size="1" maxlength="3" value="1.0">
+              </p>
 
+              <p>防御側</p>
+              <input type="text" id="q_name" size="26" placeholder="ポケモン名を入力してください..." oninput="q_name('pokemon_data.csv')">
+              <p id="number_data2"></p>
+              <p id="iv_data2"></p>
+              <p id="type_data2"></p>
+
+              <p>
+                種族値(B or D)<input id="sv2" type="text" size="1" maxlength="3">
+                <br></br>
+                努力値<input id="ev2" type="text" size="1" maxlength="3" value="252">
+                個体値<input id="iv2" type="text" size="1" maxlength="2" value="31">
+                <br></br>
+                レベル<input id="lv2" type="text" size="1" maxlength="3" value="50">
+                補正値<input id="mm2" type="text" size="1" maxlength="3" value="1.0">
+              </p>
+
+              <p>
               <br><br>
               <input type="button" value="計算する" onclick="cal()">
               <br><br>
-              <h2 id="damage_value"></h2>
+              <p id="damage_value"></p>
               </p>
             </div>
           <script src="keisan.js"></script>
           </body>
           </html>
 
-
-
-
-
-
-          <!DOCTYPE html>
-          <html>
-          <head>
-            <title>CSVファイル読み込みと表示</title>
-          </head>
-          <body>
-            <div id="csvData"></div>
-            <script>
-              loadCSV('p_data.csv');
-            </script>
-          </body>
-          </html>
-          
-                    
-
-
-
-
-
-  </ul></ul>
 </div>
 
 
@@ -195,9 +186,6 @@
     <script src="member.js"></script>
   </body>
 </div>
-
-
-
 
 
   <body>
