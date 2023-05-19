@@ -31,8 +31,11 @@ function move(file1, file2) {
         var p_move = parseCSV(data);
         for (var i = 0; i < p_move.length; i++) {
             if (move == p_move[i][0]) {
-                meg = p_move[i][1];
-                num = p_move[i][2];
+                document.getElementById("atk_data").innerHTML = '威力: '+p_move[i][1];
+                document.getElementById("atype_data").innerHTML = 'タイプ: '+p_move[i][2];
+                document.getElementById("ps_data").innerHTML = '分類: '+p_move[i][3];
+                meg = p_move[i][3];
+                num = p_move[i][1];
             }
         }
     })
@@ -46,8 +49,8 @@ function move(file1, file2) {
         var p_name = parseCSV(data);
         for (var i = 0; i < p_name.length; i++) {
             if (name == p_name[i][1]) {
-                if (meg == '物理') document.getElementById("sv").value = p_name[i][3];
-                if (meg == '特殊') document.getElementById("sv").value = p_name[i][5];
+                if (meg == 'physical') document.getElementById("sv").value = p_name[i][3];
+                if (meg == 'special') document.getElementById("sv").value = p_name[i][5];
                 document.getElementById("mv").value = num;
             }
         }
