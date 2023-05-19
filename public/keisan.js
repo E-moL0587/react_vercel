@@ -86,7 +86,7 @@ function q_name(file) {
     });
 }
 
-function cal() {
+function cal(elem) {
     let sv = parseFloat(document.getElementById('sv').value); //種族値の値を取得
     let mv = parseFloat(document.getElementById('mv').value); //技威力の値を取得
 
@@ -109,6 +109,11 @@ function cal() {
         var B = Math.floor((Math.floor((sv2*2+iv2+Math.floor(ev2/4))*lv2/100)+5)*mm2);
         var damage = Math.floor(Math.floor(Math.floor(lv*2/5+2)*mv*A/B)/50+2);
         document.getElementById("damage_value").innerHTML = '結果: '+Math.floor(damage*0.85)+'~'+Math.floor(damage*1.00)+'ダメージ';
+
+        var element = document.getElementById(elem);
+        var rect = element.getBoundingClientRect();
+        var elemtop = rect.bottom + window.pageYOffset;
+        document.documentElement.scrollTop = elemtop;
     }
 
     // エラー表示
