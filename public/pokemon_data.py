@@ -2,7 +2,7 @@
 import requests
 
 def get_pokemon_data():
-    url = "https://pokeapi.co/api/v2/pokemon?limit=200"  # 全国図鑑のポケモン数に合わせてリクエストURLを調整してください
+    url = "https://pokeapi.co/api/v2/pokemon?"  # 全国図鑑のポケモン数に合わせてリクエストURLを調整してください
     response = requests.get(url)
     data = response.json()
     pokemon_list = []

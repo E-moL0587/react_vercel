@@ -2,7 +2,7 @@
 import requests
 
 def get_move_data():
-    url = "https://pokeapi.co/api/v2/move?limit=50"  # 取得する技の数に合わせてリクエストURLを調整してください
+    url = "https://pokeapi.co/api/v2/move?limit=1000"  # 取得する技の数に合わせてリクエストURLを調整してください
     response = requests.get(url)
     data = response.json()
     move_list = []
