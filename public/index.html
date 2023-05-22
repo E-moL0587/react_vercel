@@ -15,7 +15,7 @@
       body {
         background-size: cover;
         background-position: center;
-        transition: background-image 2s;
+        transition: background-image 5s;
       }
     </style>
 
@@ -65,7 +65,7 @@
         currentIndex = nextIndex;
         
         // 元の画像に戻る前に再度関数を呼び出す
-        setTimeout(changeBackground, 10000);
+        setTimeout(changeBackground, 20000);
       }, 500);
     }
 
@@ -73,7 +73,7 @@
     document.body.style.backgroundImage = "url('" + imageList[currentIndex] + "')";
 
     // アニメーションの開始
-    setTimeout(changeBackground, 3000);
+    setTimeout(changeBackground, 10000);
   </script>
 
 
