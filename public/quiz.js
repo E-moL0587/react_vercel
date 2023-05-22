@@ -6,8 +6,8 @@ const result = document.getElementById('result');
 
 // ランダムなポケモンのIDを生成する関数
 const getRandomPokemonId = () => {
-  return Math.floor(Math.random() * 1009) + 1;
-  // return Math.floor(Math.random() * 151) + 1;
+  // return Math.floor(Math.random() * 1009) + 1;
+  return Math.floor(Math.random() * 151) + 1;
 };
 
 // ポケモンの問題を作成する関数

@@ -11,11 +11,23 @@
 
 
 
-      <div id="video-area">
+    <style>
+      body {
+        background-size: cover;
+        background-position: center;
+        transition: background-image 2s;
+      }
+    </style>
+
+
+
+
+
+      <!-- <div id="video-area">
         <video id="video" poster="image_box/zoroa.jpg" webkit-playsinline playsinline muted autoplay loop>
           <source src="image_box/zoroa.jpg" type="video/mp4">
         </video>
-      </div>
+      </div> -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="tab.css">
     <link rel="stylesheet" type="text/css" href="slider.css">
@@ -24,6 +36,49 @@
     </head>
 
 <body>
+
+
+  <script>
+    // 画像のURLリスト
+    var imageList = [
+      "background1.jpg",
+      "background2.jpg",
+      "background3.jpg",
+      "background4.jpg"
+    ];
+
+    var currentIndex = 0;
+
+    function changeBackground() {
+      // 次の画像のインデックスを計算
+      var nextIndex = (currentIndex + 1) % imageList.length;
+      
+      // 現在の画像を非表示にする
+      document.body.style.opacity = 0;
+      
+      // 0.5秒後に背景画像を切り替えて表示する
+      setTimeout(function() {
+        document.body.style.backgroundImage = "url('" + imageList[nextIndex] + "')";
+        document.body.style.opacity = 1;
+        
+        // 現在のインデックスを更新
+        currentIndex = nextIndex;
+        
+        // 元の画像に戻る前に再度関数を呼び出す
+        setTimeout(changeBackground, 10000);
+      }, 500);
+    }
+
+    // 最初の背景画像を設定
+    document.body.style.backgroundImage = "url('" + imageList[currentIndex] + "')";
+
+    // アニメーションの開始
+    setTimeout(changeBackground, 3000);
+  </script>
+
+
+
+
 
 
 
