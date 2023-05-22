@@ -25,3 +25,51 @@ document.addEventListener('DOMContentLoaded', function(){
     tabContent[index].classList.add('show');
   };
 });
+
+
+
+
+
+
+
+
+const tabItems = document.querySelectorAll('.tab-list-item');
+const tabContents = document.querySelectorAll('.tab-contents-item');
+let currentTab = 0;
+let touchStartX = 0;
+
+function handleTabClick(index) {
+  if (index === currentTab) return;
+
+  tabItems[currentTab].classList.remove('active');
+  tabItems[index].classList.add('active');
+
+  tabContents[currentTab].classList.remove('show');
+  tabContents[index].classList.add('show');
+
+  currentTab = index;
+}
+
+function handleTouchStart(event) {
+  touchStartX = event.touches[0].clientX;
+}
+
+function handleTouchEnd(event) {
+  const touchEndX = event.changedTouches[0].clientX;
+  const touchDiffX = touchEndX - touchStartX;
+
+  if (touchDiffX > 50 && currentTab > 0) {
+    handleTabClick(currentTab - 1); // 左にスワイプした場合、前のタブを表示
+  } else if (touchDiffX < -50 && currentTab < tabItems.length - 1) {
+    handleTabClick(currentTab + 1); // 右にスワイプした場合、次のタブを表示
+  }
+}
+
+// タブのクリックイベントを追加
+tabItems.forEach((item, index) => {
+  item.addEventListener('click', () => handleTabClick(index));
+});
+
+// タッチイベントを追加
+document.addEventListener('touchstart', handleTouchStart);
+document.addEventListener('touchend', handleTouchEnd);
