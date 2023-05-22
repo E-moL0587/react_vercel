@@ -4,10 +4,6 @@ body {
   text-align: center;
 }
 
-#container {
-  margin-top: 50px;
-}
-
 input[type="text"] {
   padding: 5px;
   width: 50px;
