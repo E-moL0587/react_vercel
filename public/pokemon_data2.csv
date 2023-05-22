@@ -1,0 +1,1282 @@
+図鑑番号,name,名前
+1, Bulbasaur, フシギダネ
+2, Ivysaur, フシギソウ
+3, Venusaur, フシギバナ
+4, Charmander, ヒトカゲ
+5, Charmeleon, リザード
+6, Charizard, リザードン
+7, Squirtle, ゼニガメ
+8, Wartortle, カメール
+9, Blastoise, カメックス
+10, Caterpie, キャタピー
+11, Metapod, トランセル
+12, Butterfree, バタフリー
+13, Weedle, ビードル
+14, Kakuna, コクーン
+15, Beedrill, スピアー
+16, Pidgey, ポッポ
+17, Pidgeotto, ピジョン
+18, Pidgeot, ピジョット
+19, Rattata, コラッタ
+20, Raticate, ラッタ
+21, Spearow, オニスズメ
+22, Fearow, オニドリル
+23, Ekans, アーボ
+24, Arbok, アーボック
+25, Pikachu, ピカチュウ
+26, Raichu, ライチュウ
+27, Sandshrew, サンド
+28, Sandslash, サンドパン
+29, Nidoran-f, ニドラン♀
+30, Nidorina, ニドリーナ
+31, Nidoqueen, ニドクイン
+32, Nidoran-m, ニドラン♂
+33, Nidorino, ニドリーノ
+34, Nidoking, ニドキング
+35, Clefairy, ピッピ
+36, Clefable, ピクシー
+37, Vulpix, ロコン
+38, Ninetales, キュウコン
+39, Jigglypuff, プリン
+40, Wigglytuff, プクリン
+41, Zubat, ズバット
+42, Golbat, ゴルバット
+43, Oddish, ナゾノクサ
+44, Gloom, クサイハナ
+45, Vileplume, ラフレシア
+46, Paras, パラス
+47, Parasect, パラセクト
+48, Venonat, コンパン
+49, Venomoth, モルフォン
+50, Diglett, ディグダ
+51, Dugtrio, ダグトリオ
+52, Meowth, ニャース
+53, Persian, ペルシアン
+54, Psyduck, コダック
+55, Golduck, ゴルダック
+56, Mankey, マンキー
+57, Primeape, オコリザル
+58, Growlithe, ガーディ
+59, Arcanine, ウインディ
+60, Poliwag, ニョロモ
+61, Poliwhirl, ニョロゾ
+62, Poliwrath, ニョロボン
+63, Abra, ケーシィ
+64, Kadabra, ユンゲラー
+65, Alakazam, フーディン
+66, Machop, ワンリキー
+67, Machoke, ゴーリキー
+68, Machamp, カイリキー
+69, Bellsprout, マダツボミ
+70, Weepinbell, ウツドン
+71, Victreebel, ウツドン
+72, Tentacool, メノクラゲ
+73, Tentacruel, ドククラゲ
+74, Geodude, イシツブテ
+75, Graveler, ゴローン
+76, Golem, ゴローニャ
+77, Ponyta, ポニータ
+78, Rapidash, ギャロップ
+79, Slowpoke, ヤドン
+80, Slowbro, ヤドラン
+81, Magnemite, コイル
+82, Magneton, レアコイル
+83, Farfetch'd, カモネギ
+84, Doduo, ドードー
+85, Dodrio, ドードリオ
+86, Seel, パウワウ
+87, Dewgong, ジュゴン
+88, Grimer, ベトベター
+89, Muk, ベトベトン
+90, Shellder, シェルダー
+91, Cloyster, パルシェン
+92, Gastly, ゴース
+93, Haunter, ゴースト
+94, Gengar, ゲンガー
+95, Onix, イワーク
+96, Drowzee, スリープ
+97, Hypno, スリーパー
+98, Krabby, クラブ
+99, Kingler, キングラー
+100, Voltorb, ビリリダマ
+101, Electrode, マルマイン
+102, Exeggcute, タマタマ
+103, Exeggutor, ナッシー
+104, Cubone, カラカラ
+105, Marowak, ガラガラ
+106, Hitmonlee, サワムラー
+107, Hitmonchan, エビワラー
+108, Lickitung, ベロリンガ
+109, Koffing, ドガース
+110, Weezing, マタドガス
+111, Rhyhorn, サイホーン
+112, Rhydon, サイドン
+113, Chansey, ラッキー
+114, Tangela, モンジャラ
+115, Kangaskhan, ガルーラ
+116, Horsea, タッツー
+117, Seadra, シードラ
+118, Goldeen, トサキント
+119, Seaking, アズマオウ
+120, Staryu, ヒトデマン
+121, Starmie, スターミー
+122, Mr. Mime, バリヤード
+123, Scyther, ストライク
+124, Jynx, ルージュラ
+125, Electabuzz, エレブー
+126, Magmar, ブーバー
+127, Pinsir, カイロス
+128, Tauros, ケンタロス
+129, Magikarp, コイキング
+130, Gyarados, ギャラドス
+131, Lapras, ラプラス
+132, Ditto, メタモン
+133, Eevee, イーブイ
+134, Vaporeon, シャワーズ
+135, Jolteon, サンダース
+136, Flareon, ブースター
+137, Porygon, ポリゴン
+138, Omanyte, オムナイト
+139, Omastar, オムスター
+140, Kabuto, カブト
+141, Kabutops, カブトプス
+142, Aerodactyl, プテラ
+143, Snorlax, カビゴン
+144, Articuno, フリーザー
+145, Zapdos, サンダー
+146, Moltres, ファイヤー
+147, Dratini, ミニリュウ
+148, Dragonair, ハクリュー
+149, Dragonite, カイリュー
+150, Mewtwo, ミュウツー
+151, Mew, ミュウ
+152, Chikorita, チコリータ
+153, Bayleef, ベイリーフ
+154, Meganium, メガニウム
+155, Cyndaquil, ヒノアラシ
+156, Quilava, マグマラシ
+157, Typhlosion, バクフーン
+158, Totodile, ワニノコ
+159, Croconaw, アリゲイツ
+160, Feraligatr, オーダイル
+161, Sentret, オタチ
+162, Furret, オオタチ
+163, Hoothoot, ホーホー
+164, Noctowl, ヨルノズク
+165, Ledyba, レディバ
+166, Ledian, レディアン
+167, Spinarak, イトマル
+168, Ariados, アリアドス
+169, Crobat, クロバット
+170, Chinchou, チョンチー
+171, Lanturn, ランターン
+172, Pichu, ピチュー
+173, Cleffa, ピィ
+174, Igglybuff, ププリン
+175, Togepi, トゲピー
+176, Togetic, トゲチック
+177, Natu, ネイティ
+178, Xatu, ネイティオ
+179, Mareep, メリープ
+180, Flaaffy, モココ
+181, Ampharos, デンリュウ
+182, Bellossom, キレイハナ
+183, Marill, マリル
+184, Azumarill, マリルリ
+185, Sudowoodo, ウソッキー
+186, Politoed, ニョロトノ
+187, Hoppip, ハネッコ
+188, Skiploom, ポポッコ
+189, Jumpluff, ワタッコ
+190, Aipom, エイパム
+191, Sunkern, ヒマナッツ
+192, Sunflora, キマワリ
+193, Yanma, ヤンヤンマ
+194, Wooper, ウパー
+195, Quagsire, ヌオー
+196, Espeon, エーフィ
+197, Umbreon, ブラッキー
+198, Murkrow, ヤミカラス
+199, Slowking, ヤドキング
+200, Misdreavus, ムウマ
+201, Unown, アンノーン
+202, Wobbuffet, ソーナンス
+203, Girafarig, キリンリキ
+204, Pineco, クヌギダマ
+205, Forretress, フォレトス
+206, Dunsparce, ノコッチ
+207, Gligar, グライガー
+208, Steelix, ハガネール
+209, Snubbull, ブルー
+210, Granbull, グランブル
+211, Qwilfish, ハリーセン
+212, Scizor, ハッサム
+213, Shuckle, ツボツボ
+214, Heracross, ヘラクロス
+215, Sneasel, ニューラ
+216, Teddiursa, ヒメグマ
+217, Ursaring, リングマ
+218, Slugma, マグマッグ
+219, Magcargo, マグカルゴ
+220, Swinub, ウリムー
+221, Piloswine, イノムー
+222, Corsola, サニーゴ
+223, Remoraid, テッポウオ
+224, Octillery, オクタン
+225, Delibird, デリバード
+226, Mantine, マンタイン
+227, Skarmory, エアームド
+228, Houndour, デルビル
+229, Houndoom, ヘルガー
+230, Kingdra, キングドラ
+231, Phanpy, ゴマゾウ
+232, Donphan, ドンファン
+233, Porygon2, ポリゴン２
+234, Stantler, オドシシ
+235, Smeargle, ドーブル
+236, Tyrogue, バルキー
+237, Hitmontop, カポエラー
+238, Smoochum, ムチュール
+239, Elekid, エレキッド
+240, Magby, ブビィ
+241, Miltank, ミルタンク
+242, Blissey, ハピナス
+243, Raikou, ライコウ
+244, Entei, エンテイ
+245, Suicune, スイクン
+246, Larvitar, ヨーギラス
+247, Pupitar, サナギラス
+248, Tyranitar, バンギラス
+249, Lugia, ルギア
+250, Ho-Oh, ホウオウ
+251, Celebi, セレビィ
+252, Treecko, キモリ
+253, Grovyle, ジュプトル
+254, Sceptile, ジュカイン
+255, Torchic, アチャモ
+256, Combusken, ワカシャモ
+257, Blaziken, バシャーモ
+258, Mudkip, ミズゴロウ
+259, Marshtomp, ヌマクロー
+260, Swampert, ラグラージ
+261, Poochyena, ポチエナ
+262, Mightyena, グラエナ
+263, Zigzagoon, ジグザグマ
+264, Linoone, マッスグマ
+265, Wurmple, ケムッソ
+266, Silcoon, カラサリス
+267, Beautifly, アゲハント
+268, Cascoon, マユルド
+269, Dustox, ドクケイル
+270, Lotad, ハスボー
+271, Lombre, ハスブレロ
+272, Ludicolo, ルンパッパ
+273, Seedot, タネボー
+274, Nuzleaf, コノハナ
+275, Shiftry, ダーテング
+276, Taillow, スバメ
+277, Swellow, オオスバメ
+278, Wingull, キャモメ
+279, Pelipper, ペリッパー
+280, Ralts, ラルトス
+281, Kirlia, キルリア
+282, Gardevoir, サーナイト
+283, Surskit, アメタマ
+284, Masquerain, アメモース
+285, Shroomish, キノココ
+286, Breloom, キノガッサ
+287, Slakoth, ナマケロ
+288, Vigoroth, ヤルキモノ
+289, Slaking, ケッキング
+290, Nincada, ツチニン
+291, Ninjask, テッカニン
+292, Shedinja, ヌケニン
+293, Whismur, ゴニョニョ
+294, Loudred, ドゴーム
+295, Exploud, バクオング
+296, Makuhita, マクノシタ
+297, Hariyama, ハリテヤマ
+298, Azurill, ルリリ
+299, Nosepass, ノズパス
+300, Skitty, エネコ
+301, Delcatty, エネコロロ
+302, Sableye, ヤミラミ
+303, Mawile, クチート
+304, Aron, ココドラ
+305, Lairon, コドラ
+306, Aggron, ボスゴドラ
+307, Meditite, アサナン
+308, medicham, チャーレム
+309, electrike, ラクライ
+310, manectric, ライボルト
+311, plusle, プラスル
+312, minun, マイナン
+313, volbeat, バルビート
+314, illumise, イルミーゼ
+315, roselia, ロゼリア
+316, gulpin, ゴクリン
+317, swalot, マルノーム
+318, carvanha, キバニア
+319, sharpedo, サメハダー
+320, wailmer, ホエルコ
+321, wailord, ホエルオー
+322, numel, ドンメル
+323, camerupt, バクーダ
+324, torkoal, コータス
+325, spoink, バネブー
+326, grumpig, ブーピッグ
+327, spinda, パッチール
+328, trapinch, ナックラー
+329, vibrava, ビブラーバ
+330, flygon, フライゴン
+331, cacnea, サボネア
+332, cacturne, ノクタス
+333, swablu, チルット
+334, altaria, チルタリス
+335, zangoose, ザングース
+336, seviper, ハブネーク
+337, lunatone, ルナトーン
+338, solrock, ソルロック
+339, barboach, ドジョッチ
+340, whiscash, ナマズン
+341, corphish, ヘイガニ
+342, crawdaunt, シザリガー
+343, baltoy, ヤジロン
+344, claydol, ネンドール
+345, lileep, リリーラ
+346, cradily, ユレイドル
+347, anorith, アノプス
+348, armaldo, アーマルド
+349, feebas, ヒンバス
+350, milotic, ミロカロス
+351, castform, ポワルン
+352, kecleon, カクレオン
+353, shuppet, カゲボウズ
+354, banette, ジュペッタ
+355, duskull, ヨマワル
+356, dusclops, サマヨール
+357, tropius, トロピウス
+358, chimecho, チリーン
+359, absol, アブソル
+360, wynaut, ソーナノ
+361, snorunt, ユキワラシ
+362, glalie, オニゴーリ
+363, spheal, トドグラー
+364, sealeo, トドゼルガ
+365, walrein, トドゼルガ
+366, clamperl, パールル
+367, huntail, ハンテール
+368, gorebyss, サクラビス
+369, relicanth, ジーランス
+370, luvdisc, ラブカス
+371, bagon, タツベイ
+372, shelgon, コモルー
+373, salamence, ボーマンダ
+374, beldum, ダンバル
+375, metang, メタング
+376, metagross, メタグロス
+377, regirock, レジロック
+378, regice, レジアイス
+379, registeel, レジスチル
+380, latias, ラティアス
+381, latios, ラティオス
+382, kyogre, カイオーガ
+383, groudon, グラードン
+384, rayquaza, レックウザ
+385, jirachi, ジラーチ
+386, deoxys-normal, デオキシス
+387, turtwig, ナエトル
+388, grotle, ハヤシガメ
+389, torterra, ドダイトス
+390, chimchar, ヒコザル
+391, monferno, モウカザル
+392, infernape, ゴウカザル
+393, piplup, ポッチャマ
+394, prinplup, ポッタイシ
+395, empoleon, エンペルト
+396, starly, ムックル
+397, staravia, ムクバード
+398, staraptor, ムクホーク
+399, bidoof, ビッパ
+400, bibarel, ビーダル
+401, kricketot, コロボーシ
+402, kricketune, コロトック
+403, shinx, コリンク
+404, luxio, ルクシオ
+405, luxray, レントラー
+406, budew, スボミー
+407, roserade, ロズレイド
+408, cranidos, ズガイドス
+409, rampardos, ラムパルド
+410, shieldon, タテトプス
+411, bastiodon, トリデプス
+412, burmy, ミノムッチ
+413, wormadam-plant, ミノマダム
+414, mothim, ガーメイル
+415, combee, ミツハニー
+416, vespiquen, ビークイン
+417, pachirisu, パチリス
+418, buizel, ブイゼル
+419, floatzel, フローゼル
+420, cherubi, チェリンボ
+421, cherrim, チェリム
+422, shellos, カラナクシ
+423, gastrodon, トリトドン
+424, ambipom, エテボース
+425, drifloon, フワンテ
+426, drifblim, フワライド
+427, buneary, ミミロル
+428, lopunny, ミミロップ
+429, mismagius, ムウマージ
+430, honchkrow, ドンカラス
+431, glameow, ニャルマー
+432, purugly, ブニャット
+433, chingling, リーシャン
+434, stunky, スカンプー
+435, skuntank, スカタンク
+436, bronzor, ドーミラー
+437, bronzong, ドータクン
+438, bonsly, ウソハチ
+439, mime-jr, マネネ
+440, happiny, ピンプク
+441, chatot, ペラップ
+442, spiritomb, ミカルゲ
+443, gible, フカマル
+444, gabite, ガバイト
+445, garchomp, ガブリアス
+446, munchlax, ゴンベ
+447, riolu, リオル
+448, lucario, ルカリオ
+449, hippopotas, ヒポポタス
+450, hippowdon, カバルドン
+451, skorupi, スコルピ
+452, drapion, ドラピオン
+453, croagunk, グレッグル
+454, toxicroak, ドクロッグ
+455, carnivine, マスキッパ
+456, finneon, ケイコウオ
+457, lumineon, ネオラント
+458, mantyke, タマンタ
+459, snover, ユキカブリ
+460, abomasnow, ユキノオー
+461, weavile, マニューラ
+462, magnezone, ジバコイル
+463, lickilicky, ベロベルト
+464, rhyperior, ドサイドン
+465, tangrowth, モジャンボ
+466, electivire, エレキブル
+467, magmortar, ブーバーン
+468, togekiss, トゲキッス
+469, yanmega, メガヤンマ
+470, leafeon, リーフィア
+471, glaceon, グレイシア
+472, gliscor, グライオン
+473, mamoswine, マンムー
+474, porygon-z, ポリゴンZ
+475, gallade, エルレイド
+476, probopass, ダイノーズ
+477, dusknoir, ヨノワール
+478, froslass, ユキメノコ
+479, rotom, ロトム
+480, uxie, ユクシー
+481, mesprit, エムリット
+482, azelf, アグノム
+483, dialga, ディアルガ
+484, palkia, パルキア
+485, heatran, ヒードラン
+486, regigigas, レジギガス
+487, giratina-altered, ギラティナ
+488, cresselia, クレセリア
+489, phione, フィオネ
+490, manaphy, マナフィ
+491, darkrai, ダークライ
+492, shaymin-land, シェイミ
+493, arceus, アルセウス
+494, victini, ビクティニ
+495, snivy, ツタージャ
+496, servine, ジャノビー
+497, serperior, ジャローダ
+498, tepig, ポカブ
+499, pignite, チャオブー
+500, emboar, エンブオー
+501, oshawott, ミジュマル
+502, dewott, フタチマル
+503, samurott, ダイケンキ
+504, patrat, ミネズミ
+505, watchog, ミルホッグ
+506, lillipup, ヨーテリー
+507, herdier, ハーデリア
+508, stoutland, ムーランド
+509, purrloin, チョロネコ
+510, liepard, レパルダス
+511, pansage, ヤナップ
+512, simisage, ヤナッキー
+513, pansear, バオップ
+514, simisear, バオッキー
+515, panpour, ヒヤップ
+516, simipour, ヒヤッキー
+517, munna, ムンナ
+518, musharna, ムシャーナ
+519, pidove, マメパト
+520, tranquill, ハトーボー
+521, unfezant, ケンホロウ
+522, blitzle, シママ
+523, zebstrika, ゼブライカ
+524, roggenrola, ダンゴロ
+525, boldore, ガントル
+526, gigalith, ギガイアス
+527, woobat, コロモリ
+528, swoobat, ココロモリ
+529, drilbur, モグリュー
+530, excadrill, ドリュウズ
+531, audino, タブンネ
+532, timburr, ドッコラー
+533, gurdurr, ドテッコツ
+534, conkeldurr, ローブシン
+535, tympole, オタマロ
+536, palpitoad, ガマガル
+537, seismitoad, ガマゲロゲ
+538, throh, ナゲキ
+539, sawk, ダゲキ
+540, sewaddle, クルミル
+541, swadloon, クルマユ
+542, leavanny, ハハコモリ
+543, venipede, フシデ
+544, whirlipede, ホイーガ
+545, scolipede, ペンドラー
+546, cottonee, モンメン
+547, whimsicott, エルフーン
+548, petilil, チュリネ
+549, lilligant, ドレディア
+550, basculin-red-striped, バスラオ
+551, sandile, メグロコ
+552, krokorok, ワルビル
+553, krookodile, ワルビアル
+554, darumaka, ダルマッカ
+555, darmanitan-standard, ヒヒダルマ
+556, maractus, マラカッチ
+557, dwebble, イシズマイ
+558, crustle, イワパレス
+559, scraggy, ズルッグ
+560, scrafty, ゴチム
+561, sigilyph, ゴチミル
+562, yamask, デスマス
+563, cofagrigus, デスカーン
+564, tirtouga, プロトーガ
+565, carracosta, アバゴーラ
+566, archen, アーケン
+567, archeops, アーケオス
+568, trubbish, ヤブクロン
+569, garbodor, ダストダス
+570, zorua, ゾロア
+571, zoroark, ゾロアーク
+572, minccino, チラーミィ
+573, cinccino, チラチーノ
+574, gothita, ゴチルゼル
+575, gothorita, ゴチルドン
+576, gothitelle, ゴチルドン
+577, solosis, ユニラン
+578, duosion, ダブラン
+579, reuniclus, ランクルス
+580, ducklett, コアルヒー
+581, swanna, スワンナ
+582, vanillite, バニプッチ
+583, vanillish, バニリッチ
+584, vanilluxe, バイバニラ
+585, deerling, シキジカ
+586, sawsbuck, メブキジカ
+587, emolga, エモンガ
+588, karrablast, カブルモ
+589, escavalier, シュバルゴ
+590, foongus, タマゲタケ
+591, amoonguss, モロバレル
+592, frillish, プルリル
+593, jellicent, ブルンゲル
+594, alomomola, ママンボウ
+595, joltik, バチュル
+596, galvantula, デンチュラ
+597, ferroseed, テッシード
+598, ferrothorn, ナットレイ
+599, klink, ギアル
+600, klang, ギギアル
+601, klinklang, ギギギアル
+602, tynamo, シビシラス
+603, eelektrik, シビビール
+604, eelektross, シビルドン
+605, elgyem, リグレー
+606, beheeyem, オーベム
+607, litwick, ヒトモシ
+608, lampent, ランプラー
+609, chandelure, シャンデラ
+610, axew, キバゴ
+611, fraxure, オノンド
+612, haxorus, オノノクス
+613, cubchoo, クマシュン
+614, beartic, ツンベアー
+615, cryogonal, フリージオ
+616, shelmet, チョボマキ
+617, accelgor, アギルダー
+618, stunfisk, マッギョ
+619, mienfoo, コジョフー
+620, mienshao, コジョンド
+621, druddigon, クリムガン
+622, golett, ゴビット
+623, golurk, ゴルーグ
+624, pawniard, コマタナ
+625, bisharp, キリキザン
+626, bouffalant, バッフロン
+627, rufflet, ワシボン
+628, braviary, ウォーグル
+629, vullaby, バルチャイ
+630, mandibuzz, バルジーナ
+631, heatmor, クイタラン
+632, durant, アイアント
+633, deino, モノズ
+634, zweilous, ジヘッド
+635, hydreigon, サザンドラ
+636, larvesta, メラルバ
+637, volcarona, ウルガモス
+638, cobalion, コバルオン
+639, terrakion, テラキオン
+640, virizion, ビリジオン
+641, tornadus-incarnate, トルネロス
+642, thundurus-incarnate, ボルトロス
+643, reshiram, レシラム
+644, zekrom, ゼクロム
+645, landorus-incarnate, ランドロス
+646, kyurem, キュレム
+647, keldeo-ordinary, ケルディオ
+648, meloetta-aria, メロエッタ
+649, genesect, ゲノセクト
+650, chespin, ハリマロン
+651, quilladin, ハリボーグ
+652, chesnaught, ブリガロン
+653, fennekin, フォッコ
+654, braixen, テールナー
+655, delphox, マフォクシー
+656, froakie, ケロマツ
+657, frogadier, ゲコガシラ
+658, greninja, ゲッコウガ
+659, bunnelby, ホルビー
+660, diggersby, ホルード
+661, fletchling, ヤヤコマ
+662, fletchinder, ヒノヤコマ
+663, talonflame, ファイアロー
+664, scatterbug, コフキムシ
+665, spewpa, コフーライ
+666, vivillon, ビビヨン
+667, litleo, シシコ
+668, pyroar, カエンジシ
+669, flabebe, フラベベ
+670, floette, フラエッテ
+671, florges, フラージェス
+672, skiddo, メェークル
+673, gogoat, ゴーゴート
+674, pancham, ヤンチャム
+675, pangoro, ゴロンダ
+676, furfrou, トリミアン
+677, espurr, ニャスパー
+678, meowstic-male, ニャオニクス
+679, honedge, ヒトツキ
+680, doublade, ニダンギル
+681, aegislash-shield, ギルガルド
+682, spritzee, シュシュプ
+683, aromatisse, フレフワン
+684, swirlix, ペロッパフ
+685, slurpuff, ペロリーム
+686, inkay, マーイーカ
+687, malamar, カラマネロ
+688, binacle, カメテテ
+689, barbaracle, ガメノデス
+690, skrelp, クズモー
+691, dragalge, ドラミドロ
+692, clauncher, ウデッポウ
+693, clawitzer, ブロスター
+694, helioptile, エリキテル
+695, heliolisk, エレザード
+696, tyrunt, チゴラス
+697, tyrantrum, ガチゴラス
+698, amaura, アマルス
+699, aurorus, アマルルガ
+700, sylveon, ニンフィア
+701, hawlucha, ルチャブル
+702, dedenne, デデンネ
+703, carbink, メレシー
+704, goomy, ヌメラ
+705, sliggoo, ヌメイル
+706, goodra, ヌメルゴン
+707, klefki, クレッフィ
+708, phantump, ボクレー
+709, trevenant, オーロット
+710, pumpkaboo-average, バケッチャ
+711, gourgeist-average, パンプジン
+712, bergmite, カチコール
+713, avalugg, クレベース
+714, noibat, オンバット
+715, noivern, オンバーン
+716, xerneas, ゼルネアス
+717, yveltal, イベルタル
+718, zygarde-50, ジガルデ
+719, diancie, ディアンシー
+720, hoopa, フーパ
+721, volcanion, ボルケニオン
+722, rowlet, モクロー
+723, dartrix, フクスロー
+724, decidueye, ジュナイパー
+725, litten, ニャビー
+726, torracat, ニャヒート
+727, incineroar, ガオガエン
+728, popplio, アシマリ
+729, brionne, オシャマリ
+730, primarina, アシレーヌ
+731, pikipek, ツツケラ
+732, trumbeak, ケララッパ
+733, toucannon, カモネギ
+734, yungoos, ヤングース
+735, gumshoos, デカグース
+736, grubbin, アゴジムシ
+737, charjabug, デンヂムシ
+738, vikavolt, クワガノン
+739, crabrawler, マケンカニ
+740, crabominable, ケケンカニ
+741, oricorio-baile, オドリドリ
+742, cutiefly, アブリー
+743, ribombee, アブリボン
+744, rockruff, イワンコ
+745, lycanroc-midday, ルガルガン
+746, wishiwashi-solo, ヨワシ
+747, mareanie, ヒドイデ
+748, toxapex, ドヒドイデ
+749, mudbray, ドロバンコ
+750, mudsdale, バンバドロ
+751, dewpider, シズクモ
+752, araquanid, オニシズクモ
+753, fomantis, カリキリ
+754, lurantis, ラランテス
+755, morelull, ネマシュ
+756, shiinotic, マシェード
+757, salandit, ヤトウモリ
+758, salazzle, エンニュート
+759, stufful, ヌイコグマ
+760, bewear, キテルグマ
+761, bounsweet, アマカジ
+762, steenee, アママイコ
+763, tsareena, アマージョ
+764, comfey, キュワワー
+765, oranguru, ヤレユータン
+766, passimian, ナゲツケサル
+767, wimpod, コソクムシ
+768, golisopod, グソクムシャ
+769, sandygast, スナバァ
+770, palossand, シロデスナ
+771, pyukumuku, ナマコブシ
+772, type-null, タイプ:ヌル
+773, silvally, シルヴァディ
+774, minior-red-meteor, メテノ
+775, komala, ネッコアラ
+776, turtonator, バクガメス
+777, togedemaru, トゲデマル
+778, mimikyu-disguised, ミミッキュ
+779, bruxish, ハギギシリ
+780, drampa, ジジーロン
+781, dhelmise, ダダリン
+782, jangmo-o, ジャラコ
+783, hakamo-o, ジャランゴ
+784, kommo-o, ジャラランガ
+785, tapu-koko, カプ・コケコ
+786, tapu-lele, カプ・テテフ
+787, tapu-bulu, カプ・ブルル
+788, tapu-fini, カプ・レヒレ
+789, cosmog, コスモッグ
+790, cosmoem, コスモウム
+791, solgaleo, ソルガレオ
+792, lunala, ルナアーラ
+793, nihilego, ウツロイド
+794, buzzwole, マッシブーン
+795, pheromosa, フェローチェ
+796, xurkitree, デンジュモク
+797, celesteela, セレビィ
+798, kartana, カミツルギ
+799, guzzlord, アクジキング
+800, necrozma, ネクロズマ
+801, magearna, マギアナ
+802, marshadow, マーシャドー
+803, poipole, ベベノム
+804, naganadel, アーゴヨン
+805, stakataka, ツンデツンデ
+806, blacephalon, ズガドーン
+807, zeraora, ゼラオラ
+808, meltan, メルタン
+809, melmetal, メルメタル
+810, grookey, サルノリ
+811, thwackey, ゲオルグ
+812, rillaboom, ゴリランダー
+813, scorbunny, ヒバニー
+814, raboot, エースバーン
+815, cinderace, エースバーン
+816, sobble, メッソン
+817, drizzile, ジメレオン
+818, inteleon, インテレオン
+819, skwovet, ホシガリス
+820, greedent, ヨクバリス
+821, rookidee, ココガラス
+822, corvisquire, アオガラス
+823, corviknight, アーマーガア
+824, blipbug, サッチムシ
+825, dottler, レドームシ
+826, orbeetle, イオルブ
+827, nickit, クスネ
+828, thievul, フォクスライ
+829, gossifleur, ヒメンカ
+830, eldegoss, ワタシラガ
+831, wooloo, ユキハミ
+832, dubwool, ムーランド
+833, chewtle, カムカメ
+834, drednaw, ガメノデス
+835, yamper, ワンパチ
+836, boltund, パルスワン
+837, rolycoly, タンドン
+838, carkol, トロッゴン
+839, coalossal, セキタンザン
+840, applin, カジッチュウ
+841, flapple, アップリュー
+842, appletun, タルップル
+843, silicobra, スナヘビ
+844, sandaconda, サダイジャ
+845, cramorant, ウッウ
+846, arrokuda, アオッコ
+847, barraskewda, アオドウブツ
+848, toxel, エレズン
+849, toxtricity-amped, ストリンダー
+850, sizzlipede, ヤクデ
+851, centiskorch, マルヤクデ
+852, clobbopus, タタッコ
+853, grapploct, オトスパス
+854, sinistea, ヤバチャ
+855, polteageist, ポットデス
+856, hatenna, ミブリム
+857, hattrem, ミブリム
+858, hatterene, ミブリム
+859, impidimp, ベロバー
+860, morgrem, ギモー
+861, grimmsnarl, ギモー
+862, obstagoon, オーロンゲ
+863, perrserker, ニャイキング
+864, cursola, サニゴーン
+865, sirfetchd, ネギガナイト
+866, mr-rime, バリコオル
+867, runerigus, デスバーン
+868, milcery, マホミル
+869, alcremie, マホイップ
+870, falinks, タイレーツ
+871, pincurchin, バチンウニ
+872, snom, ユキハミ
+873, frosmoth, モスノウ
+874, stonjourner, イシヘンジン
+875, eiscue-ice, コオリッポ
+876, indeedee-male, インディード
+877, morpeko-full-belly, モルペコ
+878, cufant, ゾウドウ
+879, copperajah, ダイオウドウ
+880, dracozolt, パッチラゴン
+881, arctozolt, パッチルドン
+882, dracovish, ウオノラゴン
+883, arctovish, ウオチルドン
+884, duraludon, ジュラルドン
+885, dreepy, ドラメシヤ
+886, drakloak, ドロンチ
+887, dragapult, ドラパルト
+888, zacian, ザシアン
+889, zamazenta, ザマゼンタ
+890, eternatus, ムゲンダイナ
+891, kubfu, ダクマ
+892, urshifu-single-strike, ウーラオス
+893, zarude, ザルード
+894, regieleki, レジエレキ
+895, regidrago, レジドラゴ
+896, glastrier, ブリザポス
+897, spectrier, レイスポス
+898, calyrex, バドレックス
+899, wyrdeer, シシマイ（のろいのすがた）
+900, kleavor, ヤトウモリ
+901, ursaluna, ウッウ
+902, basculegion-male, バスラオ
+903, sneasler, スナクツール
+904, overqwil, オーベム
+905, enamorus-incarnate, イラプトル
+906, sprigatito, クスネコ
+907, floragato, マユパツ
+908, meowscarada, ウッウ（のろいのすがた）
+909, fuecoco, エースバーン
+910, crocalor, ウーラオス
+911, skeledirge, サシカマス
+912, quaxly, セキタンザン
+913, quaxwell, ヤクデ
+914, quaquaval, カマスジョー
+915, lechonk, プテラダクス
+916, oinkologne, イーブイ
+917, tarountula, レントラー
+918, spidops, サニゴン
+919, nymble, ユキハミ
+920, lokix, ジャラランガ
+921, pawmi, ミブリム
+922, pawmo, テブリム
+923, pawmot, ブリムオン
+924, tandemaus, ニャミーズ
+925, maushold, マウゼル
+926, fidough, パンモチ
+927, dachsbun, ダックスビル
+928, smoliv, ツルタン
+929, dolliv, タルッド
+930, arboliva, ツリモチ
+931, squawkabilly, ドロシン
+932, nacli, ナクリラ
+933, naclstack, バチャライ
+934, garganacl, ドロタン
+935, charcadet, プテラン
+936, armarouge, ウツドン
+937, ceruledge, テテフドン
+938, tadbulb, ヌメラ
+939, bellibolt, ヌメイル
+940, wattrel, ヌメルゴン
+941, kilowattrel, ファイヤロー
+942, maschiff, メレヒコ
+943, mabosstiff, ゴンベ
+944, shroodle, マタドガス
+945, grafaiai, ウリムー
+946, bramblin, イノムー
+947, brambleghast, ジュラルドン
+948, toedscool, オニスズメ
+949, toedscruel, オニドリル
+950, klawf, バネブー
+951, capsakid, バネブー
+952, scovillain, カチコール
+953, rellor, カチコール
+954, rabsca, カチコール
+955, flittle, フワンテ
+956, espathra, フワライド
+957, tinkatink, ゴチム
+958, tinkatuff, ゴチミル
+959, tinkaton, ユキハミ
+960, wiglett, ユキノオー
+961, wugtrio, キョダイユキ
+962, bombirdier, オーロンゲ
+963, finizen, オーロット
+964, palafin, オーロット
+965, varoom, ヒバニー
+966, revavroom, ラビフット
+967, cyclizar, エースバーン
+968, orthworm, オーロトム
+969, glimmet, ムラッコ
+970, glimmora, ラランテス
+971, greavard, サイホーン
+972, houndstone, サイドン
+973, flamigo, バクガメス
+974, cetoddle, トゲチック
+975, cetitan, トゲキッス
+976, veluza, ウリムー
+977, dondozo, イワーク
+978, tatsugiri, ストライク
+979, annihilape, ライコウ
+980, clodsire, エンテイ
+981, farigiraf, スイクン
+982, dudunsparce, ヨーギラス
+983, kingambit, サナギラス
+984, great-tusk, バンギラス
+985, scream-tail, ルギア
+986, brute-bonnet, ホウオウ
+987, flutter-mane, セレビィ
+988, slither-wing, キモリ
+989, sandy-shocks, ジュプトル
+990, iron-treads, ジュカイン
+991, iron-bundle, ミズゴロウ
+992, iron-hands, ヌマクロー
+993, iron-jugulis, ラグラージ
+994, iron-moth, ポチエナ
+995, iron-thorns, グラエナ
+996, frigibax, ジグザグマ
+997, arctibax, マッスグマ
+998, baxcalibur, ケムッソ
+999, gimmighoul, カラサリス
+1000, gholdengo, アゲハント
+1001, wo-chien, マユルド
+1002, chien-pao, ドクケイル
+1003, ting-lu, ハスボー
+1004, chi-yu, ハスブレロ
+1005, roaring-moon, ルンパッパ
+1006, iron-valiant, タネボー
+1007, koraidon, コノハナ
+1008, miraidon, ダーテング
+1009, walking-wake, ウツドン
+1010, iron-leaves, ウツドキング
+10001,deoxys-attack
+10002,deoxys-defense
+10003,deoxys-speed
+10004,wormadam-sandy
+10005,wormadam-trash
+10006,shaymin-sky
+10007,giratina-origin
+10008,rotom-heat
+10009,rotom-wash
+10010,rotom-frost
+10011,rotom-fan
+10012,rotom-mow
+10013,castform-sunny
+10014,castform-rainy
+10015,castform-snowy
+10016,basculin-blue-striped
+10017,darmanitan-zen
+10018,meloetta-pirouette
+10019,tornadus-therian
+10020,thundurus-therian
+10021,landorus-therian
+10022,kyurem-black
+10023,kyurem-white
+10024,keldeo-resolute
+10025,meowstic-female
+10026,aegislash-blade
+10027,pumpkaboo-small
+10028,pumpkaboo-large
+10029,pumpkaboo-super
+10030,gourgeist-small
+10031,gourgeist-large
+10032,gourgeist-super
+10033,venusaur-mega
+10034,charizard-mega-x
+10035,charizard-mega-y
+10036,blastoise-mega
+10037,alakazam-mega
+10038,gengar-mega
+10039,kangaskhan-mega
+10040,pinsir-mega
+10041,gyarados-mega
+10042,aerodactyl-mega
+10043,mewtwo-mega-x
+10044,mewtwo-mega-y
+10045,ampharos-mega
+10046,scizor-mega
+10047,heracross-mega
+10048,houndoom-mega
+10049,tyranitar-mega
+10050,blaziken-mega
+10051,gardevoir-mega
+10052,mawile-mega
+10053,aggron-mega
+10054,medicham-mega
+10055,manectric-mega
+10056,banette-mega
+10057,absol-mega
+10058,garchomp-mega
+10059,lucario-mega
+10060,abomasnow-mega
+10061,floette-eternal
+10062,latias-mega
+10063,latios-mega
+10064,swampert-mega
+10065,sceptile-mega
+10066,sableye-mega
+10067,altaria-mega
+10068,gallade-mega
+10069,audino-mega
+10070,sharpedo-mega
+10071,slowbro-mega
+10072,steelix-mega
+10073,pidgeot-mega
+10074,glalie-mega
+10075,diancie-mega
+10076,metagross-mega
+10077,kyogre-primal
+10078,groudon-primal
+10079,rayquaza-mega
+10080,pikachu-rock-star
+10081,pikachu-belle
+10082,pikachu-pop-star
+10083,pikachu-phd
+10084,pikachu-libre
+10085,pikachu-cosplay
+10086,hoopa-unbound
+10087,camerupt-mega
+10088,lopunny-mega
+10089,salamence-mega
+10090,beedrill-mega
+10091,rattata-alola
+10092,raticate-alola
+10093,raticate-totem-alola
+10094,pikachu-original-cap
+10095,pikachu-hoenn-cap
+10096,pikachu-sinnoh-cap
+10097,pikachu-unova-cap
+10098,pikachu-kalos-cap
+10099,pikachu-alola-cap
+10100,raichu-alola
+10101,sandshrew-alola
+10102,sandslash-alola
+10103,vulpix-alola
+10104,ninetales-alola
+10105,diglett-alola
+10106,dugtrio-alola
+10107,meowth-alola
+10108,persian-alola
+10109,geodude-alola
+10110,graveler-alola
+10111,golem-alola
+10112,grimer-alola
+10113,muk-alola
+10114,exeggutor-alola
+10115,marowak-alola
+10116,greninja-battle-bond
+10117,greninja-ash
+10118,zygarde-10-power-construct
+10119,zygarde-50-power-construct
+10120,zygarde-complete
+10121,gumshoos-totem
+10122,vikavolt-totem
+10123,oricorio-pom-pom
+10124,oricorio-pau
+10125,oricorio-sensu
+10126,lycanroc-midnight
+10127,wishiwashi-school
+10128,lurantis-totem
+10129,salazzle-totem
+10130,minior-orange-meteor
+10131,minior-yellow-meteor
+10132,minior-green-meteor
+10133,minior-blue-meteor
+10134,minior-indigo-meteor
+10135,minior-violet-meteor
+10136,minior-red
+10137,minior-orange
+10138,minior-yellow
+10139,minior-green
+10140,minior-blue
+10141,minior-indigo
+10142,minior-violet
+10143,mimikyu-busted
+10144,mimikyu-totem-disguised
+10145,mimikyu-totem-busted
+10146,kommo-o-totem
+10147,magearna-original
+10148,pikachu-partner-cap
+10149,marowak-totem
+10150,ribombee-totem
+10151,rockruff-own-tempo
+10152,lycanroc-dusk
+10153,araquanid-totem
+10154,togedemaru-totem
+10155,necrozma-dusk
+10156,necrozma-dawn
+10157,necrozma-ultra
+10158,pikachu-starter
+10159,eevee-starter
+10160,pikachu-world-cap
+10161,meowth-galar
+10162,ponyta-galar
+10163,rapidash-galar
+10164,slowpoke-galar
+10165,slowbro-galar
+10166,farfetchd-galar
+10167,weezing-galar
+10168,mr-mime-galar
+10169,articuno-galar
+10170,zapdos-galar
+10171,moltres-galar
+10172,slowking-galar
+10173,corsola-galar
+10174,zigzagoon-galar
+10175,linoone-galar
+10176,darumaka-galar
+10177,darmanitan-galar-standard
+10178,darmanitan-galar-zen
+10179,yamask-galar
+10180,stunfisk-galar
+10181,zygarde-10
+10182,cramorant-gulping
+10183,cramorant-gorging
+10184,toxtricity-low-key
+10185,eiscue-noice
+10186,indeedee-female
+10187,morpeko-hangry
+10188,zacian-crowned
+10189,zamazenta-crowned
+10190,eternatus-eternamax
+10191,urshifu-rapid-strike
+10192,zarude-dada
+10193,calyrex-ice
+10194,calyrex-shadow
+10195,venusaur-gmax
+10196,charizard-gmax
+10197,blastoise-gmax
+10198,butterfree-gmax
+10199,pikachu-gmax
+10200,meowth-gmax
+10201,machamp-gmax
+10202,gengar-gmax
+10203,kingler-gmax
+10204,lapras-gmax
+10205,eevee-gmax
+10206,snorlax-gmax
+10207,garbodor-gmax
+10208,melmetal-gmax
+10209,rillaboom-gmax
+10210,cinderace-gmax
+10211,inteleon-gmax
+10212,corviknight-gmax
+10213,orbeetle-gmax
+10214,drednaw-gmax
+10215,coalossal-gmax
+10216,flapple-gmax
+10217,appletun-gmax
+10218,sandaconda-gmax
+10219,toxtricity-amped-gmax
+10220,centiskorch-gmax
+10221,hatterene-gmax
+10222,grimmsnarl-gmax
+10223,alcremie-gmax
+10224,copperajah-gmax
+10225,duraludon-gmax
+10226,urshifu-single-strike-gmax
+10227,urshifu-rapid-strike-gmax
+10228,toxtricity-low-key-gmax
+10229,growlithe-hisui
+10230,arcanine-hisui
+10231,voltorb-hisui
+10232,electrode-hisui
+10233,typhlosion-hisui
+10234,qwilfish-hisui
+10235,sneasel-hisui
+10236,samurott-hisui
+10237,lilligant-hisui
+10238,zorua-hisui
+10239,zoroark-hisui
+10240,braviary-hisui
+10241,sliggoo-hisui
+10242,goodra-hisui
+10243,avalugg-hisui
+10244,decidueye-hisui
+10245,dialga-origin
+10246,palkia-origin
+10247,basculin-white-striped
+10248,basculegion-female
+10249,enamorus-therian
+10250,tauros-paldea-combat-breed
+10251,tauros-paldea-blaze-breed
+10252,tauros-paldea-aqua-breed
+10253,wooper-paldea
+10254,oinkologne-female
+10255,dudunsparce-three-segment
+10256,palafin-hero
+10257,maushold-family-of-three
+10258,tatsugiri-droopy
+10259,tatsugiri-stretchy
+10260,squawkabilly-blue-plumage
+10261,squawkabilly-yellow-plumage
+10262,squawkabilly-white-plumage
+10263,gimmighoul-roaming
+10264,koraidon-limited-build
+10265,koraidon-sprinting-build
+10266,koraidon-swimming-build
+10267,koraidon-gliding-build
+10268,miraidon-low-power-mode
+10269,miraidon-drive-mode
+10270,miraidon-aquatic-mode
+10271,miraidon-glide-mode
