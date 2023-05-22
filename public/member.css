@@ -1,20 +1,8 @@
 .member {
-  display: flex;
-  align-items: center;
+  text-align: left;
   border: 1px solid #ffff00;
   background-color: #93a7ff86;
   padding: 10px;
   margin-bottom: 10px;
   color: #ffffff;
-}
-
-.member img {
-  margin-right: 10px;
-  width: 100px; /* 必要に応じて適切な幅を指定してください */
-  height: auto; /* 必要に応じて適切な高さを指定してください */
-}
-
-.member-flex-container {
-  display: flex;
-  justify-content: space-between;
 }

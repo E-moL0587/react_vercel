@@ -92,7 +92,10 @@
     <p class="delay-time02 fadeUp">
       毎週火曜日と水曜日の5限(16:50~)から<br></br>
       9-305号室にて活動しています！<br></br>
-      (2023/05/21 19:00更新しました)
+    </p>
+    <p class="delay-time04 fadeUp">
+      部活費用は無償で、兼部可能です。<br></br>
+      (switch代などに活用ください！)
     </p>  
   </ul></ul>
 </div>
@@ -111,7 +114,7 @@
           </head>
           <body>
             <div id="container">
-              <h2>ダメージ計算機</h2>
+              <h2 class="fadeUp">ダメージ計算機</h2>
               <p>英字,小文字,半角で入力してください<br></br>(例:eevee, pikachu, pound等)</p>
               <p>攻撃側</p>
               <input type="text" id="p_name" size="26" placeholder="ポケモン名を入力してください..." oninput="p_name('pokemon_data.csv')">
@@ -180,6 +183,7 @@
 
 
 
+<!--部員紹介-->
 <div class="tab-contents-item">
   <head>
     <title>部員紹介</title>
@@ -187,13 +191,16 @@
   </head>
   <body>
     <h1 class="fadeUp">部員紹介</h1>
-    <button id="toggleButton">表記変更</button> <!-- 表示切り替えボタン -->
+    <input type="text" class="delay-time04 fadeUp" id="memberIdInput" placeholder="学籍番号(例:A000000)を入力してください..." style="width: 300px;">
+    <button class="delay-time04 fadeUp" id="memberButton">検索</button>
+    <button class="delay-time04 fadeUp" id="membersButton" style="float: right;">簡易表記</button>
     <br></br>
-    <div id="members"></div> <!-- メンバーを表示するコンテナ -->
-
+    <div class="delay-time02 fadeUp" id="members"></div>
     <script src="member.js"></script>
   </body>
 </div>
+
+
 
 
   <body>
