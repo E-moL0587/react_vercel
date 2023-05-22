@@ -8,6 +8,9 @@
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="成蹊大学ポケモンサークルの公式ホームページです。" />
 
+
+
+
       <div id="video-area">
         <video id="video" poster="image_box/zoroa.jpg" webkit-playsinline playsinline muted autoplay loop>
           <source src="image_box/zoroa.jpg" type="video/mp4">
@@ -21,6 +24,8 @@
 
 
 <body>
+
+
 
 
 <!--tab一覧-->
@@ -205,7 +210,49 @@
 </div>
 
 
+<script>
+  // JavaScriptコードをここに配置
+  const tabItems = document.querySelectorAll('.tab-list-item');
+  const tabContents = document.querySelectorAll('.tab-contents-item');
+  let currentTab = 0;
+  let touchStartX = 0;
 
+  function handleTabClick(index) {
+    if (index === currentTab) return;
+
+    tabItems[currentTab].classList.remove('active');
+    tabItems[index].classList.add('active');
+
+    tabContents[currentTab].classList.remove('show');
+    tabContents[index].classList.add('show');
+
+    currentTab = index;
+  }
+
+  function handleTouchStart(event) {
+    touchStartX = event.touches[0].clientX;
+  }
+
+  function handleTouchEnd(event) {
+    const touchEndX = event.changedTouches[0].clientX;
+    const touchDiffX = touchEndX - touchStartX;
+
+    if (touchDiffX > 50 && currentTab > 0) {
+      handleTabClick(currentTab - 1); // 左にスワイプした場合、前のタブを表示
+    } else if (touchDiffX < -50 && currentTab < tabItems.length - 1) {
+      handleTabClick(currentTab + 1); // 右にスワイプした場合、次のタブを表示
+    }
+  }
+
+  // タブのクリックイベントを追加
+  tabItems.forEach((item, index) => {
+    item.addEventListener('click', () => handleTabClick(index));
+  });
+
+  // タッチイベントを追加
+  document.addEventListener('touchstart', handleTouchStart);
+  document.addEventListener('touchend', handleTouchEnd);
+</script>
 
 
     <div id="root"></div>
