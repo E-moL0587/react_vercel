@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+  }
+  
+  #pokemon-image {
+    margin-top: 20px;
+    margin: 0 auto;
+    width: 200px; /* 画像の幅に合わせて調整してください */
+    height: 200px; /* 画像の高さに合わせて調整してください */
+    border: 2px solid #ffff00; /* ボーダーのスタイルと色を調整してください */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeff0062; /* ボーダー内の色を指定してください */
+    box-sizing: border-box; /* ボーダーが要素のサイズに含まれるようにする */
+  }
+  
+  #pokemon-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none; /* 画像内のボーダーを削除する */
+  }
+
+  #guess-input {
+    width: 300px; /* 好みの横幅に合わせて調整してください */
+    height: 40px; /* 好みの高さに合わせて調整してください */
+  }
+
+  #submit-button {
+    width: 70px; /* 好みの横幅に合わせて調整してください */
+    height: 40px; /* 好みの高さに合わせて調整してください */
+  }
+  
