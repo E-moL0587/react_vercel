@@ -122,9 +122,6 @@ function cal(elem) {
 }
 
 
-
-
-
 function parseCSV(csv) {
     var lines = csv.split("\n");
     var data = [];

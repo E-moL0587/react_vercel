@@ -37,48 +37,10 @@ body {
   display: block;
 }
 
-
-
-
-
-
-
-
-.tab-contents-item {
-  display: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-.tab-list {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  background-color: #00959da7;
-}
-
 .tab-list-item {
-  flex: 1;
-  text-align: center;
-  color: #ffffff;
-  padding: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  font-weight: bold;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
-.tab-list-item.active {
-  background-color: #ffe10091;
-}
-
-.tab-contents-item.show {
-  display: block;
-}

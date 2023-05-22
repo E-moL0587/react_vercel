@@ -25,18 +25,3 @@ document.addEventListener('DOMContentLoaded', function(){
     tabContent[index].classList.add('show');
   };
 });
-
-const tabItems = document.querySelectorAll('.tab-list-item');
-const tabContents = document.querySelectorAll('.tab-contents-item');
-
-function handleSwipe() {
-  this.classList.add('active');
-  setTimeout(() => {
-    this.classList.remove('active');
-  }, 300);
-}
-
-tabItems.forEach(item => {
-  item.addEventListener('touchstart', handleSwipe);
-  item.addEventListener('mousedown', handleSwipe);
-});

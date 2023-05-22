@@ -23,8 +23,6 @@
 
     </head>
 
-
-
 <body>
 
 
@@ -92,9 +90,7 @@
     </div>
 
 <div class="tab-contents-item">
-  <ul class="App">
-    <ul class="App-header">
-    <h2 class="fadeUp">スケジュール</h2>
+    <h1 class="fadeUp">スケジュール</h1>
     <p class="delay-time02 fadeUp">
       毎週火曜日と水曜日の5限(16:50~)から9-305号室にて活動しています！
     </p>
@@ -113,26 +109,26 @@
 
 <div class="tab-contents-item">
 
-          <!DOCTYPE html>
-          <html>
-          <head>
-            <title>ポケモンの計算機</title>
-            <style src="keisan.css"></style>
-          </head>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>ポケモンの計算機</title>
+    <link rel="stylesheet" href="keisan.css">
+  </head>
           <body>
             <div id="container" style="text-align: center;">
-              <h2 class="fadeUp">ダメージ計算機</h2>
+              <h1 class="fadeUp">ダメージ計算機</h1>
               <p class="delay-time02 fadeUp">英字,小文字,半角で入力してください<br></br>(例:eevee, pikachu, pound等)</p>
               <br></br>
 
               
               <h2 class="delay-time04 fadeUp">攻撃側</h2>
-              <input type="text" class="delay-time02 fadeUp" id="p_name" size="26" placeholder="ポケモン名を入力してください..." oninput="p_name('pokemon_data.csv')">
+              <input type="text" class="delay-time02 fadeUp" id="p_name" style="height: 60px; width: 300px;" size="35" placeholder="ポケモン名を入力してください..." oninput="p_name('pokemon_data.csv')">
               <p id="number_data"></p>
               <p id="iv_data"></p>
               <p id="type_data"></p>
 
-              <input type="text" class="delay-time02 fadeUp" id="p_move" size="26" placeholder="技名を入力してください..." oninput="move('move_data.csv','pokemon_data.csv')">
+              <input type="text" class="delay-time02 fadeUp" id="p_move" style="height: 60px; width: 300px;" size="35" placeholder="技名を入力してください..." oninput="move('move_data.csv','pokemon_data.csv')">
               <p id="atk_data"></p>
               <p id="atype_data"></p>
               <p id="ps_data"></p>
@@ -151,12 +147,12 @@
               <br></br>
 
               <h2 class="delay-time04 fadeUp">防御側</h2>
-              <input type="text" class="delay-time02 fadeUp" id="q_name" size="26" placeholder="ポケモン名を入力してください..." oninput="q_name('pokemon_data.csv')">
+              <input type="text" class="delay-time02 fadeUp" id="q_name" style="height: 60px; width: 300px;" size="35" placeholder="ポケモン名を入力してください..." oninput="q_name('pokemon_data.csv')">
               <p id="number_data2"></p>
               <p id="iv_data2"></p>
               <p id="type_data2"></p>
 
-              <p>
+              <p class="delay-time06 fadeUp">
                 種族値(B or D)<input id="sv2" type="text" size="1" maxlength="3">
                 <br></br>
                 努力値<input id="ev2" type="text" size="1" maxlength="3" value="252">
@@ -168,16 +164,19 @@
 
               <p>
               <br><br>
-              <input type="button" value="計算する" onclick="cal('damage_value')">
+              <input type="button" style="height: 40px;" value="計算する" onclick="cal('damage_value')">
               <br><br>
               <br><br>
               <br><br>
-              <br><br>
+
               <br><br>
               <br><br>
               <br><br>
               <br><br>
               <p id="damage_value"></p>
+              <br><br>
+              <br><br>
+              <br><br>
               </p>
             </div>
           <script src="keisan.js"></script>
@@ -202,59 +201,14 @@
   </head>
   <body>
     <h1 class="fadeUp">部員紹介</h1>
-    <input type="text" class="delay-time04 fadeUp" id="memberIdInput" placeholder="(例:A000000)" style="width: 100px;">
-    <button class="delay-time04 fadeUp" id="memberButton">検索</button>
+    <input type="text" class="delay-time04 fadeUp" id="memberIdInput" style="float: left;" placeholder="(例:A000000)">
+    <button class="delay-time04 fadeUp" id="memberButton" style="float: left;">検索</button>
     <button class="delay-time04 fadeUp" id="membersButton" style="float: right;">簡易表記</button>
     <br></br>
     <div class="delay-time02 fadeUp" id="members"></div>
     <script src="member.js"></script>
   </body>
 </div>
-
-
-<script>
-  // JavaScriptコードをここに配置
-  const tabItems = document.querySelectorAll('.tab-list-item');
-  const tabContents = document.querySelectorAll('.tab-contents-item');
-  let currentTab = 0;
-  let touchStartX = 0;
-
-  function handleTabClick(index) {
-    if (index === currentTab) return;
-
-    tabItems[currentTab].classList.remove('active');
-    tabItems[index].classList.add('active');
-
-    tabContents[currentTab].classList.remove('show');
-    tabContents[index].classList.add('show');
-
-    currentTab = index;
-  }
-
-  function handleTouchStart(event) {
-    touchStartX = event.touches[0].clientX;
-  }
-
-  function handleTouchEnd(event) {
-    const touchEndX = event.changedTouches[0].clientX;
-    const touchDiffX = touchEndX - touchStartX;
-
-    if (touchDiffX > 50 && currentTab > 0) {
-      handleTabClick(currentTab - 1); // 左にスワイプした場合、前のタブを表示
-    } else if (touchDiffX < -50 && currentTab < tabItems.length - 1) {
-      handleTabClick(currentTab + 1); // 右にスワイプした場合、次のタブを表示
-    }
-  }
-
-  // タブのクリックイベントを追加
-  tabItems.forEach((item, index) => {
-    item.addEventListener('click', () => handleTabClick(index));
-  });
-
-  // タッチイベントを追加
-  document.addEventListener('touchstart', handleTouchStart);
-  document.addEventListener('touchend', handleTouchEnd);
-</script>
 
 
     <div id="root"></div>
