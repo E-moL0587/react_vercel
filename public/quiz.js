@@ -2,6 +2,9 @@ const pokemonImage = document.getElementById('pokemon-image');
 const guessInput = document.getElementById('guess-input');
 const submitButton = document.getElementById('submit-button');
 const result = document.getElementById('result');
+const score = document.getElementById('score');
+
+let totalScore = 0;
 
 // ランダムなポケモンのIDを生成する関数
 const getRandomPokemonId = () => {
@@ -58,27 +61,35 @@ const createPokemonQuestion = () => {
 
   getPokemonDataAndOverrideName();
 
-  // クイズの答えをチェックする関数
-  const checkAnswer = () => {
-    const userGuess = guessInput.value.toLowerCase();
-    guessInput.value = ''; // 入力された文字をクリア
+// クイズの答えをチェックする関数
+const checkAnswer = () => {
+  const userGuess = guessInput.value.toLowerCase();
+  guessInput.value = ''; // 入力された文字をクリア
 
-    if (userGuess === pokemonName) {
-      result.textContent = `正解です！このポケモンは ${userGuess} です。`;
-    } else {
-      result.textContent = `不正解です... このポケモンは「 ${pokemonName} 」です。あなたの答えは「 ${userGuess} 」です。`;
-    }
+  let points = 0;
+  if (userGuess === pokemonName) {
+    points = userGuess.length * 100;
+    totalScore += points;
+    result.textContent = `正解です！このポケモンは ${userGuess} です。獲得したポイント: ${points}`;
+  } else {
+    points = 300;
+    totalScore -= points;
+    if (totalScore < 0) totalScore = 0; // ポイントが負の値にならないようにする
+    result.textContent = `不正解です... このポケモンは「 ${pokemonName} 」です。あなたの答えは「 ${userGuess} 」です。失ったポイント: ${points}`;
+  }
 
-    // 答えを提出ボタンから削除
-    submitButton.removeEventListener('click', checkAnswer);
-    guessInput.removeEventListener('keydown', submitOnEnter);
+  score.textContent = `総ポイントは ${totalScore}p です`;
 
-    // 一定時間待って次の問題を作成
-    setTimeout(() => {
-      result.textContent = '';
-      createPokemonQuestion();
-    }, 3000);
-  };
+  // 答えを提出ボタンから削除
+  submitButton.removeEventListener('click', checkAnswer);
+  guessInput.removeEventListener('keydown', submitOnEnter);
+
+  // 一定時間待って次の問題を作成
+  setTimeout(() => {
+    result.textContent = '';
+    createPokemonQuestion();
+  }, 3000);
+};
 
   // Enterキーで答えを提出する関数
   const submitOnEnter = event => {
