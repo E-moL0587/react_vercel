@@ -5,7 +5,7 @@ const result = document.getElementById('result');
 
 // ランダムなポケモンのIDを生成する関数
 const getRandomPokemonId = () => {
-  return Math.floor(Math.random() * 1009) + 1;
+  return Math.floor(Math.random() * 1009) + 1; // 1010匹 2023/05現在;
 };
 
 // ポケモンの問題を作成する関数
@@ -17,46 +17,34 @@ const createPokemonQuestion = () => {
     try {
       const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${randomPokemonId}`);
       const data = await response.json();
-  
+
       pokemonName = data.name;
       const pokemonImageUrl = data.sprites.front_default;
-  
+
       // 画像を表示
       const imageElement = document.createElement('img');
       imageElement.src = pokemonImageUrl;
       pokemonImage.innerHTML = '';
       pokemonImage.appendChild(imageElement);
-  
+
     } catch (error) {
       console.log(error);
     }
   }
-  
-
-
-
 
   async function fetchCSV() {
     const response = await fetch('pokemon_data2.csv'); // CSVファイルのURLを指定します
     const text = await response.text();
     const lines = text.split('\n'); // 行ごとに分割します
-  
+
     data = [];
     for (let i = 1; i < lines.length; i++) {
       const row = lines[i].split(','); // カンマで区切られたデータを取得します
       data.push(row);
     }
-  
+
     return data;
   }
-  
-  
-
-
-
-
-
-
 
   async function getPokemonDataAndOverrideName() {
     await getPokemonInfo(randomPokemonId);
@@ -68,51 +56,79 @@ const createPokemonQuestion = () => {
     }
   }
 
-
-
-
-
   getPokemonDataAndOverrideName();
 
+  // クイズの答えをチェックする関数
+  const checkAnswer = () => {
+    const userGuess = guessInput.value.toLowerCase();
+    guessInput.value = ''; // 入力された文字をクリア
 
+    if (userGuess === pokemonName) {
+      result.textContent = `正解です！このポケモンは ${userGuess} です。`;
+    } else {
+      result.textContent = `不正解です... このポケモンは「 ${pokemonName} 」です。あなたの答えは「 ${userGuess} 」です。`;
+    }
 
+    // 答えを提出ボタンから削除
+    submitButton.removeEventListener('click', checkAnswer);
+    guessInput.removeEventListener('keydown', submitOnEnter);
 
+    // 一定時間待って次の問題を作成
+    setTimeout(() => {
+      result.textContent = '';
+      createPokemonQuestion();
+    }, 3000);
+  };
 
+  // Enterキーで答えを提出する関数
+  const submitOnEnter = event => {
+    if (event.key === 'Enter') {
+      checkAnswer();
+    }
+  };
 
-      // クイズの答えをチェックする関数
-      const checkAnswer = () => {
-        const userGuess = guessInput.value.toLowerCase();
-        guessInput.value = ''; // 入力された文字をクリア
-
-        if (userGuess === pokemonName) {
-          result.textContent = `正解です！このポケモンは ${userGuess} です。`;
-        } else {
-          result.textContent = `不正解です... このポケモンは「 ${pokemonName} 」です。あなたの答えは「 ${userGuess} 」です。`;
-        }
-
-        // 答えを提出ボタンから削除
-        submitButton.removeEventListener('click', checkAnswer);
-        guessInput.removeEventListener('keydown', submitOnEnter);
-
-        // 一定時間待って次の問題を作成
-        setTimeout(() => {
-          result.textContent = '';
-          createPokemonQuestion();
-        }, 3000);
-      };
-
-      // Enterキーで答えを提出する関数
-      const submitOnEnter = event => {
-        if (event.key === 'Enter') {
-          checkAnswer();
-        }
-      };
-
-      // 答えを提出ボタンに紐づける
-      submitButton.addEventListener('click', checkAnswer);
-      guessInput.addEventListener('keydown', submitOnEnter);
-
+  // 答えを提出ボタンに紐づける
+  submitButton.addEventListener('click', checkAnswer);
+  guessInput.addEventListener('keydown', submitOnEnter);
 };
 
 // 最初の問題を作成
 createPokemonQuestion();
+
+
+
+
+
+
+
+var isDarkened = false; // 画像が黒くなっているかどうかのフラグ
+
+// ボタンがクリックされた時の処理
+document.getElementById("myButton").addEventListener("click", function() {
+  var imageContainer = document.getElementById("pokemon-image");
+
+  if (isDarkened) {
+    // 画像がすでに黒くなっている場合、元の色に戻す
+    imageContainer.classList.remove("darkened");
+    isDarkened = false;
+  } else {
+    // 画像がまだ黒くなっていない場合、黒くする
+    imageContainer.classList.add("darkened");
+    isDarkened = true;
+  }
+});
+
+// 次へボタンがクリックされた時の処理
+document.getElementById("submit-button").addEventListener("click", function() {
+  var imageContainer = document.getElementById("pokemon-image");
+
+  if (isDarkened) {
+    // 画像がすでに黒くなっている場合、一時的に元の色に戻す
+    imageContainer.classList.remove("darkened");
+
+    // 3秒後に再び黒くする
+    setTimeout(function() {
+      imageContainer.classList.add("darkened");
+    }, 3000);
+  }
+});
