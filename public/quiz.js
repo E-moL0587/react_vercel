@@ -78,7 +78,7 @@ const checkAnswer = () => {
     result.textContent = `不正解です... このポケモンは「 ${pokemonName} 」です。あなたの答えは「 ${userGuess} 」です。失ったポイント: ${points}`;
   }
 
-  score.textContent = `総ポイントは ${totalScore}p です`;
+  score.textContent = `総ポイントは ${totalScore}p です！`;
 
   // 答えを提出ボタンから削除
   submitButton.removeEventListener('click', checkAnswer);
