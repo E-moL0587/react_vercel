@@ -68,11 +68,11 @@ const checkAnswer = () => {
 
   let points = 0;
   if (userGuess === pokemonName) {
-    points = userGuess.length * 100;
+    points = userGuess.length * (isDarkened ? 200 : 100); // 黒くなっている場合は2倍のポイント、そうでない場合は通常のポイント
     totalScore += points;
     result.textContent = `正解です！このポケモンは ${userGuess} です。獲得したポイント: ${points}`;
   } else {
-    points = 300;
+    points = 300 * (isDarkened ? 2 : 1); // 黒くなっている場合は0.5倍のポイント、そうでない場合は通常のポイント
     totalScore -= points;
     if (totalScore < 0) totalScore = 0; // ポイントが負の値にならないようにする
     result.textContent = `不正解です... このポケモンは「 ${pokemonName} 」です。あなたの答えは「 ${userGuess} 」です。失ったポイント: ${points}`;
