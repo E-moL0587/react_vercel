@@ -32,7 +32,6 @@
     <font color="ffffff">
       <ul class="tab-list">
         <li class="tab-list-item active">　ホーム　</li>
-        <li class="tab-list-item">　日程表　</li>
         <li class="tab-list-item">　計算機　</li>
         <li class="tab-list-item">　部員欄　</li>
         <li class="tab-list-item">　クイズ　</li>
@@ -94,19 +93,6 @@
       </div>
     </div>
 
-<div class="tab-contents-item">
-  <br><br>
-    <h1 class="fadeUp">スケジュール</h1>
-    <br><br>
-    <p class="delay-time02 fadeUp">
-      毎週火曜日と水曜日の5限(16:50~)から<br><br>
-      9-305号室にて活動しています！
-    </p>
-    <p class="delay-time04 fadeUp">
-      また、部活費用は無償で兼部も可能です。<br><br>
-    </p>  
-  </ul></ul>
-</div>
 
 
 
@@ -206,6 +192,20 @@
   </head>
   <body>
     <br><br>
+    <h1 class="fadeUp">スケジュール</h1>
+    <br><br>
+    <p class="delay-time02 fadeUp">
+      毎週火曜日と水曜日の5限(16:50~)から<br><br>
+      9-305号室にて活動しています！
+    </p>
+    <p class="delay-time04 fadeUp">
+      また、部活費用は無償で兼部も可能です。<br><br>
+    </p>
+    <br><br><br><br>
+
+
+
+    <br><br>
     <h1 class="fadeUp">部員紹介</h1>
     <input type="text" class="delay-time04 fadeUp" id="memberIdInput" style="float: left;" placeholder="(例:A000000)">
     <button class="delay-time04 fadeUp" id="memberButton" style="float: left;">検索</button>
@@ -222,23 +222,38 @@
   <!DOCTYPE html>
   <html>
   <head>
-    <title>Pokémon Quiz</title>
-    <link rel="stylesheet" type="text/css" href="quiz.css">
+    <title>はじめるボタン</title>
+    <style>
+      /* CSS スタイルをここに追加 */
+    </style>
   </head>
   <body>
     <br><br>
     <h1>ポケモンクイズ</h1>
-    <div id="pokemon-image"></div>
+    <p>1010匹すべています！シルエット問題にするとスコアが2倍になります</p>
+    <button id="startButton">はじめる</button>
+    <p>予期しない答えがでますが、怒らないでください(´；ω；`)ｳｩｩ</p>
     <br><br>
-    <button id="myButton">難問</button>
-    <input type="text" id="guess-input" placeholder="ポケモン名を答えてください...">
-    <button id="submit-button">次へ</button>
-    <p id="score"></p>
-    <p id="result"></p>
+    <p>[近日実装予定の内容]<br><br>
+      ・スコア表示(結果)<br><br>
+      ・DBを介してのランキング表示<br><br>
+      ・難易度調整<br><br>
+      ・SVポケモンの実装<br><br>
+    </p>
   
-    <script src="quiz.js"></script>
+    <script src="countdown.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var startButton = document.getElementById("startButton");
+        
+        startButton.addEventListener("click", function() {
+          window.location.href = "countdown.html";
+        });
+      });
+    </script>
   </body>
   </html>
+  
   
   
   
