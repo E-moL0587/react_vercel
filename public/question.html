@@ -2,12 +2,17 @@
   <html>
   <head>
     <title>Pokémon Quiz</title>
-    <link rel="stylesheet" type="text/css" href="quiz.css">
+    <link rel="stylesheet" type="text/css" href="question.css">
+    <div id="video-area">
+      <video id="video" poster="image_box/zoroa.jpg" webkit-playsinline playsinline muted autoplay loop>
+        <source src="image_box/zoroa.jpg" type="video/mp4">
+      </video>
+    </div>
   </head>
   <body>
     <br><br>
     <h1>ポケモンクイズ</h1>
-    <div id="countdown2"></div>
+    <p id="countdown2"></p>
     <div id="pokemon-image"></div>
     <br><br>
     <button id="myButton">難問</button>
@@ -15,7 +20,7 @@
     <button id="submit-button">次へ</button>
     <p id="score"></p>
     <p id="result"></p>
-    <script src="quiz.js"></script>
+    <script src="question.js"></script>
     <script src="countdown2.js"></script>
   </body>
 </html>
