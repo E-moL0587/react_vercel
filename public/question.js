@@ -79,6 +79,9 @@ const checkAnswer = () => {
   }
 
   score.textContent = `総ポイントは ${totalScore}p です！`;
+  
+  // スコアをlocalStorageに保存
+  localStorage.setItem('totalScore', totalScore.toString());
 
   // 答えを提出ボタンから削除
   submitButton.removeEventListener('click', checkAnswer);

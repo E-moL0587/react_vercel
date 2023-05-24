@@ -7,10 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="蹊モンガの公式ホームページです。(E_moL)" />
-
-
-
-
       <div id="video-area">
         <video id="video" poster="image_box/zoroa.jpg" webkit-playsinline playsinline muted autoplay loop>
           <source src="image_box/zoroa.jpg" type="video/mp4">
@@ -222,16 +218,15 @@
   <!DOCTYPE html>
   <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>はじめるボタン</title>
-    <style>
-      /* CSS スタイルをここに追加 */
-    </style>
   </head>
   <body>
     <br><br>
     <h1>ポケモンクイズ</h1>
-    <p>1010匹すべています！シルエット問題にするとスコアが2倍になります</p>
-    <button id="startButton">はじめる</button>
+    <p>1010匹の中から出題されます</p>
+    <button id="startButton" style="height: 40px;">はじめる</button><br><br>
+    <button id="extraButton" style="height: 40px;">　練習　</button>
     <p>予期しない答えがでますが、怒らないでください(´；ω；`)ｳｩｩ</p>
     <br><br>
     <p>[近日実装予定の内容]<br><br>
@@ -248,6 +243,14 @@
         
         startButton.addEventListener("click", function() {
           window.location.href = "countdown.html";
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function() {
+        var extraButton = document.getElementById("extraButton");
+        
+        extraButton.addEventListener("click", function() {
+          window.location.href = "question2.html";
         });
       });
     </script>

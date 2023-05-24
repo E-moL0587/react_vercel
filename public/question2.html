@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Pokémon Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="question.css">
+    <div id="video-area">
+      <video id="video" poster="image_box/zoroa.jpg" webkit-playsinline playsinline muted autoplay loop>
+        <source src="image_box/zoroa.jpg" type="video/mp4">
+      </video>
+    </div>
+  </head>
+  <body>
+    <br><br>
+    <h1>ポケモンクイズ</h1>
+    <div id="pokemon-image"></div>
+    <br><br>
+    <button id="myButton">難問</button>
+    <input type="text" id="guess-input" placeholder="ポケモン名を答えてください...">
+    <button id="submit-button">次へ</button>
+    <p id="score"></p>
+    <p id="result"></p>
+    <br><br>
+    <button id="finish-button">おわる</button>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var finishbutton = document.getElementById("finish-button");
+      
+      finishbutton.addEventListener("click", function() {
+        window.location.href = "index.html";
+      });
+    });
+    </script>
+    <script src="question.js"></script>
+  </body>
+</html>

@@ -13,3 +13,11 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
+// スコアの取得
+const totalScore = localStorage.getItem('totalScore');
+
+// スコアを表示する要素を取得
+const scoreElement = document.getElementById('score');
+
+// スコアを要素に反映
+scoreElement.textContent = `総ポイントは ${totalScore}p です！`;
