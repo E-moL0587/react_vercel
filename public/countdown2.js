@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     var countdownElement = document.getElementById("countdown2");
     var count = 60; // カウントダウンの秒数
-  
+
     function updateCountdown() {
       countdownElement.innerHTML = count + "秒";
   

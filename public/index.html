@@ -85,6 +85,81 @@
         <br></br>
         <br></br>
         <br></br><br></br><br></br><br></br><br>
+
+
+
+
+
+
+        <!-- <!DOCTYPE html>
+        <html>
+        <head>
+          <title>Pokémon Image</title>
+        </head>
+        <body>
+          <div id="pokemon-image"></div>
+          <script>
+            // 図鑑番号を指定してポケモンの画像を取得
+            const pokedexNumber = 10238; // 例: ピカチュウの図鑑番号
+            getPokemonImage(pokedexNumber);
+        
+            // ポケモンの画像を取得して表示する関数
+            function getPokemonImage(pokedexNumber) {
+              const baseUrl = 'https://pokeapi.co/api/v2';
+              const endpoint = `/pokemon/${pokedexNumber}`;
+        
+              // APIリクエスト
+              fetch(baseUrl + endpoint)
+                .then(response => response.json())
+                .then(data => {
+                  const pokemonImage = data.sprites.front_default;
+                  const imageElement = document.createElement('img');
+                  imageElement.src = pokemonImage;
+                  document.getElementById('pokemon-image').appendChild(imageElement);
+                })
+                .catch(error => console.log(error));
+            }
+          </script>
+        </body>
+        </html>
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <title>色違い</title>
+        </head>
+        <body>
+          <img id="pikachu-image" src="" alt="色違いのピカチュウ">
+        
+          <script>
+            // PokeAPIから色違いのピカチュウのデータを取得
+            fetch('https://pokeapi.co/api/v2/pokemon/10238/')
+              .then(response => response.json())
+              .then(data => {
+                // 色違いのピカチュウのスプライト画像URLを取得
+                const spriteUrl = data.sprites.front_shiny;
+                
+                // 画像を表示
+                const pikachuImage = document.getElementById('pikachu-image');
+                pikachuImage.src = spriteUrl;
+              })
+              .catch(error => {
+                console.log('データの取得に失敗しました', error);
+              });
+          </script>
+        </body>
+        </html> -->
+
+
+
+
+
+
+
+
+
+
+
         </ul></ul>
       </div>
     </div>
@@ -111,16 +186,19 @@
 
               
               <h2 class="delay-time04 fadeUp">攻撃側</h2>
-              <input type="text" class="delay-time02 fadeUp" id="p_name" style="height: 60px; width: 300px;" size="35" placeholder="ポケモン名を入力してください..." oninput="p_name('pokemon_data.csv')">
+              <div class="underline-input"><input type="text" class="delay-time02 fadeUp" id="p_name" size="35" placeholder="ポケモン名を入力してください..." oninput="p_name('pokemon_data.csv')"></div>
+
               <p id="number_data"></p>
               <p id="iv_data"></p>
               <p id="type_data"></p>
 
-              <input type="text" class="delay-time02 fadeUp" id="p_move" style="height: 60px; width: 300px;" size="35" placeholder="技名を入力してください..." oninput="move('move_data.csv','pokemon_data.csv')">
+              <div class="underline-input"><input type="text" class="delay-time02 fadeUp" id="p_move" size="35" placeholder="技名を入力してください..." oninput="move('move_data.csv','pokemon_data.csv')"></div>
+
               <p id="atk_data"></p>
               <p id="atype_data"></p>
               <p id="ps_data"></p>
 
+              <br><br>
               <p class="delay-time06 fadeUp">
                 技の威力<input id="mv" type="text" size="1" maxlength="3">
                 <br></br>
@@ -135,11 +213,13 @@
               <br></br>
 
               <h2 class="delay-time04 fadeUp">防御側</h2>
-              <input type="text" class="delay-time02 fadeUp" id="q_name" style="height: 60px; width: 300px;" size="35" placeholder="ポケモン名を入力してください..." oninput="q_name('pokemon_data.csv')">
+              <div class="underline-input"><input type="text" class="delay-time02 fadeUp" id="q_name" size="35" placeholder="ポケモン名を入力してください..." oninput="q_name('pokemon_data.csv')"></div>
+              
               <p id="number_data2"></p>
               <p id="iv_data2"></p>
               <p id="type_data2"></p>
 
+              <br><br>
               <p class="delay-time06 fadeUp">
                 種族値(B or D)<input id="sv2" type="text" size="1" maxlength="3">
                 <br></br>
@@ -210,6 +290,8 @@
     <div class="delay-time02 fadeUp" id="members"></div>
     <script src="member.js"></script>
   </body>
+
+
 </div>
 
 
@@ -227,13 +309,10 @@
     <p>1010匹の中から出題されます</p>
     <button id="startButton" style="height: 40px;">はじめる</button><br><br>
     <button id="extraButton" style="height: 40px;">　練習　</button>
-    <p>予期しない答えがでますが、怒らないでください(´；ω；`)ｳｩｩ</p>
+    <p>「カプコケコ」のように「・」は省いてかまいません。カタカナor半角英数字で入力はお願いします。</p>
     <br><br>
     <p>[近日実装予定の内容]<br><br>
-      ・スコア表示(結果)<br><br>
       ・DBを介してのランキング表示<br><br>
-      ・難易度調整<br><br>
-      ・SVポケモンの実装<br><br>
     </p>
   
     <script src="countdown.js"></script>
