@@ -88,7 +88,9 @@ toggleButton.addEventListener('click', () => {
 
   if (codeEnabled) {
     toggleButton.textContent = '無効化';
+    toggleButton.style.backgroundColor = ''; // 有効化の場合の背景色を赤色に変更
   } else {
     toggleButton.textContent = '有効化';
+    toggleButton.style.backgroundColor = 'yellow'; // 背景色を元に戻す（デフォルトの状態）
   }
 });
