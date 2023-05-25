@@ -27,10 +27,10 @@
 26, raichu, ライチュウ
 27, sandshrew, サンド
 28, sandslash, サンドパン
-29, nidoran-f, ニドラン♀
+29, nidoran-f, ニドラン
 30, nidorina, ニドリーナ
 31, nidoqueen, ニドクイン
-32, nidoran-m, ニドラン♂
+32, nidoran-m, ニドラン
 33, nidorino, ニドリーノ
 34, nidoking, ニドキング
 35, clefairy, ピッピ
@@ -1009,274 +1009,274 @@
 1008, miraidon, ミライドン
 1009, walking-wake, ウネルミナモ
 1010, iron-leaves, テツノイサハ
-10001,deoxys-attack
-10002,deoxys-defense
-10003,deoxys-speed
-10004,wormadam-sandy
-10005,wormadam-trash
-10006,shaymin-sky
-10007,giratina-origin
-10008,rotom-heat
-10009,rotom-wash
-10010,rotom-frost
-10011,rotom-fan
-10012,rotom-mow
-10013,castform-sunny
-10014,castform-rainy
-10015,castform-snowy
-10016,basculin-blue-striped
-10017,darmanitan-zen
-10018,meloetta-pirouette
-10019,tornadus-therian
-10020,thundurus-therian
-10021,landorus-therian
-10022,kyurem-black
-10023,kyurem-white
-10024,keldeo-resolute
-10025,meowstic-female
-10026,aegislash-blade
-10027,pumpkaboo-small
-10028,pumpkaboo-large
-10029,pumpkaboo-super
-10030,gourgeist-small
-10031,gourgeist-large
-10032,gourgeist-super
-10033,venusaur-mega
-10034,charizard-mega-x
-10035,charizard-mega-y
-10036,blastoise-mega
-10037,alakazam-mega
-10038,gengar-mega
-10039,kangaskhan-mega
-10040,pinsir-mega
-10041,gyarados-mega
-10042,aerodactyl-mega
-10043,mewtwo-mega-x
-10044,mewtwo-mega-y
-10045,ampharos-mega
-10046,scizor-mega
-10047,heracross-mega
-10048,houndoom-mega
-10049,tyranitar-mega
-10050,blaziken-mega
-10051,gardevoir-mega
-10052,mawile-mega
-10053,aggron-mega
-10054,medicham-mega
-10055,manectric-mega
-10056,banette-mega
-10057,absol-mega
-10058,garchomp-mega
-10059,lucario-mega
-10060,abomasnow-mega
-10061,floette-eternal
-10062,latias-mega
-10063,latios-mega
-10064,swampert-mega
-10065,sceptile-mega
-10066,sableye-mega
-10067,altaria-mega
-10068,gallade-mega
-10069,audino-mega
-10070,sharpedo-mega
-10071,slowbro-mega
-10072,steelix-mega
-10073,pidgeot-mega
-10074,glalie-mega
-10075,diancie-mega
-10076,metagross-mega
-10077,kyogre-primal
-10078,groudon-primal
-10079,rayquaza-mega
-10080,pikachu-rock-star
-10081,pikachu-belle
-10082,pikachu-pop-star
-10083,pikachu-phd
-10084,pikachu-libre
-10085,pikachu-cosplay
-10086,hoopa-unbound
-10087,camerupt-mega
-10088,lopunny-mega
-10089,salamence-mega
-10090,beedrill-mega
-10091,rattata-alola
-10092,raticate-alola
-10093,raticate-totem-alola
-10094,pikachu-original-cap
-10095,pikachu-hoenn-cap
-10096,pikachu-sinnoh-cap
-10097,pikachu-unova-cap
-10098,pikachu-kalos-cap
-10099,pikachu-alola-cap
-10100,raichu-alola
-10101,sandshrew-alola
-10102,sandslash-alola
-10103,vulpix-alola
-10104,ninetales-alola
-10105,diglett-alola
-10106,dugtrio-alola
-10107,meowth-alola
-10108,persian-alola
-10109,geodude-alola
-10110,graveler-alola
-10111,golem-alola
-10112,grimer-alola
-10113,muk-alola
-10114,exeggutor-alola
-10115,marowak-alola
-10116,greninja-battle-bond
-10117,greninja-ash
-10118,zygarde-10-power-construct
-10119,zygarde-50-power-construct
-10120,zygarde-complete
-10121,gumshoos-totem
-10122,vikavolt-totem
-10123,oricorio-pom-pom
-10124,oricorio-pau
-10125,oricorio-sensu
-10126,lycanroc-midnight
-10127,wishiwashi-school
-10128,lurantis-totem
-10129,salazzle-totem
-10130,minior-orange-meteor
-10131,minior-yellow-meteor
-10132,minior-green-meteor
-10133,minior-blue-meteor
-10134,minior-indigo-meteor
-10135,minior-violet-meteor
-10136,minior-red
-10137,minior-orange
-10138,minior-yellow
-10139,minior-green
-10140,minior-blue
-10141,minior-indigo
-10142,minior-violet
-10143,mimikyu-busted
-10144,mimikyu-totem-disguised
-10145,mimikyu-totem-busted
-10146,kommo-o-totem
-10147,magearna-original
-10148,pikachu-partner-cap
-10149,marowak-totem
-10150,ribombee-totem
-10151,rockruff-own-tempo
-10152,lycanroc-dusk
-10153,araquanid-totem
-10154,togedemaru-totem
-10155,necrozma-dusk
-10156,necrozma-dawn
-10157,necrozma-ultra
-10158,pikachu-starter
-10159,eevee-starter
-10160,pikachu-world-cap
-10161,meowth-galar
-10162,ponyta-galar
-10163,rapidash-galar
-10164,slowpoke-galar
-10165,slowbro-galar
-10166,farfetchd-galar
-10167,weezing-galar
-10168,mr-mime-galar
-10169,articuno-galar
-10170,zapdos-galar
-10171,moltres-galar
-10172,slowking-galar
-10173,corsola-galar
-10174,zigzagoon-galar
-10175,linoone-galar
-10176,darumaka-galar
-10177,darmanitan-galar-standard
-10178,darmanitan-galar-zen
-10179,yamask-galar
-10180,stunfisk-galar
-10181,zygarde-10
-10182,cramorant-gulping
-10183,cramorant-gorging
-10184,toxtricity-low-key
-10185,eiscue-noice
-10186,indeedee-female
-10187,morpeko-hangry
-10188,zacian-crowned
-10189,zamazenta-crowned
-10190,eternatus-eternamax
-10191,urshifu-rapid-strike
-10192,zarude-dada
-10193,calyrex-ice
-10194,calyrex-shadow
-10195,venusaur-gmax
-10196,charizard-gmax
-10197,blastoise-gmax
-10198,butterfree-gmax
-10199,pikachu-gmax
-10200,meowth-gmax
-10201,machamp-gmax
-10202,gengar-gmax
-10203,kingler-gmax
-10204,lapras-gmax
-10205,eevee-gmax
-10206,snorlax-gmax
-10207,garbodor-gmax
-10208,melmetal-gmax
-10209,rillaboom-gmax
-10210,cinderace-gmax
-10211,inteleon-gmax
-10212,corviknight-gmax
-10213,orbeetle-gmax
-10214,drednaw-gmax
-10215,coalossal-gmax
-10216,flapple-gmax
-10217,appletun-gmax
-10218,sandaconda-gmax
-10219,toxtricity-amped-gmax
-10220,centiskorch-gmax
-10221,hatterene-gmax
-10222,grimmsnarl-gmax
-10223,alcremie-gmax
-10224,copperajah-gmax
-10225,duraludon-gmax
-10226,urshifu-single-strike-gmax
-10227,urshifu-rapid-strike-gmax
-10228,toxtricity-low-key-gmax
-10229,growlithe-hisui
-10230,arcanine-hisui
-10231,voltorb-hisui
-10232,electrode-hisui
-10233,typhlosion-hisui
-10234,qwilfish-hisui
-10235,sneasel-hisui
-10236,samurott-hisui
-10237,lilligant-hisui
-10238,zorua-hisui
-10239,zoroark-hisui
-10240,braviary-hisui
-10241,sliggoo-hisui
-10242,goodra-hisui
-10243,avalugg-hisui
-10244,decidueye-hisui
-10245,dialga-origin
-10246,palkia-origin
-10247,basculin-white-striped
-10248,basculegion-female
-10249,enamorus-therian
-10250,tauros-paldea-combat-breed
-10251,tauros-paldea-blaze-breed
-10252,tauros-paldea-aqua-breed
-10253,wooper-paldea
-10254,oinkologne-female
-10255,dudunsparce-three-segment
-10256,palafin-hero
-10257,maushold-family-of-three
-10258,tatsugiri-droopy
-10259,tatsugiri-stretchy
-10260,squawkabilly-blue-plumage
-10261,squawkabilly-yellow-plumage
-10262,squawkabilly-white-plumage
-10263,gimmighoul-roaming
-10264,koraidon-limited-build
-10265,koraidon-sprinting-build
-10266,koraidon-swimming-build
-10267,koraidon-gliding-build
-10268,miraidon-low-power-mode
-10269,miraidon-drive-mode
-10270,miraidon-aquatic-mode
-10271,miraidon-glide-mode
+10001,deoxys-attack, デオキシス
+10002,deoxys-defense, デオキシス
+10003,deoxys-speed, デオキシス
+10004,wormadam-sandy, ミノマダム
+10005,wormadam-trash, ミノマダム
+10006,shaymin-sky, シェイミ
+10007,giratina-origin, ギラティナ
+10008,rotom-heat, ヒートロトム
+10009,rotom-wash, ウォッシュロトム
+10010,rotom-frost, フロストロトム
+10011,rotom-fan, スピンロトム
+10012,rotom-mow, カットロトム
+10013,castform-sunny, ポワルン
+10014,castform-rainy, ポワルン
+10015,castform-snowy, ポワルン
+10016,basculin-blue-striped, バスラオ
+10017,darmanitan-zen, ヒヒダルマ
+10018,meloetta-pirouette, メロエッタ
+10019,tornadus-therian, トルネロス
+10020,thundurus-therian, ボルトロス
+10021,landorus-therian, ランドロス
+10022,kyurem-black, ブラックキュレム
+10023,kyurem-white, ホワイトキュレム
+10024,keldeo-resolute, ケルディオ
+10025,meowstic-female, ニャオニクス
+10026,aegislash-blade, ギルガルド
+10027,pumpkaboo-small, バケッチャ
+10028,pumpkaboo-large, バケッチャ
+10029,pumpkaboo-super, バケッチャ
+10030,gourgeist-small, パンプジン
+10031,gourgeist-large, パンプジン
+10032,gourgeist-super, パンプジン
+10033,venusaur-mega, メガフシギバナ
+10034,charizard-mega-x, メガリザードンy
+10035,charizard-mega-y, メガリザードンx
+10036,blastoise-mega, メガカメックス
+10037,alakazam-mega, メガフーディン
+10038,gengar-mega, メガゲンガー
+10039,kangaskhan-mega, メガガルーラ
+10040,pinsir-mega, メガカイロス
+10041,gyarados-mega, メガギャラドス
+10042,aerodactyl-mega, メガプテラ
+10043,mewtwo-mega-x, メガミュウツーx
+10044,mewtwo-mega-y, メガミュウツーy
+10045,ampharos-mega, メガデンリュウ
+10046,scizor-mega, メガハッサム
+10047,heracross-mega, メガヘラクロス
+10048,houndoom-mega, メガヘルガー
+10049,tyranitar-mega, メガバンギラス
+10050,blaziken-mega, メガバシャーモ
+10051,gardevoir-mega, メガサーナイト
+10052,mawile-mega, メガクチート
+10053,aggron-mega, メガボスゴドラ
+10054,medicham-mega, メガチャーレム
+10055,manectric-mega, メガライボルト
+10056,banette-mega, メガジュペッタ
+10057,absol-mega, メガアブソル
+10058,garchomp-mega, メガガブリアス
+10059,lucario-mega, メガルカリオ
+10060,abomasnow-mega, メガユキノオー
+10061,floette-eternal, フラエッテ
+10062,latias-mega, メガラティアス
+10063,latios-mega, メガラティオス
+10064,swampert-mega, メガラグラージ
+10065,sceptile-mega, メガジュカイン
+10066,sableye-mega, メガヤミラミ
+10067,altaria-mega, メガチルタリス
+10068,gallade-mega, メガエルレイド
+10069,audino-mega, メガタブンネ
+10070,sharpedo-mega, メガサメハダー
+10071,slowbro-mega, メガヤドラン
+10072,steelix-mega, メガハガネール
+10073,pidgeot-mega, メガピジョット
+10074,glalie-mega, メガオニゴーリ
+10075,diancie-mega, メガディアンシー
+10076,metagross-mega, メガメタグロス
+10077,kyogre-primal, ゲンシカイオーガ
+10078,groudon-primal, ゲンシグラードン
+10079,rayquaza-mega, メガレックウザ
+10080,pikachu-rock-star, ハードロックピカチュウ
+10081,pikachu-belle, マダムピカチュウ
+10082,pikachu-pop-star, アイドルピカチュウ
+10083,pikachu-phd, ドクターピカチュウ
+10084,pikachu-libre, マスクドピカチュウ
+10085,pikachu-cosplay, おきがえピカチュウ
+10086,hoopa-unbound, フーパ
+10087,camerupt-mega, メガバクーダ
+10088,lopunny-mega, メガミミロップ
+10089,salamence-mega, メガボーマンダ
+10090,beedrill-mega, メガスピアー
+10091,rattata-alola, アローラコラッタ
+10092,raticate-alola, アローララッタ
+10093,raticate-totem-alola, アローララッタ
+10094,pikachu-original-cap, ピカチュウ
+10095,pikachu-hoenn-cap, ピカチュウ
+10096,pikachu-sinnoh-cap, ピカチュウ
+10097,pikachu-unova-cap, ピカチュウ
+10098,pikachu-kalos-cap, ピカチュウ
+10099,pikachu-alola-cap, ピカチュウ
+10100,raichu-alola, アローラライチュウ
+10101,sandshrew-alola, アローラサンド
+10102,sandslash-alola, アローラサンドパン
+10103,vulpix-alola, アローラロコン
+10104,ninetales-alola, アローラキュウコン
+10105,diglett-alola, アローラディグダ
+10106,dugtrio-alola, アローラダグトリオ
+10107,meowth-alola, アローラニャース
+10108,persian-alola, アローラペルシアン
+10109,geodude-alola, アローライシツブテ
+10110,graveler-alola, アローラゴローン
+10111,golem-alola, アローラゴローニャ
+10112,grimer-alola, アローラベトベター
+10113,muk-alola, アローラベトベトン
+10114,exeggutor-alola, アローラナッシー
+10115,marowak-alola, アローラガラガラ
+10116,greninja-battle-bond, サトシゲッコウガ
+10117,greninja-ash, サトシゲッコウガ
+10118,zygarde-10-power-construct, ジガルデ
+10119,zygarde-50-power-construct, ジガルデ
+10120,zygarde-complete, ジガルデ
+10121,gumshoos-totem, デカグース
+10122,vikavolt-totem, クワガノン
+10123,oricorio-pom-pom, オドリドリ
+10124,oricorio-pau, オドリドリ
+10125,oricorio-sensu, オドリドリ
+10126,lycanroc-midnight, ルガルガン
+10127,wishiwashi-school, ヨワシ
+10128,lurantis-totem, ラランテス
+10129,salazzle-totem, エンニュート
+10130,minior-orange-meteor, メテノ
+10131,minior-yellow-meteor, メテノ
+10132,minior-green-meteor, メテノ
+10133,minior-blue-meteor, メテノ
+10134,minior-indigo-meteor, メテノ
+10135,minior-violet-meteor, メテノ
+10136,minior-red, メテノ
+10137,minior-orange, メテノ
+10138,minior-yellow, メテノ
+10139,minior-green, メテノ
+10140,minior-blue, メテノ
+10141,minior-indigo, メテノ
+10142,minior-violet, メテノ
+10143,mimikyu-busted, ミミッキュ
+10144,mimikyu-totem-disguised, ミミッキュ
+10145,mimikyu-totem-busted, ミミッキュ
+10146,kommo-o-totem, ジャラランガ
+10147,magearna-original, マギアナ
+10148,pikachu-partner-cap, ピカチュウ
+10149,marowak-totem, ガラガラ
+10150,ribombee-totem, アブリボン
+10151,rockruff-own-tempo, イワンコ
+10152,lycanroc-dusk, ルガルガン
+10153,araquanid-totem, オニシズクモ
+10154,togedemaru-totem, トゲデマル
+10155,necrozma-dusk, ネクロズマたそがれのたてがみ
+10156,necrozma-dawn, ネクロズマあかつきのつばさ
+10157,necrozma-ultra, ウルトラネクロズマ
+10158,pikachu-starter, ごめんなさい画像がないです認知済みです泣
+10159,eevee-starter, ごめんなさい画像がないです認知済みです泣
+10160,pikachu-world-cap, ごめんなさい画像がないです認知済みです泣
+10161,meowth-galar, ガラルニャース
+10162,ponyta-galar, ガラルポニータ
+10163,rapidash-galar, ガラルギャロップ
+10164,slowpoke-galar, ガラルヤドン
+10165,slowbro-galar, ガラルヤドラン
+10166,farfetchd-galar, ガラルカモネギ
+10167,weezing-galar, ガラルマタドガス
+10168,mr-mime-galar, ガラルバリヤード
+10169,articuno-galar, ガラルフリーザー
+10170,zapdos-galar, ガラルサンダー
+10171,moltres-galar, ガラルファイヤー
+10172,slowking-galar, ガラルヤドキング
+10173,corsola-galar, ガラルサニーゴ
+10174,zigzagoon-galar, ガラルジグザグマ
+10175,linoone-galar, ガラルマッスグマ
+10176,darumaka-galar, ガラルダルマッカ
+10177,darmanitan-galar-standard, ガラルヒヒダルマ
+10178,darmanitan-galar-zen, ガラルヒヒダルマ
+10179,yamask-galar, ガラルデスマス
+10180,stunfisk-galar, ガラルマッギョ
+10181,zygarde-10, ジガルデ
+10182,cramorant-gulping, ウッウ
+10183,cramorant-gorging, ウッウ
+10184,toxtricity-low-key, ストリンダー
+10185,eiscue-noice, コオリッポナイスフェイス
+10186,indeedee-female, イエッサン
+10187,morpeko-hangry, モルペコ
+10188,zacian-crowned, ザシアン
+10189,zamazenta-crowned, ザマゼンタ
+10190,eternatus-eternamax, ムゲンダイナ
+10191,urshifu-rapid-strike, ウーラオスれんげきのかた
+10192,zarude-dada, ごめんなさい画像がないです認知済みです泣
+10193,calyrex-ice, バドレックスはくばじょうのすがた
+10194,calyrex-shadow, バドレックスこくばじょうのすがた
+10195,venusaur-gmax, キョダイマックスフシギバナ
+10196,charizard-gmax, キョダイマックスリザードン
+10197,blastoise-gmax, キョダイマックスカメックス
+10198,butterfree-gmax, キョダイマックスバタフリー
+10199,pikachu-gmax, キョダイマックスピカチュウ
+10200,meowth-gmax, キョダイマックスニャース
+10201,machamp-gmax, キョダイマックスカイリキー
+10202,gengar-gmax, キョダイマックスゲンガー
+10203,kingler-gmax, キョダイマックスキングラー
+10204,lapras-gmax, キョダイマックスラプラス
+10205,eevee-gmax, キョダイマックスイーブイ
+10206,snorlax-gmax, キョダイマックスカビゴン
+10207,garbodor-gmax, キョダイマックスダストダス
+10208,melmetal-gmax, キョダイマックスメルメタル
+10209,rillaboom-gmax, キョダイマックスゴリランダー
+10210,cinderace-gmax, キョダイマックスエースバーン
+10211,inteleon-gmax, キョダイマックスインテレオン
+10212,corviknight-gmax, キョダイマックスアーマーガア
+10213,orbeetle-gmax, キョダイマックスイオルブ
+10214,drednaw-gmax, キョダイマックスカジリガメ
+10215,coalossal-gmax, キョダイマックスセキタンザン
+10216,flapple-gmax, キョダイマックスアップリュー
+10217,appletun-gmax, キョダイマックスタルップル
+10218,sandaconda-gmax, キョダイマックスサダイジャ
+10219,toxtricity-amped-gmax, キョダイマックスストリンダー
+10220,centiskorch-gmax, キョダイマックスマルヤクデ
+10221,hatterene-gmax, キョダイマックスブリムオン
+10222,grimmsnarl-gmax, キョダイマックスオーロンゲ
+10223,alcremie-gmax, キョダイマックスマホイップ
+10224,copperajah-gmax, キョダイマックスダイオウドウ
+10225,duraludon-gmax, キョダイマックスジュラルドン
+10226,urshifu-single-strike-gmax, キョダイマックスウーラオスいちげきのかた
+10227,urshifu-rapid-strike-gmax, キョダイマックスれんげきのかた
+10228,toxtricity-low-key-gmax, キョダイマックスストリンダー
+10229,growlithe-hisui, ヒスイガーディ
+10230,arcanine-hisui, ヒスイウインディ
+10231,voltorb-hisui, ヒスイビリリダマ
+10232,electrode-hisui, ヒスイマルマイン
+10233,typhlosion-hisui, ヒスイバクフーン
+10234,qwilfish-hisui, ヒスイハリーセン
+10235,sneasel-hisui, ヒスイニューラ
+10236,samurott-hisui, ヒスイダイケンキ
+10237,lilligant-hisui, ヒスイドレディア
+10238,zorua-hisui, ヒスイゾロア
+10239,zoroark-hisui, ヒスイゾロアーク
+10240,braviary-hisui, ヒスイウォーグル
+10241,sliggoo-hisui, ヒスイヌメイル
+10242,goodra-hisui, ヒスイヌメルゴン
+10243,avalugg-hisui, ヒスイクレベース
+10244,decidueye-hisui, ヒスイジュナイパー
+10245,dialga-origin, オリジンディアルガ
+10246,palkia-origin, オリジンパルキア
+10247,basculin-white-striped, バスラオ
+10248,basculegion-female, イダイトウ
+10249,enamorus-therian, ラブトロス
+10250,tauros-paldea-combat-breed, パルデアケンタロス
+10251,tauros-paldea-blaze-breed, パルデアケンタロス
+10252,tauros-paldea-aqua-breed, パルデアケンタロス
+10253,wooper-paldea, パルデアウパー
+10254,oinkologne-female, パフュートン
+10255,dudunsparce-three-segment, ノココッチ
+10256,palafin-hero, イルカマン
+10257,maushold-family-of-three, イッカネズミ
+10258,tatsugiri-droopy, シャリタツ
+10259,tatsugiri-stretchy, シャリタツ
+10260,squawkabilly-blue-plumage, イキリンコ
+10261,squawkabilly-yellow-plumage, イキリンコ
+10262,squawkabilly-white-plumage, イキリンコ
+10263,gimmighoul-roaming, コレクレー
+10264,koraidon-limited-build, ごめんなさい画像がないです認知済みです泣
+10265,koraidon-sprinting-build, ごめんなさい画像がないです認知済みです泣
+10266,koraidon-swimming-build, ごめんなさい画像がないです認知済みです泣
+10267,koraidon-gliding-build, ごめんなさい画像がないです認知済みです泣
+10268,miraidon-low-power-mode, ごめんなさい画像がないです認知済みです泣
+10269,miraidon-drive-modev, ごめんなさい画像がないです認知済みです泣
+10270,miraidon-aquatic-mode, ごめんなさい画像がないです認知済みです泣
+10271,miraidon-glide-mode, ごめんなさい画像がないです認知済みです泣

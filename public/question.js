@@ -5,17 +5,33 @@ const result = document.getElementById('result');
 const score = document.getElementById('score');
 
 let totalScore = 0;
+let userGuess = '';
+let pokemonName = '';
 
 // ランダムなポケモンのIDを生成する関数
 const getRandomPokemonId = () => {
-  return Math.floor(Math.random() * 1009) + 1; // 1010匹 2023/05現在;
+  
+  var randomNumber;
+
+  // ランダムに範囲を選ぶ
+  var range = Math.floor(Math.random() * 2); // 0または1をランダムに生成
+  
+  if (range === 0) {
+    // 0〜100の範囲からランダムな数値を生成
+    randomNumber = Math.floor(Math.random() * 1009) + 1;
+  } else {
+    // 200〜400の範囲からランダムな数値を生成
+    randomNumber = Math.floor(Math.random() * 271) + 10001 + 1;
+  }
+
+  return randomNumber;  
 };
 
 // ポケモンの問題を作成する関数
 const createPokemonQuestion = () => {
   const randomPokemonId = getRandomPokemonId();
 
-  // ポケモンの名前と画像を同期的に受け取ってます(#^.^#)
+  // ポケモンの名前と画像を同期的に受け取ってます
   async function getPokemonInfo(randomPokemonId) {
     try {
       const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${randomPokemonId}`);
@@ -55,7 +71,13 @@ const createPokemonQuestion = () => {
     for (let i = 0; i < data.length; i++) {
       var pokeENG = data[i][1]?.trim();
       var pokeJPN = data[i][2]?.trim();
-      if (pokemonName === pokeENG) pokemonName = pokeJPN;
+      if (pokemonName === pokeENG) {
+        pokemonName = pokeJPN;
+
+        // HTML要素の取得
+        var element = document.getElementById("len");
+        element.innerHTML = "このポケモンは "+ pokemonName.length + " 文字です";
+      }
     }
   }
 
@@ -87,11 +109,14 @@ const checkAnswer = () => {
   submitButton.removeEventListener('click', checkAnswer);
   guessInput.removeEventListener('keydown', submitOnEnter);
 
+  // 正解か不正解かに応じて待機時間を設定
+  const delay = userGuess === pokemonName ? 500 : 3000;
+
   // 一定時間待って次の問題を作成
   setTimeout(() => {
     result.textContent = '';
     createPokemonQuestion();
-  }, 3000);
+  }, delay);
 };
 
   // Enterキーで答えを提出する関数
@@ -140,9 +165,12 @@ document.getElementById("submit-button").addEventListener("click", function() {
     // 画像がすでに黒くなっている場合、一時的に元の色に戻す
     imageContainer.classList.remove("darkened");
 
-    // 3秒後に再び黒くする
+    // 正解か不正解かに応じて待機時間を設定
+    const delay = userGuess === pokemonName ? 500 : 3000;
+
+    // 指定した待機時間後に再び黒くする
     setTimeout(function() {
       imageContainer.classList.add("darkened");
-    }, 3000);
+    }, delay);
   }
 });

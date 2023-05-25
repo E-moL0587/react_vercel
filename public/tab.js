@@ -37,6 +37,7 @@ const tabItems = document.querySelectorAll('.tab-list-item');
 const tabContents = document.querySelectorAll('.tab-contents-item');
 let currentTab = 0;
 let touchStartX = 0;
+let codeEnabled = true; // JavaScriptのコードの有効/無効を管理するフラグ
 
 function handleTabClick(index) {
   if (index === currentTab) return;
@@ -55,6 +56,8 @@ function handleTouchStart(event) {
 }
 
 function handleTouchEnd(event) {
+  if (!codeEnabled) return; // コードが無効化されている場合、処理を終了
+
   const touchEndX = event.changedTouches[0].clientX;
   const touchDiffX = touchEndX - touchStartX;
 
@@ -67,9 +70,25 @@ function handleTouchEnd(event) {
 
 // タブのクリックイベントを追加
 tabItems.forEach((item, index) => {
-  item.addEventListener('click', () => handleTabClick(index));
+  item.addEventListener('click', () => {
+    if (codeEnabled) {
+      handleTabClick(index);
+    }
+  });
 });
 
 // タッチイベントを追加
 document.addEventListener('touchstart', handleTouchStart);
 document.addEventListener('touchend', handleTouchEnd);
+
+// 設定ボタンのクリックイベントを追加
+const toggleButton = document.getElementById('toggleButton');
+toggleButton.addEventListener('click', () => {
+  codeEnabled = !codeEnabled; // コードの有効/無効を切り替える
+
+  if (codeEnabled) {
+    toggleButton.textContent = '無効化';
+  } else {
+    toggleButton.textContent = '有効化';
+  }
+});
