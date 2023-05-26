@@ -9,14 +9,20 @@ let totalScore = 0;
 // ランダムなポケモンのIDを生成する関数
 const getRandomPokemonId = () => {
   var randomNumber;
-  var range = Math.floor(Math.random() * 2);
-  if (range === 0) {
-    randomNumber = Math.floor(Math.random() * 1009) + 1;
-  } else {
-    randomNumber = Math.floor(Math.random() * 271) + 10001 + 1;
-  }
-  return randomNumber;  
+  var excludedNumbers = [0, 10158, 10159, 10160, 10192, 10264, 10265, 10266, 10267, 10268, 10269, 10270, 10271]; // 除外したい数字のリスト
+
+  do {
+    var range = Math.floor(Math.random() * 2);
+    if (range === 0) {
+      randomNumber = Math.floor(Math.random() * 1010);
+    } else {
+      randomNumber = Math.floor(Math.random() * 270) + 10001;
+    }
+  } while (excludedNumbers.includes(randomNumber));
+
+  return randomNumber;
 };
+
 
 // ポケモンの問題を作成する関数
 const createPokemonQuestion = () => {
@@ -175,4 +181,10 @@ document.getElementById("myButton").addEventListener("click", function() {
   }
 });
 
-
+document.addEventListener("DOMContentLoaded", function() {
+  var finishbutton = document.getElementById("finish-button");
+  
+  finishbutton.addEventListener("click", function() {
+    window.location.href = "index.html";
+  });
+});
