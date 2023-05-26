@@ -165,10 +165,10 @@ document.addEventListener("keydown", function(event) {
 createPokemonQuestion();
 
 var isDarkened = false; // 画像が黒くなっているかどうかのフラグ
+var imageContainer = document.getElementById("pokemon-image");
 
 // ボタンがクリックされた時の処理
 document.getElementById("myButton").addEventListener("click", function() {
-  var imageContainer = document.getElementById("pokemon-image");
 
   if (isDarkened) {
     // 画像がすでに黒くなっている場合、元の色に戻す
