@@ -97,6 +97,42 @@ const checkAnswer = () => {
   submitButton.removeEventListener('click', checkAnswer);
   guessInput.removeEventListener('keydown', submitOnEnter);
 
+
+
+
+  
+// 次へボタンがクリックされた時の処理
+function handleButtonClick() {
+  var imageContainer = document.getElementById("pokemon-image");
+
+  const delay = userGuess === pokemonName ? 500 : 3000;
+
+  if (isDarkened) {
+    // 画像がすでに黒くなっている場合、一時的に元の色に戻す
+    imageContainer.classList.remove("darkened");
+
+    // 3秒後に再び黒くする
+    setTimeout(function() {
+      imageContainer.classList.add("darkened");
+    }, delay);
+  }
+}
+
+document.getElementById("submit-button").addEventListener("click", handleButtonClick);
+
+// エンターキーが押された時の処理
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    handleButtonClick();
+  }
+});
+
+
+
+
+
+
+
   // 正解か不正解かに応じて待機時間を設定
   const delay = userGuess === pokemonName ? 500 : 3000;
 
@@ -139,26 +175,4 @@ document.getElementById("myButton").addEventListener("click", function() {
   }
 });
 
-// 次へボタンがクリックされた時の処理
-function handleButtonClick() {
-  var imageContainer = document.getElementById("pokemon-image");
 
-  if (isDarkened) {
-    // 画像がすでに黒くなっている場合、一時的に元の色に戻す
-    imageContainer.classList.remove("darkened");
-
-    // 3秒後に再び黒くする
-    setTimeout(function() {
-      imageContainer.classList.add("darkened");
-    }, 500);
-  }
-}
-
-document.getElementById("submit-button").addEventListener("click", handleButtonClick);
-
-// エンターキーが押された時の処理
-document.addEventListener("keydown", function(event) {
-  if (event.key === "Enter") {
-    handleButtonClick();
-  }
-});
