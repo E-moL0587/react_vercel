@@ -1,0 +1,22 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>PCゲーム</title>
+    </head>
+    <body>
+      <br><br>
+      <h1>ゲーム</h1>
+      <button id="game_start" style="height: 40px;">はじめる</button><br><br>
+      <p>PCで動く簡単なゲームを作成中です！</p>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var startButton = document.getElementById("game_start");
+          startButton.addEventListener("click", function() {
+            window.location.href = "game.html";
+          });
+        });
+      </script>
+    </body>
+    </html>
