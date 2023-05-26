@@ -181,10 +181,3 @@ document.getElementById("myButton").addEventListener("click", function() {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-  var finishbutton = document.getElementById("finish-button");
-  
-  finishbutton.addEventListener("click", function() {
-    window.location.href = "index.html";
-  });
-});

@@ -20,6 +20,16 @@
     <p id="score"></p>
     <p id="result"></p>
     <br><br>
+    <button id="finish-button">おわる</button>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var finishbutton = document.getElementById("finish-button");
+        
+        finishbutton.addEventListener("click", function() {
+          window.location.href = "index.html";
+        });
+      });
+    </script>
     <script src="question.js"></script>
     <script src="countdown2.js"></script>
   </body>
