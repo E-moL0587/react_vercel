@@ -1,0 +1,25 @@
+#gameCanvas {
+  border: 3px solid black;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+#finish {
+  position: absolute;
+  left: 50%+0px; /* 左からの位置を指定 */
+  top: 500px; /* 上からの位置を指定 */
+}
+#leftButton {
+  position: absolute;
+  left: 100px; /* 左からの位置を指定 */
+  top: 500px; /* 上からの位置を指定 */
+}
+#rightButton {
+  position: absolute;
+  left: 470px; /* 左からの位置を指定 */
+  top: 500px; /* 上からの位置を指定 */
+}

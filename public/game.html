@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PCゲーム</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <canvas id="gameCanvas" width="600" height="400"></canvas>
+  <img id="playerImage" src="image_bw/ピカチュウ.png" style="display: none;">
+  <button id="leftButton"  onclick="myFunction()" onkeydown="return false;">左ボタン</button>
+  <button id="rightButton" onclick="myFunction()" onkeydown="return false;">右ボタン</button>
+  <button id="finish" onclick="myFunction()" onkeydown="return false;">おわる</button>
+  <script src="game.js"></script>
+  <script src="game_button.js"></script>
+  <script src="game_finish.js"></script>
+</body>
+</html>
