@@ -6,13 +6,20 @@ const score = document.getElementById('score');
 
 let totalScore = 0;
 
+var num = 0;
+
+if (num === 1) {
+  var imageContainer = document.getElementById("pokemon-image");
+  imageContainer.classList.add("darkened");
+}
+
 // ランダムなポケモンのIDを生成する関数
 const getRandomPokemonId = () => {
   var randomNumber;
   var excludedNumbers = [0, 
     10093, 10117, 10121, 10122, 10128, 10129, 10130, 10131, 10132, 10133, 10134, 10135,
     10137, 10138, 10139, 10140, 10141, 10142, 10144, 10145, 10146, 10149, 10150, 10151,
-    10153, 10154, 10158, 10159, 10160, 10182, 10183, 10187, 10192, 10264, 10265, 10266,
+    10153, 10154, 10158, 10159, 10160, 10181, 10182, 10183, 10187, 10192, 10264, 10265, 10266,
     10267, 10268, 10269, 10270, 10271]; // 除外したい数字のリスト
 
   do {

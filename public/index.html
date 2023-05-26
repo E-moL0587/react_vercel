@@ -310,6 +310,7 @@
   <body>
     <br><br>
     <h1>ポケモンクイズ</h1>
+    <button id="startButton_hard" style="height: 40px;">はじめる( Hard )</button><br><br>
     <button id="startButton" style="height: 40px;">はじめる(Normal)</button><br><br>
     <button id="extraButton" style="height: 40px;">　練習　</button><br><br>
     <p>
@@ -317,10 +318,7 @@
       ポケモンの入力は、カタカナ(一部ひらがな)or小文字半角英数字でお願いします。<br><br><br><br>
       「カプコケコ」のように「・」は省いてかまいません。<br><br>
       「ニドラン」は「♂ ♀」は不要です。<br><br>
-      
-      2~3匹が英語になるらしいです。不具合がありましたらポケモン名教えてください(m´・ω・｀)m ｺﾞﾒﾝ…<br><br>
-      900匹以降は手動で文字打ってるので、答えが間違っている可能性があります<br><br>
-      全てのポケモンをある程度にはbw化して出題しています。これら全て分かる人にはポケモン博士の称号をあげます！
+
     </p>
     <br><br>
     <p>[近日実装予定の内容]<br><br>
@@ -332,6 +330,13 @@
     <script src="countdown.js"></script>
     <script>
 
+      document.addEventListener("DOMContentLoaded", function() {
+        var startButton = document.getElementById("startButton_hard");
+        
+        startButton.addEventListener("click", function() {
+          window.location.href = "countdown.html";
+        });
+      });
 
       document.addEventListener("DOMContentLoaded", function() {
         var startButton = document.getElementById("startButton");
