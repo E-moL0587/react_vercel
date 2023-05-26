@@ -18,7 +18,7 @@ const getRandomPokemonId = () => {
   do {
     var range = Math.floor(Math.random() * 2);
     if (range === 0) {
-      randomNumber = Math.floor(10256);
+      randomNumber = Math.floor(Math.random() * 1010);
     } else {
       randomNumber = Math.floor(Math.random() * 270) + 10001;
     }
