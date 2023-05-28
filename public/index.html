@@ -90,80 +90,6 @@
         <br></br>
         <br></br><br></br><br></br><br></br><br>
 
-
-
-
-
-
-        <!-- <!DOCTYPE html>
-        <html>
-        <head>
-          <title>Pokémon Image</title>
-        </head>
-        <body>
-          <div id="pokemon-image"></div>
-          <script>
-            // 図鑑番号を指定してポケモンの画像を取得
-            const pokedexNumber = 10238; // 例: ピカチュウの図鑑番号
-            getPokemonImage(pokedexNumber);
-        
-            // ポケモンの画像を取得して表示する関数
-            function getPokemonImage(pokedexNumber) {
-              const baseUrl = 'https://pokeapi.co/api/v2';
-              const endpoint = `/pokemon/${pokedexNumber}`;
-        
-              // APIリクエスト
-              fetch(baseUrl + endpoint)
-                .then(response => response.json())
-                .then(data => {
-                  const pokemonImage = data.sprites.front_default;
-                  const imageElement = document.createElement('img');
-                  imageElement.src = pokemonImage;
-                  document.getElementById('pokemon-image').appendChild(imageElement);
-                })
-                .catch(error => console.log(error));
-            }
-          </script>
-        </body>
-        </html>
-
-        <!DOCTYPE html>
-        <html>
-        <head>
-          <title>色違い</title>
-        </head>
-        <body>
-          <img id="pikachu-image" src="" alt="色違いのピカチュウ">
-        
-          <script>
-            // PokeAPIから色違いのピカチュウのデータを取得
-            fetch('https://pokeapi.co/api/v2/pokemon/10238/')
-              .then(response => response.json())
-              .then(data => {
-                // 色違いのピカチュウのスプライト画像URLを取得
-                const spriteUrl = data.sprites.front_shiny;
-                
-                // 画像を表示
-                const pikachuImage = document.getElementById('pikachu-image');
-                pikachuImage.src = spriteUrl;
-              })
-              .catch(error => {
-                console.log('データの取得に失敗しました', error);
-              });
-          </script>
-        </body>
-        </html> -->
-
-
-
-
-
-
-
-
-
-
-
         </ul></ul>
       </div>
     </div>
@@ -310,8 +236,8 @@
   <body>
     <br><br>
     <h1>ポケモンクイズ</h1>
-    <button id="startButton_hard" style="height: 40px;">はじめる( Hard )</button><br><br>
-    <button id="startButton" style="height: 40px;">はじめる(Normal)</button><br><br>
+    <button id="startButton_hard"   style="height: 40px;">はじめる(難易度★★☆)</button><br><br>
+    <button id="startButton_expert" style="height: 40px;">はじめる(難易度★★★)</button><br><br>
     <button id="extraButton" style="height: 40px;">　練習　</button><br><br>
     <p>
       【ルール説明】<br><br>
@@ -334,15 +260,15 @@
         var startButton = document.getElementById("startButton_hard");
         
         startButton.addEventListener("click", function() {
-          window.location.href = "countdown.html";
+          window.location.href = "question_hard.html";
         });
       });
 
       document.addEventListener("DOMContentLoaded", function() {
-        var startButton = document.getElementById("startButton");
+        var startButton = document.getElementById("startButton_expert");
         
         startButton.addEventListener("click", function() {
-          window.location.href = "countdown.html";
+          window.location.href = "question_expert.html";
         });
       });
 
