@@ -226,12 +226,8 @@
 
 
 <div class="tab-contents-item">
-
-  <!DOCTYPE html>
-  <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>はじめるボタン</title>
   </head>
   <body>
     <br><br>
@@ -241,46 +237,28 @@
     
     <p>
       【ルール説明】<br><br>
-      ポケモンの入力は、カタカナ(ひらがな)<br><br>
-      or小文字半角英数字でお願いします。<br><br>
-      「カプコケコ」のように・は不要です<br><br>
-      「ニドラン」の「♂,♀」は不要です。<br><br>
-
+      ポケモンの入力は、カタカナ<br><br>
+      か、小文字半角英数字でお願いします<br><br>
+      カプコケコのように・,：は不要です<br><br><br><br>
+      ポケモンは1~1010匹すべて出現します
     </p>
   
-    <script src="countdown.js"></script>
     <script>
-
       document.addEventListener("DOMContentLoaded", function() {
         var startButton = document.getElementById("startButton_hard");
-        
         startButton.addEventListener("click", function() {
           window.location.href = "question_hard.html";
         });
       });
-
       document.addEventListener("DOMContentLoaded", function() {
         var startButton = document.getElementById("startButton_expert");
-        
         startButton.addEventListener("click", function() {
           window.location.href = "question_expert.html";
         });
       });
 
-      document.addEventListener("DOMContentLoaded", function() {
-        var extraButton = document.getElementById("extraButton");
-        
-        extraButton.addEventListener("click", function() {
-          window.location.href = "question2.html";
-        });
-      });
     </script>
-  </body>
-  </html>
-  
-  
-  
-  
+  </body>  
 </div>
 
 
