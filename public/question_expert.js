@@ -87,11 +87,11 @@ const checkAnswer = () => {
 
   let points = 0;
   if (userGuess === pokemonName) {
-    points = userGuess.length * 100;
+    points = userGuess.length * 200;
     totalScore += points;
     result.textContent = `正解です！このポケモンは ${userGuess} です。獲得したポイント: ${points}p`;
   } else {
-    points = 300;
+    points = 600;
     totalScore -= points;
     if (totalScore < 0) totalScore = 0; // ポイントが負の値にならないようにする
     result.textContent = `不正解です... このポケモンは「 ${pokemonName} 」です。あなたの答えは「 ${userGuess} 」です。失ったポイント: ${points}p`;
