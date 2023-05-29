@@ -17,8 +17,18 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="tab.css">
     <link rel="stylesheet" type="text/css" href="slider.css">
+    <link rel="stylesheet" type="text/css" href="load.css">
   </head>
   <body>
+
+    <div id="loading-screen">
+      <div id="loading-content">
+        <img src="image_home/180.gif" alt="Loading Spinner">
+        <p>Loading...</p>
+      </div>
+    </div>
+    <script src="load.js"></script>
+
     <font color="ffffff">
       <ul class="tab-list">
         <li class="tab-list-item active">作成中</li>
@@ -30,27 +40,47 @@
       </ul>
     </font>
 
-<!--ホーム-->
 <div class="tab-contents">
-  <div class="tab-contents-item show">
+<div class="tab-contents-item show">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
   </head>
   <body>
     <div id="video-area">
       <img id="video" src="image_home/sky.jpg" alt="siro.png">
     </div>
+    <div style="height: 100px;"></div>
     <h2>
       <font face="serif">成蹊大学ポケモンサークル</font>
+    </h2>
+    <h2 style="line-height: 1;">
       <font face="serif" size="200">蹊モンガ</font>
     </h2>
     <img src="image_box/keimolga.png" class="App-logo" alt="logo" />
-    <h2>
-      ポケモンが大好きな方達が集まる団体です！
-    </h2>
+    <p>楽しいを共有し、ポケモンの魅力を伝えていく</p>
+    <p style="line-height: 1;">ポケモン専門のサークルです</p>
+
+    <div style="height: 1500px;"></div>
+
+    <div id="intro" class="hidden">
+      <h2>スケジュール</h2>
+      <p>毎週火曜日と水曜日の5限(16:50~)から</p>
+      <p style="line-height: 1;">9-305号室にて活動しています</p>
+      <p style="line-height: 1;"></p>部活の費用は0円/年で兼部可能です</p>
+      </p>
+    </div>
+    
+    <div style="height: 1500px;"></div>
+
+    <div id="members" class="hidden">
+    </div>
+
+
+
   </body>
-  </div>
+</div>
 </div>
 
 
