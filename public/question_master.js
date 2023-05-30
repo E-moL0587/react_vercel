@@ -5,11 +5,24 @@ const score = document.getElementById('score');
 const result = document.getElementById('result');
 
 let totalScore = 0;
-let level = "hard";
+let level = "expert";
 localStorage.setItem('level', level);
 
+ランダムなポケモンのIDを生成する関数
 const getRandomPokemonId = () => {
-  return Math.floor(Math.random() * 1010) + 1;
+    var randomNumber;
+    var excludedNumbers = [
+      10093, 10117, 10121, 10122, 10128, 10129, 10130, 10131, 10132, 10133, 10134, 10135,
+      10137, 10138, 10139, 10140, 10141, 10142, 10144, 10145, 10146, 10149, 10150, 10151,
+      10153, 10154, 10158, 10159, 10160, 10181, 10182, 10183, 10187, 10192, 10264, 10265,
+      10266, 10267, 10268, 10269, 10270, 10271
+    ];
+
+    do {
+      randomNumber = Math.floor(Math.random() * 10271) + 1;
+    } while (excludedNumbers.includes(randomNumber) || (randomNumber >= 1011 && randomNumber <= 10000));
+
+    return randomNumber;
 };
 
 // ポケモンの問題を作成する関数
@@ -26,8 +39,12 @@ const createPokemonQuestion = () => {
 
       const imageElement = document.createElement('img');
       imageElement.src = pokemonImageUrl;
+      imageElement.classList.add('darkened');
       pokemonImage.innerHTML = '';
       pokemonImage.appendChild(imageElement);
+
+      var imageContainer = document.getElementById("pokemon-image");
+      imageContainer.classList.add("darkened");
 
     } catch (error) {
       console.log(error);
@@ -69,11 +86,11 @@ const checkAnswer = () => {
 
   let points = 0;
   if (userGuess === pokemonName) {
-    points = userGuess.length * 100;
+    points = userGuess.length * 200;
     totalScore += points;
     result.textContent = `正解です！このポケモンは ${userGuess} です。獲得したポイント: ${points}p`;
   } else {
-    points = 300;
+    points = 600;
     totalScore -= points;
     if (totalScore < 0) totalScore = 0; // ポイントが負の値にならないようにする
     result.textContent = `不正解です... このポケモンは「 ${pokemonName} 」です。あなたの答えは「 ${userGuess} 」です。失ったポイント: ${points}p`;
@@ -92,7 +109,10 @@ const checkAnswer = () => {
   const delay = userGuess === pokemonName ? 0 : 3000;
 
   // 一定時間待って次の問題を作成
-  setTimeout(() => {
+  var imageContainer = document.getElementById("pokemon-image");
+  imageContainer.classList.remove("darkened");
+  setTimeout(function() {
+    imageContainer.classList.add("darkened");
     result.textContent = '';
     createPokemonQuestion();
     }, delay);

@@ -155,6 +155,7 @@
     </div>
     <button id="startButton_hard" style="height: 40px;">はじめる(難易度★☆☆☆)</button><br><br>
     <button id="startButton_expert" style="height: 40px;">はじめる(難易度★★★☆)</button><br><br>
+    <button id="startButton_master" style="height: 40px;">はじめる(難易度★★★★)</button><br><br>
   
     <h3 style="line-height: 1;"><font face="serif">
       【ルール説明】<br><br>
@@ -168,6 +169,7 @@
       document.addEventListener("DOMContentLoaded", function() {
         var startButtonHard = document.getElementById("startButton_hard");
         var startButtonExpert = document.getElementById("startButton_expert");
+        var startButtonMaster = document.getElementById("startButton_master");
         var countdownScreen = document.getElementById("countdown-screen");
         var countdownTimer = document.getElementById("countdown-timer");
   
@@ -198,6 +200,10 @@
   
         startButtonExpert.addEventListener("click", function() {
           startCountdownAndRedirect("question_expert.html");
+        });
+
+        startButtonMaster.addEventListener("click", function() {
+          startCountdownAndRedirect("question_master.html");
         });
       });
     </script>
