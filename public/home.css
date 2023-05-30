@@ -1,19 +1,7 @@
 h2 { color: #000000; }
 p  { color: #000000; }
 
-html {
-      scroll-behavior: smooth;
-    }
-
-    .hidden {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.3s, transform 0.3s;
-    }
-
-    .visible {
-      opacity: 1;
-      transform: translateY(0);
-      transition: opacity 0.3s, transform 0.3s;
-    }
-
+.App-logo {
+  height: 50vmin;
+  pointer-events: none;
+}

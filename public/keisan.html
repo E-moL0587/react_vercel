@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>ポケモンの計算機</title>
+    <link rel="stylesheet" href="keisan.css">
+  </head>
+  <body>
+    <div id="container" style="text-align: center;">
+      <br><br>
+      <h1 class="fadeUp">ダメージ計算機</h1>
+      <p class="delay-time02 fadeUp">英字,小文字,半角で入力してください<br></br>(例:eevee, pikachu, pound等)</p>
+      <br></br>
+
+      
+      <h2 class="delay-time04 fadeUp">攻撃側</h2>
+      <div class="underline-input"><input type="text" class="delay-time02 fadeUp" id="p_name" size="35" placeholder="ポケモン名を入力してください..." oninput="p_name('pokemon_data.csv')"></div>
+
+      <p id="number_data"></p>
+      <p id="iv_data"></p>
+      <p id="type_data"></p>
+
+      <div class="underline-input"><input type="text" class="delay-time02 fadeUp" id="p_move" size="35" placeholder="技名を入力してください..." oninput="move('move_data.csv','pokemon_data.csv')"></div>
+
+      <p id="atk_data"></p>
+      <p id="atype_data"></p>
+      <p id="ps_data"></p>
+
+      <br><br>
+      <p class="delay-time06 fadeUp">
+        技の威力<input id="mv" type="text" size="1" maxlength="3">
+        <br></br>
+        種族値(A or C)<input id="sv" type="text" size="1" maxlength="3">
+        <br></br>
+        努力値<input id="ev" type="text" size="1" maxlength="3" value="252">
+        個体値<input id="iv" type="text" size="1" maxlength="2" value="31">
+        <br></br>
+        レベル<input id="lv" type="text" size="1" maxlength="3" value="50">
+        補正値<input id="mm" type="text" size="1" maxlength="3" value="1.0">
+      </p>
+      <br></br>
+
+      <h2 class="delay-time04 fadeUp">防御側</h2>
+      <div class="underline-input"><input type="text" class="delay-time02 fadeUp" id="q_name" size="35" placeholder="ポケモン名を入力してください..." oninput="q_name('pokemon_data.csv')"></div>
+      
+      <p id="number_data2"></p>
+      <p id="iv_data2"></p>
+      <p id="type_data2"></p>
+
+      <br><br>
+      <p class="delay-time06 fadeUp">
+        種族値(B or D)<input id="sv2" type="text" size="1" maxlength="3">
+        <br></br>
+        努力値<input id="ev2" type="text" size="1" maxlength="3" value="252">
+        個体値<input id="iv2" type="text" size="1" maxlength="2" value="31">
+        <br></br>
+        レベル<input id="lv2" type="text" size="1" maxlength="3" value="50">
+        補正値<input id="mm2" type="text" size="1" maxlength="3" value="1.0">
+      </p>
+
+      <p>
+      <br><br>
+      <input type="button" style="height: 40px;" value="計算する" onclick="cal('damage_value')">
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <p id="damage_value"></p>
+      <br><br>
+      <br><br>
+      <br><br>
+      </p>
+    </div>
+  <script src="keisan.js"></script>
+  </body>
+</html>

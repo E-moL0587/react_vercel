@@ -51,19 +51,6 @@ body {
   filter: brightness(0%);
 }
 
-h1 {
-  color: #ffffff;
-  text-align: center;
-}
-
-h2 {
-  color: #ffffff;
-}
-
-p  {
-  color: #ffffff;
-}
-
 #video-area {
   position: fixed;
   z-index: -100;/*最背面に設定*/
