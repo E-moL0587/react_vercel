@@ -31,8 +31,8 @@
     <font color="ffffff">
       <ul class="tab-list">
         <li class="tab-list-item active">Home</li>
-        <li class="tab-list-item">　計算機　</li>
-        <li class="tab-list-item">　部員欄　</li>
+        <li class="tab-list-item">　u-3000　</li>
+        <li class="tab-list-item">　コンセプト　</li>
         <li class="tab-list-item">　クイズ　</li>
         <button id="toggleButton">スワイプ</button>
       </ul>
@@ -42,9 +42,14 @@
 <div class="tab-contents">
 <div class="tab-contents-item show">
   <head>
+    <style>
+      body { text-align: center; }
+      /* canvas {
+        border: 1px solid #000;
+      } */
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="home.css">
-    <script src="home.js"></script>
   </head>
   <body>
     <h2>
@@ -54,8 +59,9 @@
       <font face="serif" size="200">蹊モンガ</font>
     </h2>
     <img src="image_box/keimolga.png" class="App-logo" alt="logo" />
-    <h3><font face="serif">楽しいを共有し、ポケモンの魅力を伝えていく</font></h3>
+    <h3><font face="serif">楽しいを共有しポケモンの魅力を伝えていく</font></h3>
     <h3 style="line-height: 0;"><font face="serif">ポケモン専門のサークルです</font></h3>
+    <script src="home.js"></script>
   </body>
 </div>
 </div>
@@ -77,7 +83,37 @@
 
 
 <div class="tab-contents-item">
+
+  <!DOCTYPE html>
+  <html>
   <head>
+      <title>Particle Effect</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <script src="p2.js"></script>
+  </body>
+  </html>  
+
+</div>
+
+
+
+
+
+<!--部員紹介-->
+<div class="tab-contents-item">
+
+
+
+
+
+
+
+  <head>
+    <style>
+      body { text-align: center; }
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -86,7 +122,7 @@
     </h1>
     <button id="startButton_keisan"   style="height: 40px;">はじめる</button><br><br>
     <h3 style="line-height: 1;">
-      <font face="serif">【説明】ポケモンの計算ができます</font>
+      <font face="serif">ポケモンの計算ができます</font>
     </h3>
     <script>
       document.addEventListener("DOMContentLoaded", function() {
@@ -98,14 +134,16 @@
     </script>
   </body>
 
-</div>
 
 
 
 
 
-<!--部員紹介-->
-<div class="tab-contents-item">
+
+
+
+
+
   <head>
     <title>部員紹介</title>
     <link rel="stylesheet" type="text/css" href="member.css">
@@ -141,6 +179,9 @@
 
 <div class="tab-contents-item">
   <head>
+    <style>
+      body { text-align: center; }
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
