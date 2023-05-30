@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = "question_hard.html";
       } else if (level === "expert") {
         window.location.href = "question_expert.html";
+      } else if (level === "master") {
+        window.location.href = "question_master.html";
       } else {
         window.location.href = "index.html";
       }

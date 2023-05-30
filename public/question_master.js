@@ -5,24 +5,23 @@ const score = document.getElementById('score');
 const result = document.getElementById('result');
 
 let totalScore = 0;
-let level = "expert";
+let level = "master";
 localStorage.setItem('level', level);
 
-ランダムなポケモンのIDを生成する関数
 const getRandomPokemonId = () => {
-    var randomNumber;
-    var excludedNumbers = [
-      10093, 10117, 10121, 10122, 10128, 10129, 10130, 10131, 10132, 10133, 10134, 10135,
-      10137, 10138, 10139, 10140, 10141, 10142, 10144, 10145, 10146, 10149, 10150, 10151,
-      10153, 10154, 10158, 10159, 10160, 10181, 10182, 10183, 10187, 10192, 10264, 10265,
-      10266, 10267, 10268, 10269, 10270, 10271
-    ];
+  var randomNumber;
+  var excludedNumbers = [
+    10093, 10117, 10121, 10122, 10128, 10129, 10130, 10131, 10132, 10133, 10134, 10135,
+    10137, 10138, 10139, 10140, 10141, 10142, 10144, 10145, 10146, 10149, 10150, 10151,
+    10153, 10154, 10158, 10159, 10160, 10181, 10182, 10183, 10187, 10192, 10264, 10265,
+    10266, 10267, 10268, 10269, 10270, 10271
+  ];
 
-    do {
-      randomNumber = Math.floor(Math.random() * 10271) + 1;
-    } while (excludedNumbers.includes(randomNumber) || (randomNumber >= 1011 && randomNumber <= 10000));
+  do {
+    randomNumber = Math.floor(Math.random() * 10271) + 1;
+  } while (excludedNumbers.includes(randomNumber) || (randomNumber >= 1011 && randomNumber <= 10000));
 
-    return randomNumber;
+  return randomNumber;
 };
 
 // ポケモンの問題を作成する関数
