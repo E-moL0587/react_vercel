@@ -4,7 +4,7 @@ const ctx = canvas.getContext('2d');
 
 // キャンバスのサイズをウィンドウサイズに合わせる
 canvas.width = window.innerWidth * 0.9;
-canvas.height = window.innerHeight;
+canvas.height = window.innerHeight * 0.9;
 
 // パーティクルの設定
 const particleCount = 6;  // パーティクルの数
