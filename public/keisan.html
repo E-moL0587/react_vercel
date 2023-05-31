@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
+    <div id="video-area">
+      <img id="video" src="image_home/sky.jpg" alt="静止画の画像">
+    </div>
     <div id="container" style="text-align: center;">
       <br><br>
       <h1 class="fadeUp">ダメージ計算機</h1>
@@ -75,5 +78,15 @@
       </p>
     </div>
   <script src="keisan.js"></script>
+  <button id="finish-button">おわる</button>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var finishbutton = document.getElementById("finish-button");
+        
+        finishbutton.addEventListener("click", function() {
+          window.location.href = "index.html";
+        });
+      });
+    </script>
   </body>
 </html>

@@ -24,7 +24,7 @@ class Particle {
     this.baseY = this.y;
     this.density = Math.random() * 30 + 1;  // パーティクルの密度
     this.spriteURL = spriteURL;
-    this.isShiny = Math.random() < 0.05;  // 5%の確率で色違いになる
+    this.isShiny = Math.random() < 0.05;  // 30%の確率で色違いになる
     this.sprite = new Image();
     this.sprite.src = this.isShiny ? shinySpriteURL : spriteURL;
   }
@@ -84,8 +84,21 @@ class Particle {
   }
 
   draw() {
+    if (this.isShiny) {
+      const gradient = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.size);
+      gradient.addColorStop(0, 'rgba(255, 255, 0, 0.8)');  // 黄色 (RGBA値: 255, 255, 0)
+      gradient.addColorStop(0.2, 'rgba(255, 255, 0, 0.4)');
+      gradient.addColorStop(0.5, 'rgba(255, 255, 255, 0)');
+  
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fillStyle = gradient;
+      ctx.fill();
+    }
+  
     ctx.drawImage(this.sprite, this.x - this.size / 2, this.y - this.size / 2, this.size, this.size);
   }
+  
 }
 
 // パーティクルの初期化

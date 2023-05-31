@@ -31,10 +31,10 @@
     <font color="ffffff">
       <ul class="tab-list">
         <li class="tab-list-item active">Home</li>
-        <li class="tab-list-item">　u-3000　</li>
-        <li class="tab-list-item">　コンセプト　</li>
-        <li class="tab-list-item">　クイズ　</li>
-        <button id="toggleButton">スワイプ</button>
+        <li class="tab-list-item">　未完成　</li>
+        <li class="tab-list-item">　Schedule　</li>
+        <li class="tab-list-item">　Quiz　</li>
+        <button id="toggleButton">Swipe</button>
       </ul>
     </font>
 
@@ -65,51 +65,32 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 <div class="tab-contents-item">
 
-  <!DOCTYPE html>
-  <html>
   <head>
     <style>
-      /* body { text-align: center; }
-      canvas {
-        border: 1px solid #000;
-      } */
+      body { text-align: center; }
     </style>
-    <link rel="stylesheet" type="text/css" href="p2.css">
-    <title>Particle Effect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <canvas id="canvas"></canvas>
-    <script src="p2.js"></script>
+    <h1>
+      <font face="serif">ポケモン広場</font>
+    </h1>
+    <button id="startButton_park"   style="height: 40px;">はじめる</button><br><br>
+    <h3 style="line-height: 1;">
+      <font face="serif">ランダムで6匹のポケモンが出現します</font>
+    </h3>
+    <br><br><br><br>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var startButton = document.getElementById("startButton_park");
+        startButton.addEventListener("click", function() {
+          window.location.href = "park.html";
+        });
+      });
+    </script>
   </body>
-  </html>  
-
-</div>
-
-
-
-
-
-<!--部員紹介-->
-<div class="tab-contents-item">
-
-
-
-
-
-
 
   <head>
     <style>
@@ -135,14 +116,14 @@
     </script>
   </body>
 
+</div>
 
 
 
 
 
-
-
-
+<!--部員紹介-->
+<div class="tab-contents-item">
 
 
   <head>
