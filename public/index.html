@@ -82,7 +82,7 @@
     <h1>
       <font face="serif">ポケモン広場</font>
     </h1>
-    <button id="startButton_park"   style="height: 40px;">はじめる</button><br><br>
+    <button id="startButton_park" style="height: 40px;">はじめる</button><br><br>
     <h3 style="line-height: 1;">
       <font face="serif">ランダムで6匹のポケモンが出現します</font>
     </h3>
@@ -107,7 +107,7 @@
     <h1>
       <font face="serif">ダメージ計算機</font>
     </h1>
-    <button id="startButton_keisan"   style="height: 40px;">はじめる</button><br><br>
+    <button id="startButton_keisan" style="height: 40px;">はじめる</button><br><br>
     <h3 style="line-height: 1;">
       <font face="serif">ポケモンの計算ができます</font>
     </h3>
@@ -116,6 +116,31 @@
         var startButton = document.getElementById("startButton_keisan");
         startButton.addEventListener("click", function() {
           window.location.href = "keisan.html";
+        });
+      });
+    </script>
+  </body>
+
+  <head>
+    <style>
+      body { text-align: center; }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h1>
+      <font face="serif">AIのGPT</font>
+    </h1>
+    <button id="startButton_pika" style="height: 40px;">はじめる</button><br><br>
+    <h3 style="line-height: 1;">
+      <font face="serif">ピカチュウについて</font>
+    </h3>
+    <br><br><br><br>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var startButton = document.getElementById("startButton_pika");
+        startButton.addEventListener("click", function() {
+          window.location.href = "pika_gpt.html";
         });
       });
     </script>
@@ -181,6 +206,7 @@
         <h3 id="countdown-timer"></h3>
       </div>
     </div>
+    <!-- <button id="startButton_normal" style="height: 40px;">はじめる</button><br><br> -->
     <button id="startButton_hard" style="height: 40px;">はじめる(難易度★☆☆☆)</button><br><br>
     <button id="startButton_expert" style="height: 40px;">はじめる(難易度★★★☆)</button><br><br>
     <button id="startButton_master" style="height: 40px;">はじめる(難易度★★★★)</button><br><br>
@@ -195,6 +221,7 @@
     
     <script>
       document.addEventListener("DOMContentLoaded", function() {
+        var startButtonNormal = document.getElementById("startButton_normal");
         var startButtonHard = document.getElementById("startButton_hard");
         var startButtonExpert = document.getElementById("startButton_expert");
         var startButtonMaster = document.getElementById("startButton_master");
@@ -221,6 +248,9 @@
             }
           }, 1000);
         }
+        startButtonNormal.addEventListener("click", function() {
+          startCountdownAndRedirect("question_normal.html");
+        });
   
         startButtonHard.addEventListener("click", function() {
           startCountdownAndRedirect("question_hard.html");

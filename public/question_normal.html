@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>ポケモンクイズ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="question.css">
+    <div id="video-area">
+      <img id="video" src="image_home/sky.jpg" alt="静止画の画像">
+    </div>
+  </head>
+  <body>
+    <h1>ポケモンクイズ</h1>
+    <p id="countdown2"></p>
+    <p id="len"></p>
+    <div id="pokemon-image"></div>
+    <br><br>
+    <input type="text" id="guess-input" placeholder="ポケモン名を答えてください...">
+    <button id="submit-button">次へ</button>
+    <p id="score"></p>
+    <p id="result"></p>
+    <br><br>
+    <button id="finish-button">おわる</button>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var finishbutton = document.getElementById("finish-button");
+        
+        finishbutton.addEventListener("click", function() {
+          window.location.href = "index.html";
+        });
+      });
+    </script>
+    <script src="question_hard.js"></script>
+    <script src="countdown2.js"></script>
+  </body>
+</html>
