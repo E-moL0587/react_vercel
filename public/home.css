@@ -5,3 +5,20 @@ p  { color: #000000; }
   height: 50vmin;
   pointer-events: none;
 }
+
+.slider {
+  width: 375px;
+  height: 220px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
