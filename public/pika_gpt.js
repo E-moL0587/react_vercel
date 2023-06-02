@@ -1,8 +1,8 @@
 // ChatGPT APIのエンドポイントURL
-const apiUrl = 'https://api.openai.com/v1/chat/completions';
+const apiUrl = 'https://api.openai.com/v1/chat/pika_api';
 
 // OpenAI APIキー
-// const apiKey = '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';
+const apiKey = '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';
 
 // ユーザー入力と応答のログを保持する変数
 let chatLog = [];

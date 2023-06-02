@@ -16,7 +16,7 @@ let mouseY = 0;
 
 // パーティクルオブジェクトの定義
 class Particle {
-  constructor(x, y, size, spriteURL, shinySpriteURL) {
+  constructor(x, y, size, spriteURL, shinySpriteURL, name) {
     this.x = x;
     this.y = y;
     this.size = size;
@@ -27,12 +27,34 @@ class Particle {
     this.isShiny = Math.random() < 0.05;  // 30%の確率で色違いになる
     this.sprite = new Image();
     this.sprite.src = this.isShiny ? shinySpriteURL : spriteURL;
+    this.name = name;
+    this.showName = false;  // 名前を表示するかどうかのフラグ
+    this.nameTimeout = null;  // 名前表示のタイムアウトの参照
+  }
+
+  // ポケモンの名前を表示する
+  displayName() {
+    ctx.font = '16px Arial';
+    ctx.fillStyle = '#000000';  // 名前の色
+    ctx.textAlign = 'center';
+    ctx.fillText(this.name, this.x, this.y + this.size / 2 + 20);
   }
 
   calculateDistance(otherParticle) {
     const dx = otherParticle.x - this.x;
     const dy = otherParticle.y - this.y;
     return Math.sqrt(dx ** 2 + dy ** 2);
+  }
+
+  // 名前の表示を開始する
+  startNameTimeout() {
+    if (this.nameTimeout) {
+      clearTimeout(this.nameTimeout);
+    }
+    this.showName = true;
+    this.nameTimeout = setTimeout(() => {
+      this.showName = false;
+    }, 3000);  // 3秒後に名前の表示を終了する
   }
 
   update() {
@@ -108,11 +130,20 @@ async function init() {
     const x = Math.random() * (canvas.width - size * 2) + size;
     const y = Math.random() * (canvas.height - size * 2) + size;
 
-    const pokemonData = await getRandomPokemon();
-    const spriteURL = pokemonData.sprites.front_default;
-    const shinySpriteURL = pokemonData.sprites.front_shiny;
+    let pokemonData = null;
+    let spriteURL = null;
+    let shinySpriteURL = null;
+    let name = null;
 
-    const particle = new Particle(x, y, size, spriteURL, shinySpriteURL);
+    // ランダムなポケモンのデータを取得し、画像のURLと名前を設定
+    while (!spriteURL) {
+      pokemonData = await getRandomPokemon();
+      spriteURL = pokemonData.sprites.front_default;
+      shinySpriteURL = pokemonData.sprites.front_shiny;
+      name = pokemonData.name;
+    }
+
+    const particle = new Particle(x, y, size, spriteURL, shinySpriteURL, name);
     particles.push(particle);
   }
 }
@@ -142,6 +173,10 @@ function animate() {
   particles.forEach(particle => {
     particle.update();
     particle.draw();
+
+    if (particle.showName) {
+      particle.displayName();
+    }
   });
 
   requestAnimationFrame(animate);
@@ -157,4 +192,20 @@ window.addEventListener('load', () => {
 window.addEventListener('mousemove', updateMousePosition);
 window.addEventListener('touchmove', (e) => {
   updateMousePosition(e.touches[0]);
+});
+
+// パーティクルのクリックイベントを追加
+canvas.addEventListener('click', (e) => {
+  const rect = canvas.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+
+  particles.forEach(particle => {
+    if (x > particle.x - particle.size / 2 &&
+        x < particle.x + particle.size / 2 &&
+        y > particle.y - particle.size / 2 &&
+        y < particle.y + particle.size / 2) {
+      particle.startNameTimeout();
+    }
+  });
 });

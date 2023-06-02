@@ -30,11 +30,11 @@
     <!-- タブ画面 -->
     <font color="ffffff">
       <ul class="tab-list">
-        <li class="tab-list-item active">Home</li>
-        <li class="tab-list-item">　未完成　</li>
-        <li class="tab-list-item">　Schedule　</li>
-        <li class="tab-list-item">　Quiz　</li>
-        <button id="toggleButton">Swipe</button>
+        <li class="tab-list-item active">ホーム</li>
+        <li class="tab-list-item">コンテンツ</li>
+        <li class="tab-list-item">部員紹介</li>
+        <li class="tab-list-item">クイズ</li>
+        <button id="toggleButton">スワイプ機能</button>
       </ul>
     </font>
 
@@ -71,6 +71,18 @@
 
 
 <div class="tab-contents-item">
+
+  <body>
+    <h1>
+      <font face="serif">スケジュール</font>
+    </h1>
+    <h3 style="line-height: 1;">
+      <font face="serif">毎週火曜日と水曜日の5限(16:50~)から<br><br>
+        9-305号室にて活動しています！<br><br>
+        また、部活費用は無償で兼部も可能です。</font>
+    </h3>
+    <br><br><br><br>
+  </body>
 
   <head>
     <style>
@@ -111,6 +123,7 @@
     <h3 style="line-height: 1;">
       <font face="serif">ポケモンの計算ができます</font>
     </h3>
+    <br><br><br><br>
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         var startButton = document.getElementById("startButton_keisan");
@@ -129,11 +142,11 @@
   </head>
   <body>
     <h1>
-      <font face="serif">AI</font>
+      <font face="serif">作成中です</font>
     </h1>
     <button id="startButton_pika" style="height: 40px;">はじめる</button><br><br>
     <h3 style="line-height: 1;">
-      <font face="serif">n</font>
+      <font face="serif">ポケモンのAI</font>
     </h3>
     <br><br><br><br>
     <script>
@@ -154,28 +167,12 @@
 
 <!--部員紹介-->
 <div class="tab-contents-item">
-
-
   <head>
     <title>部員紹介</title>
     <link rel="stylesheet" type="text/css" href="member.css">
   </head>
   <body>
-    <br><br>
-    <h1 class="fadeUp">スケジュール</h1>
-    <br><br>
-    <p class="delay-time02 fadeUp">
-      毎週火曜日と水曜日の5限(16:50~)から<br><br>
-      9-305号室にて活動しています！
-    </p>
-    <p class="delay-time04 fadeUp">
-      また、部活費用は無償で兼部も可能です。<br><br>
-    </p>
-    <br><br><br><br>
-
-
-
-    <br><br>
+    <font face="serif">
     <h1 class="fadeUp">部員紹介</h1>
     <input type="text" class="delay-time04 fadeUp" id="memberIdInput" style="float: left;" placeholder="(例:A000000)">
     <button class="delay-time04 fadeUp" id="memberButton" style="float: left;">検索</button>
@@ -183,11 +180,9 @@
     <br></br>
     <div class="delay-time02 fadeUp" id="members"></div>
     <script src="member.js"></script>
+    </font>
   </body>
-
-
 </div>
-
 
 <div class="tab-contents-item">
   <head>
