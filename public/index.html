@@ -13,8 +13,6 @@
     <link rel="stylesheet" type="text/css" href="tab.css">
     <link rel="stylesheet" type="text/css" href="slider.css">
     <link rel="stylesheet" type="text/css" href="load.css">
-    <style>
-    </style>
   </head>
   <body>
 
@@ -216,7 +214,6 @@
     
     <script>
       document.addEventListener("DOMContentLoaded", function() {
-        var startButtonNormal = document.getElementById("startButton_normal");
         var startButtonHard = document.getElementById("startButton_hard");
         var startButtonExpert = document.getElementById("startButton_expert");
         var startButtonMaster = document.getElementById("startButton_master");
@@ -243,9 +240,6 @@
             }
           }, 1000);
         }
-        startButtonNormal.addEventListener("click", function() {
-          startCountdownAndRedirect("question_normal.html");
-        });
   
         startButtonHard.addEventListener("click", function() {
           startCountdownAndRedirect("question_hard.html");
