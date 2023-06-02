@@ -1,57 +1,33 @@
-// ChatGPT APIのエンドポイントURL
-const apiUrl = 'https://api.openai.com/v1/chat/pika_api';
+var currentPokemonName = ""; // 現在のポケモンの名前を格納する変数
 
-// OpenAI APIキー
-const apiKey = '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';
+function getRandomPokemon() {
+    var randomNumber = Math.floor(Math.random() * 898) + 1; // 1から898までのランダムな数を生成
+    var apiUrl = "https://pokeapi.co/api/v2/pokemon/" + randomNumber;
 
-// ユーザー入力と応答のログを保持する変数
-let chatLog = [];
+    fetch(apiUrl)
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+            currentPokemonName = data.name;
+            var pokemonImage = data.sprites.front_default;
 
-// メッセージを送信する関数
-async function sendMessage() {
-  const userInput = document.getElementById('user-input').value;
-  appendMessage('user', userInput);
-
-  // ChatGPT APIへのリクエストペイロードの設定
-  const payload = {
-    messages: [
-      { role: 'system', content: 'You are a helpful assistant.' },
-      { role: 'user', content: userInput },
-    ],
-  };
-
-  try {
-    // ChatGPT APIへのPOSTリクエストの送信
-    const response = await fetch(apiUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${apiKey}`,
-      },
-      body: JSON.stringify(payload),
-    });
-
-    const data = await response.json();
-    const modelReply = data.choices[0].message.content;
-    appendMessage('assistant', modelReply);
-  } catch (error) {
-    console.error('Error:', error);
-  }
+            document.getElementById("pokemonName").textContent = currentPokemonName;
+            document.getElementById("pokemonImage").src = pokemonImage;
+        });
 }
 
-// メッセージをログに追加し、チャットウィンドウに表示する関数
-function appendMessage(role, content) {
-  const chatLogContainer = document.getElementById('chat-log');
-  const messageElement = document.createElement('div');
-  messageElement.classList.add(role);
-  messageElement.innerText = content;
-  chatLogContainer.appendChild(messageElement);
+function checkInput(event) {
+    if (event.key === "Enter") {
+        var inputName = document.getElementById("inputName").value.toLowerCase();
+
+        if (inputName === currentPokemonName) {
+            document.getElementById("inputName").value = "";
+            getRandomPokemon();
+        } else {
+            return false; // 入力が間違っている場合は送信をキャンセル
+        }
+    }
 }
 
-// ユーザー入力フィールドでEnterキーが押されたときにメッセージを送信する処理
-document.getElementById('user-input').addEventListener('keydown', function(event) {
-  if (event.key === 'Enter') {
-    sendMessage();
-  }
-});
-
+getRandomPokemon();
