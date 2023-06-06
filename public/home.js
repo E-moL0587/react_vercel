@@ -11,3 +11,26 @@ function nextSlide() {
 }
 
 setInterval(nextSlide, interval);
+
+    // 楕円のパラメータ
+    var centerX = 250;  // 楕円の中心のX座標
+    var centerY = 150;  // 楕円の中心のY座標
+    var radiusX = 200;  // X軸方向の半径
+    var radiusY = 100;  // Y軸方向の半径
+    var speed = 0.01;   // 点の移動速度
+
+    // ポイントの要素を取得
+    var points = document.getElementsByClassName('point');
+
+    // アニメーションを開始
+    var angle = 0;
+    var intervalId = setInterval(function() {
+      for (var i = 0; i < points.length; i++) {
+        var point = points[i];
+        var x = centerX + Math.cos(angle) * radiusX;
+        var y = centerY + Math.sin(angle) * radiusY;
+        point.style.left = x + 'px';
+        point.style.top = y + 'px';
+        angle += speed;
+      }
+    }, 10); // アニメーションの更新間隔（ミリ秒）
