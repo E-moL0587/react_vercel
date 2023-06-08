@@ -13,10 +13,10 @@ function nextSlide() {
 setInterval(nextSlide, interval);
 
     // 楕円のパラメータ
-    var centerX = 250;  // 楕円の中心のX座標
-    var centerY = 150;  // 楕円の中心のY座標
-    var radiusX = 200;  // X軸方向の半径
-    var radiusY = 100;  // Y軸方向の半径
+    var centerX = 135;  // 楕円の中心のX座標
+    var centerY = 450;  // 楕円の中心のY座標
+    var radiusX = 100;  // X軸方向の半径
+    var radiusY = 50;  // Y軸方向の半径
     var speed = 0.01;   // 点の移動速度
 
     // ポイントの要素を取得
